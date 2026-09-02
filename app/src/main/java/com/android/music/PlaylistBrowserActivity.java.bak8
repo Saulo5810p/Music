@@ -497,7 +497,8 @@ public class PlaylistBrowserActivity extends ListActivity
         Cursor counter = MusicUtils.query(this, MediaStore.Audio.Media.EXTERNAL_CONTENT_URI,
                 new String[] {MediaStore.Audio.Media._ID}, "is_podcast=1", null, null);
         if (counter != null) {
-            int numpodcasts = counter.getCount();
+            counter.moveToFirst();
+            int numpodcasts = counter.getInt(0);
             counter.close();
             if (numpodcasts > 0) {
                 ArrayList<Object> podcasts = new ArrayList<Object>(2);
