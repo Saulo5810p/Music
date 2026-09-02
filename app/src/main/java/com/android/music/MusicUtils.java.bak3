@@ -1045,7 +1045,10 @@ public class MusicUtils {
                 MediaMetadataRetriever retriever = new MediaMetadataRetriever();
                 try {
                     retriever.setDataSource(context, uri);
-                    art = retriever.getEmbeddedPicture();
+                    byte[] artBytes = retriever.getEmbeddedPicture();
+                    if (artBytes != null) {
+                        art = BitmapFactory.decodeByteArray(artBytes, 0, artBytes.length);
+                    }
                 } catch (IllegalArgumentException ex) {
                 } catch (RuntimeException ex) {
                 } finally {
