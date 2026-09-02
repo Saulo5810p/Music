@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="6653146846093237201" name="create_playlist_create_text_prompt">"Otevřete klávesnici a zadejte název nového seznamu stop. Pokud zvolíte tlačítko Uložit, seznamu stop bude přidělen název %s."</string>
-    <string msgid="6930730254920388535" name="rename_playlist_diff_prompt">"Otevřete klávesnici a zadejte nový název seznamu stop <ns1:g id="PLAYLIST">%s</ns1:g>, nebo zvolte tlačítko Uložit a seznamu stop bude přidělen název %s."</string>
-    <string msgid="7777541452078260899" name="rename_playlist_same_prompt">"Otevřete klávesnici a zadejte nový název seznamu stop <ns1:g id="PLAYLIST">%s</ns1:g>."</string>
-</resources>

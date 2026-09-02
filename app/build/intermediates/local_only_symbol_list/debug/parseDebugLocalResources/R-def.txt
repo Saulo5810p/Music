@@ -111,6 +111,7 @@ id radio
 id repeat
 id sd_icon
 id sd_message
+id search_box
 id set
 id shuffle
 id spinner

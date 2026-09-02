@@ -55,7 +55,10 @@ import android.widget.ImageView;
 import android.widget.SectionIndexer;
 import android.widget.SimpleCursorTreeAdapter;
 import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.ExpandableListView.ExpandableListContextMenuInfo;
+import android.text.Editable;
+import android.text.TextWatcher;
 
 import java.text.Collator;
 import android.os.Build;
@@ -71,7 +74,9 @@ public class ArtistAlbumBrowserActivity extends ExpandableListActivity
     private String mCurrentArtistNameForAlbum;
     private ArtistAlbumListAdapter mAdapter;
     private boolean mAdapterSent;
+    private EditText mSearchBox;
     private final static int SEARCH = CHILD_MENU_BASE;
+    private final static int SEARCH_INLINE = CHILD_MENU_BASE + 20;
 
     public ArtistAlbumBrowserActivity()
     {
@@ -107,6 +112,7 @@ public class ArtistAlbumBrowserActivity extends ExpandableListActivity
         lv.setFastScrollEnabled(true);
         lv.setOnCreateContextMenuListener(this);
         lv.setTextFilterEnabled(true);
+        setupSearchBox();
 
         mAdapter = (ArtistAlbumListAdapter) getLastNonConfigurationInstance();
         if (mAdapter == null) {
@@ -264,6 +270,7 @@ public class ArtistAlbumBrowserActivity extends ExpandableListActivity
         menu.add(0, GOTO_START, 0, R.string.goto_start).setIcon(R.drawable.ic_menu_music_library);
         menu.add(0, GOTO_PLAYBACK, 0, R.string.goto_playback).setIcon(R.drawable.ic_menu_playback);
         menu.add(0, SHUFFLE_ALL, 0, R.string.shuffle_all).setIcon(R.drawable.ic_menu_shuffle);
+        menu.add(0, SEARCH_INLINE, 0, R.string.search_title).setIcon(android.R.drawable.ic_menu_search);
         return true;
     }
     
@@ -300,8 +307,52 @@ public class ArtistAlbumBrowserActivity extends ExpandableListActivity
                     cursor.close();
                 }
                 return true;
+
+            case SEARCH_INLINE:
+                toggleSearchBox();
+                return true;
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    /**
+     * Wires up the inline search box (shared media_picker_activity_expanding
+     * layout) to the expandable list's own text filter, so typing an artist
+     * or album name filters this tab's list in place, reusing the existing
+     * filter/LIKE-query machinery.
+     */
+    private void setupSearchBox() {
+        mSearchBox = (EditText) findViewById(R.id.search_box);
+        if (mSearchBox == null) {
+            return;
+        }
+        mSearchBox.addTextChangedListener(new TextWatcher() {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                ExpandableListView lv = getExpandableListView();
+                if (lv != null) {
+                    if (s.length() == 0) {
+                        lv.clearTextFilter();
+                    } else {
+                        lv.setFilterText(s.toString());
+                    }
+                }
+            }
+            public void afterTextChanged(Editable s) {}
+        });
+    }
+
+    private void toggleSearchBox() {
+        if (mSearchBox == null) {
+            return;
+        }
+        if (mSearchBox.getVisibility() == View.VISIBLE) {
+            mSearchBox.setText("");
+            mSearchBox.setVisibility(View.GONE);
+        } else {
+            mSearchBox.setVisibility(View.VISIBLE);
+            mSearchBox.requestFocus();
+        }
     }
 
     @Override

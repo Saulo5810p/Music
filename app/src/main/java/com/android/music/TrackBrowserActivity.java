@@ -57,7 +57,10 @@ import android.widget.ListView;
 import android.widget.SectionIndexer;
 import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.AdapterView.AdapterContextMenuInfo;
+import android.text.Editable;
+import android.text.TextWatcher;
 
 import java.text.Collator;
 import java.util.Arrays;
@@ -73,6 +76,7 @@ public class TrackBrowserActivity extends ListActivity
     private static final int CLEAR_PLAYLIST = CHILD_MENU_BASE + 4;
     private static final int REMOVE = CHILD_MENU_BASE + 5;
     private static final int SEARCH = CHILD_MENU_BASE + 6;
+    private static final int SEARCH_INLINE = CHILD_MENU_BASE + 7;
 
 
     private static final String LOGTAG = "TrackBrowser";
@@ -85,6 +89,7 @@ public class TrackBrowserActivity extends ListActivity
     private String mCurrentAlbumName;
     private String mCurrentArtistNameForAlbum;
     private ListView mTrackList;
+    private EditText mSearchBox;
     private Cursor mTrackCursor;
     private TrackListAdapter mAdapter;
     private boolean mAdapterSent = false;
@@ -157,6 +162,7 @@ public class TrackBrowserActivity extends ListActivity
             mTrackList.setCacheColorHint(0);
         } else {
             mTrackList.setTextFilterEnabled(true);
+            setupSearchBox();
         }
         mAdapter = (TrackListAdapter) getLastNonConfigurationInstance();
         
@@ -686,6 +692,44 @@ public class TrackBrowserActivity extends ListActivity
         startActivity(Intent.createChooser(i, title));
     }
 
+    /**
+     * Wires up the inline search box (shared media_picker_activity layout)
+     * to the list's own text filter, so typing a song title filters this
+     * tab's list in place, reusing the existing filter/LIKE-query machinery.
+     */
+    private void setupSearchBox() {
+        mSearchBox = (EditText) findViewById(R.id.search_box);
+        if (mSearchBox == null) {
+            return;
+        }
+        mSearchBox.addTextChangedListener(new TextWatcher() {
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                if (mTrackList != null) {
+                    if (s.length() == 0) {
+                        mTrackList.clearTextFilter();
+                    } else {
+                        mTrackList.setFilterText(s.toString());
+                    }
+                }
+            }
+            public void afterTextChanged(Editable s) {}
+        });
+    }
+
+    private void toggleSearchBox() {
+        if (mSearchBox == null) {
+            return;
+        }
+        if (mSearchBox.getVisibility() == View.VISIBLE) {
+            mSearchBox.setText("");
+            mSearchBox.setVisibility(View.GONE);
+        } else {
+            mSearchBox.setVisibility(View.VISIBLE);
+            mSearchBox.requestFocus();
+        }
+    }
+
     // In order to use alt-up/down as a shortcut for moving the selected item
     // in the list, we need to override dispatchKeyEvent, not onKeyDown.
     // (onKeyDown never sees these events, since they are handled by the list)
@@ -828,6 +872,10 @@ public class TrackBrowserActivity extends ListActivity
                 menu.add(0, CLEAR_PLAYLIST, 0, R.string.clear_playlist).setIcon(android.R.drawable.ic_menu_close_clear_cancel);
             }
         }
+        if (!mEditMode) {
+            menu.add(0, SEARCH_INLINE, 0, R.string.search_title)
+                    .setIcon(android.R.drawable.ic_menu_search);
+        }
         return true;
     }
 
@@ -840,6 +888,10 @@ public class TrackBrowserActivity extends ListActivity
                 MusicUtils.playAll(this, mTrackCursor);
                 return true;
             }
+
+            case SEARCH_INLINE:
+                toggleSearchBox();
+                return true;
 
             case GOTO_START:
                 intent = new Intent();

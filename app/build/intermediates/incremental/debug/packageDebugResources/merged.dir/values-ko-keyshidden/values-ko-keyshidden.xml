@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="6653146846093237201" name="create_playlist_create_text_prompt">"키보드를 사용하여 새 재생 목록에 이름을 지정하거나 \'저장\'을 선택하여 \'%s\'(이)라고 지정합니다."</string>
-    <string msgid="6930730254920388535" name="rename_playlist_diff_prompt">"키보드를 사용하여 재생 목록 \'<ns1:g id="PLAYLIST">%s</ns1:g>\'에 새 이름을 지정하거나 \'저장\'을 선택하여 \'%s\'(이)라고 지정합니다."</string>
-    <string msgid="7777541452078260899" name="rename_playlist_same_prompt">"키보드를 사용하여 재생 목록 \'<ns1:g id="PLAYLIST">%s</ns1:g>\'에 새 이름을 지정합니다."</string>
-</resources>

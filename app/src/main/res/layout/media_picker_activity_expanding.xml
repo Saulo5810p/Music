@@ -22,6 +22,17 @@
 
     <include layout="@layout/sd_error" />
 
+    <EditText
+        android:id="@+id/search_box"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dip"
+        android:hint="@string/search_title"
+        android:singleLine="true"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:visibility="gone" />
+
     <ExpandableListView
         android:id="@android:id/list"
         android:layout_width="fill_parent"
