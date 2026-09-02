@@ -680,7 +680,11 @@ public class MediaPlaybackService extends Service {
             iFilter.addAction(Intent.ACTION_MEDIA_EJECT);
             iFilter.addAction(Intent.ACTION_MEDIA_MOUNTED);
             iFilter.addDataScheme("file");
-            registerReceiver(mUnmountReceiver, iFilter);
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                registerReceiver(mUnmountReceiver, iFilter, Context.RECEIVER_EXPORTED);
+            } else {
+                registerReceiver(mUnmountReceiver, iFilter);
+            }
         }
     }
 

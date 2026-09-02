@@ -61,6 +61,7 @@ import android.widget.AdapterView.AdapterContextMenuInfo;
 
 import java.text.Collator;
 import java.util.Arrays;
+import android.os.Build;
 
 public class TrackBrowserActivity extends ListActivity
         implements View.OnCreateContextMenuListener, MusicUtils.Defs, ServiceConnection
@@ -173,7 +174,11 @@ public class TrackBrowserActivity extends ListActivity
         f.addAction(Intent.ACTION_MEDIA_SCANNER_FINISHED);
         f.addAction(Intent.ACTION_MEDIA_UNMOUNTED);
         f.addDataScheme("file");
-        registerReceiver(mScanListener, f);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mScanListener, f, Context.RECEIVER_EXPORTED);
+        } else {
+            registerReceiver(mScanListener, f);
+        }
 
         if (mAdapter == null) {
             //Log.i("@@@", "starting query");
@@ -339,7 +344,11 @@ public class TrackBrowserActivity extends ListActivity
             try {
                 int cur = MusicUtils.sService.getQueuePosition();
                 setSelection(cur);
-                registerReceiver(mNowPlayingListener, new IntentFilter(f));
+                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                    registerReceiver(mNowPlayingListener, new IntentFilter(f), Context.RECEIVER_NOT_EXPORTED);
+                } else {
+                    registerReceiver(mNowPlayingListener, new IntentFilter(f));
+                }
                 mNowPlayingListener.onReceive(this, new Intent(MediaPlaybackService.META_CHANGED));
             } catch (RemoteException ex) {
             }
@@ -357,7 +366,11 @@ public class TrackBrowserActivity extends ListActivity
                     mTrackCursor.moveToNext();
                 }
             }
-            registerReceiver(mTrackListListener, new IntentFilter(f));
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                registerReceiver(mTrackListListener, new IntentFilter(f), Context.RECEIVER_NOT_EXPORTED);
+            } else {
+                registerReceiver(mTrackListListener, new IntentFilter(f));
+            }
             mTrackListListener.onReceive(this, new Intent(MediaPlaybackService.META_CHANGED));
         }
     }

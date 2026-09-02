@@ -80,6 +80,7 @@ public class MusicBrowserActivity extends Activity
         });
         setDefaultKeyMode(DEFAULT_KEYS_SEARCH_LOCAL);
         requestNotificationPermissionIfNeeded();
+        requestPhoneStatePermissionIfNeeded();
         init();
     }
 
@@ -94,6 +95,21 @@ public class MusicBrowserActivity extends Activity
                     != PackageManager.PERMISSION_GRANTED) {
                 ActivityCompat.requestPermissions(this,
                         new String[]{Manifest.permission.POST_NOTIFICATIONS}, 1);
+            }
+        }
+    }
+
+    /**
+     * MediaPlaybackService listens for phone call state (to pause
+     * playback during calls), which requires the runtime
+     * READ_PHONE_STATE permission since Android 6.0 (API 23).
+     */
+    private void requestPhoneStatePermissionIfNeeded() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
+                    != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this,
+                        new String[]{Manifest.permission.READ_PHONE_STATE}, 2);
             }
         }
     }
@@ -140,7 +156,11 @@ public class MusicBrowserActivity extends Activity
         super.onResume();
         IntentFilter f = new IntentFilter();
         f.addAction(MediaPlaybackService.META_CHANGED);
-        registerReceiver(mStatusListener, new IntentFilter(f));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mStatusListener, new IntentFilter(f), Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            registerReceiver(mStatusListener, new IntentFilter(f));
+        }
         updateMenu();
         if (mAutoShuffle) {
             mAutoShuffle = false;

@@ -31,6 +31,7 @@ import android.os.RemoteException;
 import android.view.Window;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.os.Build;
 
 public class StreamStarter extends Activity
 {
@@ -59,7 +60,11 @@ public class StreamStarter extends Activity
                     IntentFilter f = new IntentFilter();
                     f.addAction(MediaPlaybackService.ASYNC_OPEN_COMPLETE);
                     f.addAction(MediaPlaybackService.PLAYBACK_COMPLETE);
-                    registerReceiver(mStatusListener, new IntentFilter(f));
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+                        registerReceiver(mStatusListener, new IntentFilter(f), Context.RECEIVER_NOT_EXPORTED);
+                    } else {
+                        registerReceiver(mStatusListener, new IntentFilter(f));
+                    }
                     MusicUtils.sService.openFileAsync(getIntent().getData().toString());
                 } catch (RemoteException ex) {
                 }

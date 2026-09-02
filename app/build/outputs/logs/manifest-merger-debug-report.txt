@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:17:1-230:12
-INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:17:1-230:12
-INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:17:1-230:12
-INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:17:1-230:12
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:17:1-231:12
+INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:17:1-231:12
+INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:17:1-231:12
+INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:17:1-231:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/ce2532098f2d5a13879aed2d7273e8f4/transformed/appcompat-resources-1.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat:1.7.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/6f192d873cd9917f4c119a511d5e732b/transformed/appcompat-1.7.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.media:media:1.7.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/26739b81d8da55356ff5a796038ee57a/transformed/media-1.7.0/AndroidManifest.xml:2:1-7:12
@@ -78,9 +78,13 @@ uses-permission#android.permission.POST_NOTIFICATIONS
 ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:25:5-77
 	android:name
 		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:25:22-74
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:26:5-75
+	android:name
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:26:22-72
 application
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:27:5-229:19
-INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:27:5-229:19
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:5-230:19
+INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:5-230:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/6344566fc579019f5ddc5dc21aa700cb/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:23:5-33:19
@@ -98,238 +102,230 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /data/data/com.termux/files
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1d876224da57df4a482e52292d7feacd/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:label
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:9-50
-	android:allowTaskReparenting
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:30:9-44
-	android:icon
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:27:18-52
-	android:taskAffinity
 		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:29:9-50
+	android:allowTaskReparenting
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:31:9-44
+	android:icon
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:18-52
+	android:taskAffinity
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:30:9-50
 activity#com.android.music.MusicBrowserActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:31:9-41:19
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:32:9-42:19
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:31:55-78
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:32:55-78
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:31:19-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:32:19-54
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.LAUNCHER
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:32:13-36:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:33:13-37:29
 action#android.intent.action.MAIN
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:33:17-69
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:33:25-66
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:34:25-66
 category#android.intent.category.DEFAULT
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:34:17-76
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:34:27-73
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
 category#android.intent.category.LAUNCHER
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-77
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:36:17-77
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:36:27-74
 meta-data#android.app.default_searchable
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:37:14-40:16
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:38:14-41:16
 	android:value
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:39:17-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:40:17-54
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:38:17-62
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:39:17-62
 receiver#com.android.music.MediaButtonIntentReceiver
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:42:9-47:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:43:9-48:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:42:60-83
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:43:60-83
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:42:19-59
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:43:19-59
 intent-filter#action:name:android.intent.action.MEDIA_BUTTON+action:name:android.media.AUDIO_BECOMING_NOISY
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:43:13-46:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:44:13-47:29
 action#android.intent.action.MEDIA_BUTTON
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:44:17-77
-	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:44:25-74
-action#android.media.AUDIO_BECOMING_NOISY
 ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:45:17-77
 	android:name
 		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:45:25-74
+action#android.media.AUDIO_BECOMING_NOISY
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:46:17-77
+	android:name
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:46:25-74
 activity#com.android.music.MediaPlaybackActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:59:9-81:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:60:9-82:20
 	android:clearTaskOnLaunch
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:64:17-49
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:65:17-49
 	android:label
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:61:17-59
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:62:17-59
 	android:excludeFromRecents
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:65:17-50
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:66:17-50
 	android:launchMode
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:63:17-48
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:64:17-48
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:66:17-40
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:67:17-40
 	android:theme
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:60:17-64
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:61:17-64
 	android:taskAffinity
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:62:17-40
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:63:17-40
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:59:19-55
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:60:19-55
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:application/itunes+data:mimeType:application/ogg+data:mimeType:application/x-ogg+data:mimeType:audio/*+data:scheme:content+data:scheme:file
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:67:13-76:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:68:13-77:29
 action#android.intent.action.VIEW
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:68:17-69
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:69:17-69
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:68:25-66
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:69:25-66
 data
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:70:17-49
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
 	android:scheme
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:70:23-47
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:23-47
 	android:mimeType
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:72:23-49
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
 intent-filter#action:name:com.android.music.PLAYBACK_VIEWER+category:name:android.intent.category.DEFAULT
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:77:13-80:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:78:13-81:29
 action#com.android.music.PLAYBACK_VIEWER
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:78:17-76
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:79:17-76
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:78:25-73
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:79:25-73
 activity#com.android.music.StreamStarter
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:82:9-94:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:9-95:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:82:92-115
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:92-115
 	android:theme
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:82:48-91
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:48-91
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:82:19-47
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:19-47
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:mimeType:audio/mp3+data:mimeType:audio/mp4+data:mimeType:audio/mp4a-latm+data:mimeType:audio/mpeg+data:mimeType:audio/x-mp3+data:scheme:http
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:13-93:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:84:13-94:29
 category#android.intent.category.BROWSABLE
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:86:17-78
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:87:17-78
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:86:27-75
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:87:27-75
 activity#com.android.music.ArtistAlbumBrowserActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:95:9-101:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:96:9-102:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:95:61-84
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:96:61-84
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:95:19-60
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:96:19-60
 intent-filter#action:name:android.intent.action.PICK+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/artistalbum
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:96:13-100:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:97:13-101:29
 action#android.intent.action.PICK
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:97:17-69
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:17-69
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:97:25-66
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:25-66
 activity#com.android.music.AlbumBrowserActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:102:9-108:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:103:9-109:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:102:55-78
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:103:55-78
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:102:19-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:103:19-54
 intent-filter#action:name:android.intent.action.PICK+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/album
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:103:13-107:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:104:13-108:29
 activity#com.android.music.TrackBrowserActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:109:9-116:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:110:9-117:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:109:55-78
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:110:55-78
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:109:19-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:110:19-54
 intent-filter#action:name:android.intent.action.EDIT+action:name:android.intent.action.PICK+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/track
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:110:13-115:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:111:13-116:29
 action#android.intent.action.EDIT
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:111:17-69
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:112:17-69
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:111:25-66
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:112:25-66
 activity#com.android.music.QueryBrowserActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:117:9-128:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:118:9-129:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:119:17-40
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:120:17-40
 	android:theme
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:118:17-64
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:119:17-64
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:117:19-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:118:19-54
 intent-filter#action:name:android.intent.action.SEARCH+category:name:android.intent.category.DEFAULT
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:120:13-123:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:121:13-124:29
 action#android.intent.action.SEARCH
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:121:17-71
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:122:17-71
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:121:25-68
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:122:25-68
 meta-data#android.app.searchable
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:124:13-127:15
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:125:13-128:15
 	android:resource
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:126:17-51
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:127:17-51
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:125:17-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:126:17-54
 activity#com.android.music.PlaylistBrowserActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:129:9-140:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:9-141:20
 	android:label
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:129:58-99
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:58-99
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:129:100-123
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:100-123
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:129:19-57
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:19-57
 intent-filter#action:name:android.intent.action.PICK+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/playlist
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:13-134:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:131:13-135:29
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/playlist
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:135:13-139:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:136:13-140:29
 activity-alias#com.android.music.PlaylistShortcutActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:141:9-152:26
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:142:9-153:26
 	android:label
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:143:13-55
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:144:13-55
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:145:13-36
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:146:13-36
 	android:targetActivity
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:142:13-61
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:143:13-61
 	android:icon
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:144:13-73
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:145:13-73
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:141:25-64
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:142:25-64
 intent-filter#action:name:android.intent.action.CREATE_SHORTCUT+category:name:android.intent.category.DEFAULT
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:147:13-150:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:148:13-151:29
 action#android.intent.action.CREATE_SHORTCUT
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:148:17-80
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:149:17-80
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:148:25-77
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:149:25-77
 activity#com.android.music.VideoBrowserActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:153:9-170:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:154:9-171:20
 	android:label
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:155:13-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:156:13-54
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:157:13-36
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:158:13-36
 	android:icon
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:156:13-47
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:157:13-47
 	android:taskAffinity
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:154:13-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:155:13-54
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:153:19-54
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:154:19-54
 intent-filter#action:name:android.intent.action.PICK+category:name:android.intent.category.DEFAULT+data:mimeType:vnd.android.cursor.dir/video
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:158:13-162:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:159:13-163:29
 activity#com.android.music.MediaPickerActivity
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:171:9-193:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:172:9-194:20
 	android:label
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:171:54-94
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:172:54-94
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:171:95-119
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:172:95-119
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:171:19-53
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:172:19-53
 activity#com.android.music.MusicPicker
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:194:9-213:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:195:9-214:20
 	android:label
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:194:46-88
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:195:46-88
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:194:89-112
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:195:89-112
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:194:19-45
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:195:19-45
 intent-filter#action:name:android.intent.action.GET_CONTENT+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.OPENABLE+data:mimeType:application/ogg+data:mimeType:application/x-ogg+data:mimeType:audio/*
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:197:13-204:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:198:13-205:29
 action#android.intent.action.GET_CONTENT
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:198:17-76
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:199:17-76
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:198:25-73
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:199:25-73
 category#android.intent.category.OPENABLE
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:200:17-77
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:201:17-77
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:200:27-74
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:201:27-74
 intent-filter#action:name:android.intent.action.PICK+category:name:android.intent.category.DEFAULT+category:name:android.intent.category.OPENABLE+data:mimeType:vnd.android.cursor.dir/audio
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:207:13-212:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:208:13-213:29
 activity#com.android.music.CreatePlaylist
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:214:9-120
-	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:214:93-117
-	android:theme
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:214:49-92
-	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:214:19-48
-activity#com.android.music.RenamePlaylist
 ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:215:9-120
 	android:exported
 		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:215:93-117
@@ -337,56 +333,64 @@ ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.x
 		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:215:49-92
 	android:name
 		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:215:19-48
+activity#com.android.music.RenamePlaylist
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:9-120
+	android:exported
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:93-117
+	android:theme
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:49-92
+	android:name
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:19-48
 activity#com.android.music.WeekSelector
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:9-118
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:9-118
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:91-115
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:91-115
 	android:theme
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:47-90
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:47-90
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:19-46
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:19-46
 activity#com.android.music.DeleteItems
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:9-117
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:9-117
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:90-114
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:90-114
 	android:theme
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:46-89
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:46-89
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:19-45
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:19-45
 activity#com.android.music.ScanningProgress
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:9-122
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:9-122
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:95-119
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:95-119
 	android:theme
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:51-94
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:51-94
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:19-50
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:19-50
 service#com.android.music.MediaPlaybackService
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:9-221:61
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:220:9-222:61
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:220:13-37
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:221:13-37
 	android:foregroundServiceType
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:221:13-58
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:222:13-58
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:18-53
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:220:18-53
 receiver#com.android.music.MediaAppWidgetProvider
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:223:9-228:20
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:224:9-229:20
 	android:exported
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:223:57-80
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:224:57-80
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:223:19-56
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:224:19-56
 intent-filter#action:name:android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:224:13-226:29
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:225:13-227:29
 action#android.appwidget.action.APPWIDGET_UPDATE
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:225:17-84
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:226:17-84
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:225:25-81
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:226:25-81
 meta-data#android.appwidget.provider
-ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:227:13-107
+ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:228:13-107
 	android:resource
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:227:66-104
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:228:66-104
 	android:name
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:227:24-65
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:228:24-65
 uses-sdk
 INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml

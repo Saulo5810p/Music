@@ -59,6 +59,7 @@ import android.widget.SeekBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.SeekBar.OnSeekBarChangeListener;
+import android.os.Build;
 
 
 public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
@@ -464,7 +465,11 @@ public class MediaPlaybackActivity extends Activity implements MusicUtils.Defs,
         f.addAction(MediaPlaybackService.PLAYSTATE_CHANGED);
         f.addAction(MediaPlaybackService.META_CHANGED);
         f.addAction(MediaPlaybackService.PLAYBACK_COMPLETE);
-        registerReceiver(mStatusListener, new IntentFilter(f));
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mStatusListener, new IntentFilter(f), Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            registerReceiver(mStatusListener, new IntentFilter(f));
+        }
         updateTrackInfo();
         long next = refreshNow();
         queueNextRefresh(next);

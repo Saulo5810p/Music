@@ -55,6 +55,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.AdapterView.AdapterContextMenuInfo;
+import android.os.Build;
 
 public class PlaylistBrowserActivity extends ListActivity
     implements View.OnCreateContextMenuListener, MusicUtils.Defs
@@ -119,7 +120,11 @@ public class PlaylistBrowserActivity extends ListActivity
         f.addAction(Intent.ACTION_MEDIA_SCANNER_FINISHED);
         f.addAction(Intent.ACTION_MEDIA_UNMOUNTED);
         f.addDataScheme("file");
-        registerReceiver(mScanListener, f);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mScanListener, f, Context.RECEIVER_EXPORTED);
+        } else {
+            registerReceiver(mScanListener, f);
+        }
 
         setContentView(R.layout.media_picker_activity);
         ListView lv = getListView();

@@ -58,6 +58,7 @@ import android.widget.TextView;
 import android.widget.ExpandableListView.ExpandableListContextMenuInfo;
 
 import java.text.Collator;
+import android.os.Build;
 
 
 public class ArtistAlbumBrowserActivity extends ExpandableListActivity
@@ -95,7 +96,11 @@ public class ArtistAlbumBrowserActivity extends ExpandableListActivity
         f.addAction(Intent.ACTION_MEDIA_SCANNER_FINISHED);
         f.addAction(Intent.ACTION_MEDIA_UNMOUNTED);
         f.addDataScheme("file");
-        registerReceiver(mScanListener, f);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mScanListener, f, Context.RECEIVER_EXPORTED);
+        } else {
+            registerReceiver(mScanListener, f);
+        }
 
         setContentView(R.layout.media_picker_activity_expanding);
         ExpandableListView lv = getExpandableListView();
@@ -173,7 +178,11 @@ public class ArtistAlbumBrowserActivity extends ExpandableListActivity
         IntentFilter f = new IntentFilter();
         f.addAction(MediaPlaybackService.META_CHANGED);
         f.addAction(MediaPlaybackService.QUEUE_CHANGED);
-        registerReceiver(mTrackListListener, f);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mTrackListListener, f, Context.RECEIVER_NOT_EXPORTED);
+        } else {
+            registerReceiver(mTrackListListener, f);
+        }
         mTrackListListener.onReceive(null, null);
 
         MusicUtils.setSpinnerState(this);

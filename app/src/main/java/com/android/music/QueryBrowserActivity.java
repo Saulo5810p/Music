@@ -52,6 +52,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 import java.util.ArrayList;
+import android.os.Build;
 
 public class QueryBrowserActivity extends ListActivity
 implements MusicUtils.Defs, ServiceConnection
@@ -89,7 +90,11 @@ implements MusicUtils.Defs, ServiceConnection
         f.addAction(Intent.ACTION_MEDIA_SCANNER_STARTED);
         f.addAction(Intent.ACTION_MEDIA_UNMOUNTED);
         f.addDataScheme("file");
-        registerReceiver(mScanListener, f);
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+            registerReceiver(mScanListener, f, Context.RECEIVER_EXPORTED);
+        } else {
+            registerReceiver(mScanListener, f);
+        }
         
         Intent intent = getIntent();
         
