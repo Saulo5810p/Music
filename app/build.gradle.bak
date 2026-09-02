@@ -40,10 +40,3 @@ dependencies {
     implementation 'androidx.media:media:1.7.0'
     implementation 'androidx.core:core:1.13.1'
 }
-
-// >>> fix_kotlin_duplicate.py: exclude old kotlin-stdlib-jdk7/jdk8
-configurations.all {
-    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
-    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
-}
-// <<< fix_kotlin_duplicate.py
