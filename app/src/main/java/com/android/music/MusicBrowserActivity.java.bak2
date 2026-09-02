@@ -204,26 +204,26 @@ public class MusicBrowserActivity extends Activity
     
     public void onClick(View v) {
         Intent intent;
-        int __clickedId = v.getId();
+                int __clickedId = v.getId();
         if (__clickedId == R.id.browse_button) {
-            intent = new Intent(Intent.ACTION_PICK);
-            intent.setDataAndType(Uri.EMPTY, "vnd.android.cursor.dir/artistalbum");
-            startActivity(intent);
+    intent = new Intent(Intent.ACTION_PICK);
+                    intent.setDataAndType(Uri.EMPTY, "vnd.android.cursor.dir/artistalbum");
+                    startActivity(intent);
         } else if (__clickedId == R.id.albums_button) {
-            intent = new Intent(Intent.ACTION_PICK);
-            intent.setDataAndType(Uri.EMPTY, "vnd.android.cursor.dir/album");
-            startActivity(intent);
+    intent = new Intent(Intent.ACTION_PICK);
+                    intent.setDataAndType(Uri.EMPTY, "vnd.android.cursor.dir/album");
+                    startActivity(intent);
         } else if (__clickedId == R.id.tracks_button) {
-            intent = new Intent(Intent.ACTION_PICK);
-            intent.setDataAndType(Uri.EMPTY, "vnd.android.cursor.dir/track");
-            startActivity(intent);
+    intent = new Intent(Intent.ACTION_PICK);
+                    intent.setDataAndType(Uri.EMPTY, "vnd.android.cursor.dir/track");
+                    startActivity(intent);
         } else if (__clickedId == R.id.playlists_button) {
-            intent = new Intent(Intent.ACTION_PICK);
-            intent.setDataAndType(Uri.EMPTY, MediaStore.Audio.Playlists.CONTENT_TYPE);
-            startActivity(intent);
+    intent = new Intent(Intent.ACTION_PICK);
+                    intent.setDataAndType(Uri.EMPTY, MediaStore.Audio.Playlists.CONTENT_TYPE);
+                    startActivity(intent);
         } else if (__clickedId == R.id.nowplaying) {
-            intent = new Intent("com.android.music.PLAYBACK_VIEWER");
-            startActivity(intent);
+    intent = new Intent("com.android.music.PLAYBACK_VIEWER");
+                    startActivity(intent);
         }
     }
 
