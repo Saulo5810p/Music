@@ -1051,6 +1051,7 @@ public class MusicUtils {
                 } finally {
                     try {
                         retriever.release();
+                    } catch (IOException ex) {
                     } catch (RuntimeException ex) {
                     }
                 }
