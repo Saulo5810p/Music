@@ -491,14 +491,13 @@ public class MusicUtils {
             // need to determine the number of items currently in the playlist,
             // so the play_order field can be maintained.
             String[] cols = new String[] {
-                    MediaStore.Audio.Playlists.Members._ID
+                    "count(*)"
             };
             Uri uri = MediaStore.Audio.Playlists.Members.getContentUri("external", playlistid);
             Cursor cur = resolver.query(uri, cols, null, null, null);
-            int base = cur != null ? cur.getCount() : 0;
-            if (cur != null) {
-                cur.close();
-            }
+            cur.moveToFirst();
+            int base = cur.getInt(0);
+            cur.close();
 
             for (int i = 0; i < size; i++) {
                 values[i] = new ContentValues();

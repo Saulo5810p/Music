@@ -746,10 +746,7 @@ public class ArtistAlbumBrowserActivity extends ExpandableListActivity
             Cursor c = MusicUtils.query(mActivity,
                     MediaStore.Audio.Artists.Albums.getContentUri("external", id),
                     cols, null, null, MediaStore.Audio.Albums.DEFAULT_SORT_ORDER);
-            if (c == null) {
-                return null;
-            }
-
+            
             class MyCursorWrapper extends CursorWrapper {
                 String mArtistName;
                 int mMagicColumnIdx;

@@ -20,8 +20,6 @@ import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.appwidget.AppWidgetManager;
-import android.Manifest;
-import android.content.pm.PackageManager;
 import android.content.ContentResolver;
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -130,7 +128,7 @@ public class MediaPlaybackService extends Service {
     private final Shuffler mRand = new Shuffler();
     private int mOpenFailedCounter = 0;
     String[] mCursorCols = new String[] {
-            MediaStore.Audio.Media._ID,     // index must match IDCOLIDX below
+            "audio._id AS _id",             // index must match IDCOLIDX below
             MediaStore.Audio.Media.ARTIST,
             MediaStore.Audio.Media.ALBUM,
             MediaStore.Audio.Media.TITLE,
@@ -333,11 +331,8 @@ public class MediaPlaybackService extends Service {
             registerReceiver(mIntentReceiver, commandFilter);
         }
         
-        if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE)
-                == PackageManager.PERMISSION_GRANTED) {
-            TelephonyManager tmgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-            tmgr.listen(mPhoneStateListener, PhoneStateListener.LISTEN_CALL_STATE);
-        }
+        TelephonyManager tmgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        tmgr.listen(mPhoneStateListener, PhoneStateListener.LISTEN_CALL_STATE);
         PowerManager pm = (PowerManager)getSystemService(Context.POWER_SERVICE);
         mWakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK, this.getClass().getName());
         mWakeLock.setReferenceCounted(false);
@@ -373,11 +368,8 @@ public class MediaPlaybackService extends Service {
             mCursor = null;
         }
 
-        if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE)
-                == PackageManager.PERMISSION_GRANTED) {
-            TelephonyManager tmgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-            tmgr.listen(mPhoneStateListener, 0);
-        }
+        TelephonyManager tmgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        tmgr.listen(mPhoneStateListener, 0);
 
         unregisterReceiver(mIntentReceiver);
         if (mUnmountReceiver != null) {
@@ -573,14 +565,7 @@ public class MediaPlaybackService extends Service {
     public void onStart(Intent intent, int startId) {
         mServiceStartId = startId;
         mDelayedStopHandler.removeCallbacksAndMessages(null);
-
-        if (intent == null) {
-            mDelayedStopHandler.removeCallbacksAndMessages(null);
-            Message msg = mDelayedStopHandler.obtainMessage();
-            mDelayedStopHandler.sendMessageDelayed(msg, IDLE_DELAY);
-            return;
-        }
-
+        
         String action = intent.getAction();
         String cmd = intent.getStringExtra("command");
         
