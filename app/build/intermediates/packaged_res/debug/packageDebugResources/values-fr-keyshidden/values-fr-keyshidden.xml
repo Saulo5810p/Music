@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
-    <string msgid="6653146846093237201" name="create_playlist_create_text_prompt">"Ouvrez le clavier afin de saisir un nom pour votre nouvelle playlist ou sélectionnez Enregistrer pour la nommer \"%s\"."</string>
-    <string msgid="6930730254920388535" name="rename_playlist_diff_prompt">"Ouvrez le clavier pour saisir un nouveau nom pour la playlist \"<ns1:g id="PLAYLIST">%s</ns1:g>\" ou sélectionnez Enregistrer pour la nommer \"%s\"."</string>
-    <string msgid="7777541452078260899" name="rename_playlist_same_prompt">"Ouvrez le clavier pour renommer la playlist \"<ns1:g id="PLAYLIST">%s</ns1:g>\"."</string>
-</resources>

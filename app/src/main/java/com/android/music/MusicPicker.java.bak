@@ -707,12 +707,12 @@ public class MusicPicker extends ListActivity
     }
     
     public void onClick(View v) {
-                int __clickedId = v.getId();
-        if (__clickedId == R.id.okayButton) {
-    if (mSelectedId >= 0) {
-                        setResult(RESULT_OK, new Intent().setData(mSelectedUri));
-                        finish();
-        }
+        switch (v.getId()) {
+            case R.id.okayButton:
+                if (mSelectedId >= 0) {
+                    setResult(RESULT_OK, new Intent().setData(mSelectedUri));
+                    finish();
+                }
                 break;
 
             case R.id.cancelButton:

@@ -50,7 +50,7 @@ import android.graphics.PixelFormat;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 
-import android.media.MediaMetadataRetriever;
+import android.media.MediaScanner;
 import android.net.Uri;
 import android.os.RemoteException;
 import android.os.Environment;
@@ -1042,19 +1042,22 @@ public class MusicUtils {
                 }
             }
             if (uri != null) {
-                MediaMetadataRetriever retriever = new MediaMetadataRetriever();
+                MediaScanner scanner = new MediaScanner(context);
+                ParcelFileDescriptor pfd = null;
                 try {
-                    retriever.setDataSource(context, uri);
-                    byte[] artBytes = retriever.getEmbeddedPicture();
-                    if (artBytes != null) {
-                        art = BitmapFactory.decodeByteArray(artBytes, 0, artBytes.length);
+                    pfd = context.getContentResolver().openFileDescriptor(uri, "r");
+                    if (pfd != null) {
+                        FileDescriptor fd = pfd.getFileDescriptor();
+                        art = scanner.extractAlbumArt(fd);
                     }
-                } catch (IllegalArgumentException ex) {
-                } catch (RuntimeException ex) {
+                } catch (IOException ex) {
+                } catch (SecurityException ex) {
                 } finally {
                     try {
-                        retriever.release();
-                    } catch (RuntimeException ex) {
+                        if (pfd != null) {
+                            pfd.close();
+                        }
+                    } catch (IOException ex) {
                     }
                 }
             }

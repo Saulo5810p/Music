@@ -36,8 +36,6 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 
 public class TouchInterceptor extends ListView {
-    private Context mContext;
-
     
     private View mDragView;
     private WindowManager mWindowManager;
@@ -61,7 +59,6 @@ public class TouchInterceptor extends ListView {
     private final int mTouchSlop;
 
     public TouchInterceptor(Context context, AttributeSet attrs) {
-        mContext = context;
         super(context, attrs);
         SharedPreferences pref = context.getSharedPreferences("Music", 3);
         mRemoveMode = pref.getInt("deletemode", -1);
