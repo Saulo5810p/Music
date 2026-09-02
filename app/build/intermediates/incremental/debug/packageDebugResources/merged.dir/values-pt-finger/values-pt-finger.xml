@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="2128095771677061443" name="notification_artist_album">"<ns1:g id="ALBUM">%2$s</ns1:g>"\n"<ns1:g id="ARTIST">%1$s</ns1:g>"</string>
+</resources>
