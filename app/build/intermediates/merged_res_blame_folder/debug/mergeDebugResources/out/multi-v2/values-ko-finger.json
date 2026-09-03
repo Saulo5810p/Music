@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-22:/values-ko-finger/values-ko-finger.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-ko-finger/values-ko-finger.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-ko-finger/strings2.xml",

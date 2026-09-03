@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-22:/values-tr-keysexposed/values-tr-keysexposed.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-tr-keysexposed/values-tr-keysexposed.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-tr-keysexposed/strings.xml",

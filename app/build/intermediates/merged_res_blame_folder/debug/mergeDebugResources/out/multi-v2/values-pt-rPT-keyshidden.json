@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-22:/values-pt-rPT-keyshidden/values-pt-rPT-keyshidden.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-pt-rPT-keyshidden/values-pt-rPT-keyshidden.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-pt-rPT-keyshidden/strings.xml",

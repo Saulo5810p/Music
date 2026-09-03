@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-22:/values-land/values-land.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-land/dimens.xml",
@@ -13,21 +13,11 @@
                         "endOffsets": "780,731"
                     },
                     "to": {
-                        "startLines": "5,6",
+                        "startLines": "2,3",
                         "startColumns": "4,4",
-                        "startOffsets": "264,313",
+                        "startOffsets": "55,104",
                         "endColumns": "48,48",
-                        "endOffsets": "308,357"
-                    }
-                },
-                {
-                    "source": "/data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/6f192d873cd9917f4c119a511d5e732b/transformed/appcompat-1.7.0/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,125,196",
-                        "endColumns": "69,70,67",
-                        "endOffsets": "120,191,259"
+                        "endOffsets": "99,148"
                     }
                 }
             ]

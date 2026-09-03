@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-22:/values-tr-finger/values-tr-finger.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-tr-finger/values-tr-finger.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-tr-finger/strings2.xml",

@@ -1,0 +1,28 @@
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class com.android.music.AlbumBrowserActivity { <init>(); }
+-keep class com.android.music.ArtistAlbumBrowserActivity { <init>(); }
+-keep class com.android.music.CreatePlaylist { <init>(); }
+-keep class com.android.music.DeleteItems { <init>(); }
+-keep class com.android.music.MediaAppWidgetProvider { <init>(); }
+-keep class com.android.music.MediaButtonIntentReceiver { <init>(); }
+-keep class com.android.music.MediaPickerActivity { <init>(); }
+-keep class com.android.music.MediaPlaybackActivity { <init>(); }
+-keep class com.android.music.MediaPlaybackService { <init>(); }
+-keep class com.android.music.MusicBrowserActivity { <init>(); }
+-keep class com.android.music.MusicPicker { <init>(); }
+-keep class com.android.music.PlaylistBrowserActivity { <init>(); }
+-keep class com.android.music.QueryBrowserActivity { <init>(); }
+-keep class com.android.music.RenamePlaylist { <init>(); }
+-keep class com.android.music.ScanningProgress { <init>(); }
+-keep class com.android.music.StreamStarter { <init>(); }
+-keep class com.android.music.TrackBrowserActivity { <init>(); }
+-keep class com.android.music.VideoBrowserActivity { <init>(); }
+-keep class com.android.music.WeekSelector { <init>(); }
+-keep class com.android.music.CheckableRelativeLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.music.RepeatingImageButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.music.TouchInterceptor { <init>(android.content.Context, android.util.AttributeSet); }
+

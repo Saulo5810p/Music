@@ -1,0 +1,371 @@
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/Music/app/build/intermediates/aapt_proguard_file/debug/processDebugResources/aapt_rules.txt
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class com.android.music.AlbumBrowserActivity { <init>(); }
+-keep class com.android.music.ArtistAlbumBrowserActivity { <init>(); }
+-keep class com.android.music.CreatePlaylist { <init>(); }
+-keep class com.android.music.DeleteItems { <init>(); }
+-keep class com.android.music.MediaAppWidgetProvider { <init>(); }
+-keep class com.android.music.MediaButtonIntentReceiver { <init>(); }
+-keep class com.android.music.MediaPickerActivity { <init>(); }
+-keep class com.android.music.MediaPlaybackActivity { <init>(); }
+-keep class com.android.music.MediaPlaybackService { <init>(); }
+-keep class com.android.music.MusicBrowserActivity { <init>(); }
+-keep class com.android.music.MusicPicker { <init>(); }
+-keep class com.android.music.PlaylistBrowserActivity { <init>(); }
+-keep class com.android.music.QueryBrowserActivity { <init>(); }
+-keep class com.android.music.RenamePlaylist { <init>(); }
+-keep class com.android.music.ScanningProgress { <init>(); }
+-keep class com.android.music.StreamStarter { <init>(); }
+-keep class com.android.music.TrackBrowserActivity { <init>(); }
+-keep class com.android.music.VideoBrowserActivity { <init>(); }
+-keep class com.android.music.WeekSelector { <init>(); }
+-keep class com.android.music.CheckableRelativeLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.music.RepeatingImageButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.android.music.TouchInterceptor { <init>(android.content.Context, android.util.AttributeSet); }
+
+
+# End of content from /data/data/com.termux/files/home/Music/app/build/intermediates/aapt_proguard_file/debug/processDebugResources/aapt_rules.txt
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/Music/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.7.0
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+#
+# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
+# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
+# will be ignored by new version of the Android plugin for Gradle.
+
+# Optimizations: If you don't want to optimize, use the proguard-android.txt configuration file
+# instead of this one, which turns off the optimization flags.
+-allowaccessmodification
+
+# Preserve some attributes that may be required for reflection.
+-keepattributes AnnotationDefault,
+                EnclosingMethod,
+                InnerClasses,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations,
+                Signature
+
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keep public class com.google.android.vending.licensing.ILicensingService
+-dontnote com.android.vending.licensing.ILicensingService
+-dontnote com.google.vending.licensing.ILicensingService
+-dontnote com.google.android.vending.licensing.ILicensingService
+
+# For native methods, see https://www.guardsquare.com/manual/configuration/examples#native
+-keepclasseswithmembernames,includedescriptorclasses class * {
+    native <methods>;
+}
+
+# Keep setters in Views so that animations can still work.
+-keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick.
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# For enumeration classes, see https://www.guardsquare.com/manual/configuration/examples#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+# Preserve annotated Javascript interface methods.
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+# The support libraries contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version. We know about them, and they are safe.
+-dontnote android.support.**
+-dontnote androidx.**
+-dontwarn android.support.**
+-dontwarn androidx.**
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
+-dontnote org.apache.http.**
+-dontnote android.net.http.**
+
+# These classes are duplicated between android.jar and core-lambda-stubs.jar.
+-dontnote java.lang.invoke.**
+
+# End of content from /data/data/com.termux/files/home/Music/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.7.0
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/Music/app/proguard-rules.pro
+# Regras R8/ProGuard para o port do Music (AOSP Donut -> moderno).
+#
+# Objetivo: deixar o R8 remover codigo morto das libs AndroidX (appcompat*,
+# media, core) sem tocar em nada que o app realmente usa em runtime,
+# especialmente coisas acessadas via reflection interna das libs de media
+# (MediaSessionCompat / NotificationCompat.MediaStyle / MediaButtonReceiver),
+# via AIDL (IMediaPlaybackService), ou via nome de classe no manifest.
+#
+# *appcompat foi removida do build.gradle por nao ser usada; caso alguem
+# volte a adiciona-la no futuro, estas regras nao dependem dela.
+
+# --- Componentes do proprio app declarados no AndroidManifest.xml ---
+# O Android Gradle Plugin ja mantem Activities/Services/Receivers/Providers
+# citados no manifest automaticamente, mas fixamos explicitamente porque
+# varias telas sao abertas por Intent com nome de classe / acao customizada
+# (com.android.music.PLAYBACK_VIEWER, MediaAppWidgetProvider, etc.) e
+# porque MediaPlaybackService e controlado via AIDL (ver abaixo).
+-keep class com.android.music.** extends android.app.Activity { *; }
+-keep class com.android.music.** extends android.app.Service { *; }
+-keep class com.android.music.** extends android.content.BroadcastReceiver { *; }
+-keep class com.android.music.** extends android.appwidget.AppWidgetProvider { *; }
+
+# --- AIDL (IMediaPlaybackService) ---
+# Interfaces/Stubs gerados de .aidl sao chamados via Binder por nome de
+# metodo/transacao; nao deixar o R8 renomear ou podar nada aqui.
+-keep class com.android.music.IMediaPlaybackService { *; }
+-keep class com.android.music.IMediaPlaybackService$* { *; }
+
+# --- AndroidX Media (MediaSessionCompat, MediaButtonReceiver, MediaStyle) ---
+# Essas classes fazem bastante trabalho via reflection interna para manter
+# compatibilidade entre versoes de Android (o motivo de existirem "Compat").
+# Sao tambem o coracao da notificacao de midia (foreground service) que ja
+# foi validada funcionando — qualquer poda agressiva aqui e o risco real.
+-keep class androidx.media.session.MediaButtonReceiver { *; }
+-keep class androidx.media.app.NotificationCompat$MediaStyle { *; }
+-keep class android.support.v4.media.session.MediaSessionCompat { *; }
+-keep class android.support.v4.media.session.MediaSessionCompat$* { *; }
+-keep class android.support.v4.media.** { *; }
+-dontwarn android.support.v4.media.**
+
+# --- AndroidX Core (NotificationCompat, ContextCompat) ---
+-keep class androidx.core.app.NotificationCompat { *; }
+-keep class androidx.core.app.NotificationCompat$* { *; }
+-keep class androidx.core.app.NotificationChannelCompat { *; }
+-keep class androidx.core.app.NotificationChannelCompat$* { *; }
+-keep class androidx.core.app.NotificationManagerCompat { *; }
+-keep class androidx.core.content.ContextCompat { *; }
+
+# --- Regra generica para *Compat/*Builder usados via reflection em libs AndroidX ---
+# Cobre variantes internas que a lib de media cria dinamicamente conforme a
+# versao do Android detectada em runtime (padrao comum nessas libs "Compat").
+-keep class androidx.media.**Impl* { *; }
+-keep class androidx.core.app.**Impl* { *; }
+
+# --- Parcelable / Bundle ---
+# Nenhum Parcelable customizado foi encontrado no codigo do app hoje, mas
+# a regra padrao e barata e evita quebra silenciosa se um for adicionado.
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# --- Enums (padrao seguro, o R8 as vezes poda valueOf/values por engano) ---
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+# --- Atributos uteis para stack traces legiveis em logcat ---
+-keepattributes SourceFile,LineNumberTable
+-renamesourcefileattribute SourceFile
+
+# Nao ofuscar nomes (foco e reduzir tamanho via shrink de codigo morto,
+# nao dificultar leitura de logcat/crash — o app nao tem motivo de
+# ofuscacao por sigilo, e ofuscacao pura nao ajuda tanto no tamanho
+# quanto o shrink em si).
+-dontobfuscate
+
+# End of content from /data/data/com.termux/files/home/Music/app/proguard-rules.pro
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/26739b81d8da55356ff5a796038ee57a/transformed/media-1.7.0/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.v4.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class androidx.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+# End of content from /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/26739b81d8da55356ff5a796038ee57a/transformed/media-1.7.0/proguard.txt
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1d876224da57df4a482e52292d7feacd/transformed/core-1.13.1/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# End of content from /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1d876224da57df4a482e52292d7feacd/transformed/core-1.13.1/proguard.txt
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/5e6331d032f52c64d03c22d29e9a2190/transformed/versionedparcelable-1.1.1/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/5e6331d032f52c64d03c22d29e9a2190/transformed/versionedparcelable-1.1.1/proguard.txt
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/450c0f578c8bf8ef3d68744b3ea6bdbd/transformed/lifecycle-runtime-2.6.2/proguard.txt
+-keepattributes AnnotationDefault,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep !interface * implements androidx.lifecycle.LifecycleObserver {
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+# End of content from /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/450c0f578c8bf8ef3d68744b3ea6bdbd/transformed/lifecycle-runtime-2.6.2/proguard.txt
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/11f37b6e007a69dcdcd25269c775452e/transformed/startup-runtime-1.1.1/proguard.txt
+# It's important that we preserve initializer names, given they are used in the AndroidManifest.xml.
+-keepnames class * extends androidx.startup.Initializer
+
+# These Proguard rules ensures that ComponentInitializers are are neither shrunk nor obfuscated,
+# and are a part of the primary dex file. This is because they are discovered and instantiated
+# during application startup.
+-keep class * extends androidx.startup.Initializer {
+    # Keep the public no-argument constructor while allowing other methods to be optimized.
+    <init>();
+}
+
+-assumenosideeffects class androidx.startup.StartupLogger { public static <methods>; }
+
+# End of content from /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/11f37b6e007a69dcdcd25269c775452e/transformed/startup-runtime-1.1.1/proguard.txt
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/db5b3b212058001330c4c34b57d98737/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+-keep,allowobfuscation @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+-keepclassmembers,allowobfuscation class * {
+  @androidx.annotation.DoNotInline <methods>;
+}
+
+# End of content from /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/db5b3b212058001330c4c34b57d98737/transformed/rules/lib/META-INF/proguard/androidx-annotations.pro
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/7aed6e40e94acc3270879649612ba440/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# Allow R8 to optimize away the FastServiceLoader.
+# Together with ServiceLoader optimization in R8
+# this results in direct instantiation when loading Dispatchers.Main
+-assumenosideeffects class kotlinx.coroutines.internal.MainDispatcherLoader {
+    boolean FAST_SERVICE_LOADER_ENABLED return false;
+}
+
+-assumenosideeffects class kotlinx.coroutines.internal.FastServiceLoaderKt {
+    boolean ANDROID_DETECTED return true;
+}
+
+# Disable support for "Missing Main Dispatcher", since we always have Android main dispatcher
+-assumenosideeffects class kotlinx.coroutines.internal.MainDispatchersKt {
+    boolean SUPPORT_MISSING return false;
+}
+
+# Statically turn off all debugging facilities and assertions
+-assumenosideeffects class kotlinx.coroutines.DebugKt {
+    boolean getASSERTIONS_ENABLED() return false;
+    boolean getDEBUG() return false;
+    boolean getRECOVER_STACK_TRACES() return false;
+}
+
+# End of content from /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/7aed6e40e94acc3270879649612ba440/transformed/rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# The proguard configuration file for the following section is /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d9e218389500af161cc2280594e0da86/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
+# When editing this file, update the following files as well:
+# - META-INF/proguard/coroutines.pro
+# - META-INF/com.android.tools/proguard/coroutines.pro
+
+# Most of volatile fields are updated with AFU and should not be mangled
+-keepclassmembers class kotlinx.coroutines.** {
+    volatile <fields>;
+}
+
+# Same story for the standard library's SafeContinuation that also uses AtomicReferenceFieldUpdater
+-keepclassmembers class kotlin.coroutines.SafeContinuation {
+    volatile <fields>;
+}
+
+# These classes are only required by kotlinx.coroutines.debug.AgentPremain, which is only loaded when
+# kotlinx-coroutines-core is used as a Java agent, so these are not needed in contexts where ProGuard is used.
+-dontwarn java.lang.instrument.ClassFileTransformer
+-dontwarn sun.misc.SignalHandler
+-dontwarn java.lang.instrument.Instrumentation
+-dontwarn sun.misc.Signal
+
+# Only used in `kotlinx.coroutines.internal.ExceptionsConstructor`.
+# The case when it is not available is hidden in a `try`-`catch`, as well as a check for Android.
+-dontwarn java.lang.ClassValue
+
+# An annotation used for build tooling, won't be directly accessed.
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+# End of content from /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d9e218389500af161cc2280594e0da86/transformed/rules/lib/META-INF/com.android.tools/r8/coroutines.pro
+# The proguard configuration file for the following section is <unknown>
+
+# End of content from <unknown>

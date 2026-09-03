@@ -587,70 +587,58 @@
 332        </receiver>
 333
 334        <provider
-334-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:24:9-32:20
+334-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:24:9-32:20
 335            android:name="androidx.startup.InitializationProvider"
-335-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:25:13-67
+335-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:25:13-67
 336            android:authorities="com.android.music.androidx-startup"
-336-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:26:13-68
+336-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:26:13-68
 337            android:exported="false" >
-337-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:27:13-37
+337-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:27:13-37
 338            <meta-data
-338-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:29:13-31:52
-339                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-339-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:30:17-75
+338-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:29:13-31:52
+339                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+339-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:30:17-85
 340                android:value="androidx.startup" />
-340-->[androidx.emoji2:emoji2:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/a0df3ba630ce9acd3c9fe0f524089e52/transformed/emoji2-1.3.0/AndroidManifest.xml:31:17-49
-341            <meta-data
-341-->[androidx.lifecycle:lifecycle-process:2.6.2] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/6344566fc579019f5ddc5dc21aa700cb/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:29:13-31:52
-342                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-342-->[androidx.lifecycle:lifecycle-process:2.6.2] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/6344566fc579019f5ddc5dc21aa700cb/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:30:17-78
-343                android:value="androidx.startup" />
-343-->[androidx.lifecycle:lifecycle-process:2.6.2] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/6344566fc579019f5ddc5dc21aa700cb/transformed/lifecycle-process-2.6.2/AndroidManifest.xml:31:17-49
-344            <meta-data
-344-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
-345                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-345-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
-346                android:value="androidx.startup" />
-346-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
-347        </provider>
-348
-349        <receiver
-349-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
-350            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-350-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
-351            android:directBootAware="false"
-351-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
-352            android:enabled="true"
-352-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
-353            android:exported="true"
-353-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
-354            android:permission="android.permission.DUMP" >
-354-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+340-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:31:17-49
+341        </provider>
+342
+343        <receiver
+343-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:34:9-52:20
+344            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+344-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:35:13-76
+345            android:directBootAware="false"
+345-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:36:13-44
+346            android:enabled="true"
+346-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:37:13-35
+347            android:exported="true"
+347-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:38:13-36
+348            android:permission="android.permission.DUMP" >
+348-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:39:13-57
+349            <intent-filter>
+349-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:40:13-42:29
+350                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+350-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:17-91
+350-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:41:25-88
+351            </intent-filter>
+352            <intent-filter>
+352-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:43:13-45:29
+353                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+353-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:17-85
+353-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:44:25-82
+354            </intent-filter>
 355            <intent-filter>
-355-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
-356                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-356-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
-356-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+355-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:46:13-48:29
+356                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+356-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:17-88
+356-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:47:25-85
 357            </intent-filter>
 358            <intent-filter>
-358-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
-359                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-359-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
-359-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+358-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:49:13-51:29
+359                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+359-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:17-95
+359-->[androidx.profileinstaller:profileinstaller:1.3.0] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/1e02af3e5d1485deabc6c6656da75547/transformed/profileinstaller-1.3.0/AndroidManifest.xml:50:25-92
 360            </intent-filter>
-361            <intent-filter>
-361-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
-362                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-362-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
-362-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
-363            </intent-filter>
-364            <intent-filter>
-364-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
-365                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-365-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
-365-->[androidx.profileinstaller:profileinstaller:1.3.1] /data/data/com.termux/files/home/.gradle/caches/9.6.1/transforms/d89a41ac4f1331e343d0a46b938a8bc5/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
-366            </intent-filter>
-367        </receiver>
-368    </application>
-369
-370</manifest>
+361        </receiver>
+362    </application>
+363
+364</manifest>
