@@ -43,7 +43,8 @@
         android:extractNativeLibs="true"
         android:icon="@drawable/app_music"
         android:label="@string/musicbrowserlabel"
-        android:taskAffinity="android.task.music" >
+        android:taskAffinity="android.task.music"
+        android:theme="@android:style/Theme" >
         <activity
             android:name="com.android.music.MusicBrowserActivity"
             android:exported="true" >

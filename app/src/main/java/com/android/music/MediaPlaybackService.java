@@ -55,6 +55,7 @@ import android.provider.MediaStore;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.util.Log;
+import android.widget.RemoteViews;
 import android.widget.Toast;
 
 
@@ -871,9 +872,9 @@ public class MediaPlaybackService extends Service {
     @SuppressWarnings("deprecation")
     private Notification buildNotification() {
         // Notification.Builder só existe a partir do Android 3 (API 11).
-        // Abaixo disso o service toca sem notificação.
+        // Abaixo disso usa o modelo original do Android 1.6 (RemoteViews, sem botões).
         if (Build.VERSION.SDK_INT < 11) {
-            return null;
+            return buildLegacyNotification();
         }
         boolean playing = isPlaying();
 
@@ -957,6 +958,41 @@ public class MediaPlaybackService extends Service {
         return Build.VERSION.SDK_INT >= 16 ? builder.build() : builder.getNotification();
     }
 
+    /**
+     * Notificação do Music original (Android 1.6): RemoteViews com
+     * R.layout.statusbar, sem botões. Usada só abaixo da API 11.
+     */
+    @SuppressWarnings("deprecation")
+    private Notification buildLegacyNotification() {
+        RemoteViews views = new RemoteViews(getPackageName(), R.layout.statusbar);
+        views.setImageViewResource(R.id.icon, R.drawable.stat_notify_musicplayer);
+        if (getAudioId() < 0) {
+            // streaming
+            views.setTextViewText(R.id.trackname, getPath());
+            views.setTextViewText(R.id.artistalbum, null);
+        } else {
+            String artist = getArtistName();
+            views.setTextViewText(R.id.trackname, getTrackName());
+            if (artist == null || artist.equals(MediaFileCompat.UNKNOWN_STRING)) {
+                artist = getString(R.string.unknown_artist_name);
+            }
+            String album = getAlbumName();
+            if (album == null || album.equals(MediaFileCompat.UNKNOWN_STRING)) {
+                album = getString(R.string.unknown_album_name);
+            }
+            views.setTextViewText(R.id.artistalbum,
+                    getString(R.string.notification_artist_album, artist, album));
+        }
+
+        Notification status = new Notification();
+        status.contentView = views;
+        status.flags |= Notification.FLAG_ONGOING_EVENT;
+        status.icon = R.drawable.stat_notify_musicplayer;
+        status.contentIntent = PendingIntent.getActivity(this, 0,
+                new Intent("com.android.music.PLAYBACK_VIEWER"), 0);
+        return status;
+    }
+
     // ---- helpers locais com checagem de API (sem bibliotecas compat) -------
 
     /** FLAG_IMMUTABLE só existe a partir da API 23. */
@@ -976,18 +1012,29 @@ public class MediaPlaybackService extends Service {
     }
 
     private void startForegroundCompat() {
-        if (Build.VERSION.SDK_INT < 5) {
-            return; // startForeground() não existe na API 4
-        }
         Notification n = buildNotification();
-        if (n != null) {
+        if (n == null) {
+            return;
+        }
+        if (Build.VERSION.SDK_INT >= 5) {
             startForeground(PLAYBACKSERVICE_STATUS, n);
+        } else if (mNotificationManager != null) {
+            // API 4 (Android 1.6) não tem startForeground(): só posta a notificação.
+            mNotificationManager.notify(PLAYBACKSERVICE_STATUS, n);
         }
     }
 
     private void notifyCompat() {
+        if (mNotificationManager == null) {
+            return;
+        }
+        if (Build.VERSION.SDK_INT < 11) {
+            // Modelo do Android 1.6: ao pausar, a notificação some.
+            mNotificationManager.cancel(PLAYBACKSERVICE_STATUS);
+            return;
+        }
         Notification n = buildNotification();
-        if (n != null && mNotificationManager != null) {
+        if (n != null) {
             mNotificationManager.notify(PLAYBACKSERVICE_STATUS, n);
         }
     }

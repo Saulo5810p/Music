@@ -1,800 +1,801 @@
-com.android.music.ArtistAlbumBrowserActivity$1
-com.android.music.PlaylistBrowserActivity
-com.android.music.RepeatingImageButton
-com.android.music.MusicBrowserActivity$4
-com.android.music.ArtistAlbumBrowserActivity$2
-com.android.music.IMediaPlaybackService
-com.android.music.MediaPlaybackService$5
-com.android.music.IMediaPlaybackService$Stub
-com.android.music.VideoBrowserActivity
-com.android.music.DeleteItems
-com.android.music.RenamePlaylist
-com.android.music.MediaPlaybackActivity$13
-com.android.music.PlaylistBrowserActivity$2
-com.android.music.MediaPickerActivity
-com.android.music.AlbumBrowserActivity$2
-com.android.music.MusicPicker
-com.android.music.WeekSelector
-com.android.music.MediaButtonIntentReceiver
-com.android.music.QueryBrowserActivity
-com.android.music.CheckableRelativeLayout
-com.android.music.TrackBrowserActivity$6
-com.android.music.MediaPlaybackService
-com.android.music.MediaPlaybackActivity
 com.android.music.CreatePlaylist
-com.android.music.StreamStarter
-com.android.music.AlbumBrowserActivity$1
-com.android.music.TrackBrowserActivity
+com.android.music.MediaPlaybackActivity
 com.android.music.MediaAppWidgetProvider
-com.android.music.ArtistAlbumBrowserActivity
-com.android.music.TrackBrowserActivity$5
-com.android.music.QueryBrowserActivity$1
-com.android.music.TouchInterceptor
+com.android.music.MediaButtonIntentReceiver
+com.android.music.RepeatingImageButton
+com.android.music.IMediaPlaybackService
+com.android.music.ArtistAlbumBrowserActivity$2
+com.android.music.QueryBrowserActivity
+com.android.music.MusicBrowserActivity$4
+com.android.music.MusicPicker
 com.android.music.StreamStarter$2
+com.android.music.VideoBrowserActivity
+com.android.music.StreamStarter
+com.android.music.MusicBrowserActivity
+com.android.music.TouchInterceptor
+com.android.music.MediaPlaybackService$3
+com.android.music.MediaPlaybackActivity$13
+com.android.music.AlbumBrowserActivity$2
+com.android.music.MediaPlaybackService$5
+com.android.music.ArtistAlbumBrowserActivity
+com.android.music.TrackBrowserActivity
+com.android.music.TrackBrowserActivity$6
+com.android.music.AlbumBrowserActivity
+com.android.music.RenamePlaylist
+com.android.music.CheckableRelativeLayout
+com.android.music.IMediaPlaybackService$Stub
+com.android.music.QueryBrowserActivity$1
+com.android.music.PlaylistBrowserActivity$2
 com.android.music.IMediaPlaybackService$Default
 com.android.music.ScanningProgress
-com.android.music.IMediaPlaybackService$Stub$Proxy
-com.android.music.MediaPlaybackService$3
 com.android.music.TrackBrowserActivity$1
-com.android.music.MusicBrowserActivity
-com.android.music.AlbumBrowserActivity
-com.android.music.TrackBrowserActivity: boolean mDeletedOneRow
-com.android.music.MediaPlaybackActivity: int ALBUM_ART_DECODED
-com.android.music.MusicPicker: android.net.Uri mSelectedUri
-com.android.music.PlaylistBrowserActivity: android.database.Cursor mPlaylistCursor
-com.android.music.DeleteItems: android.widget.TextView mPrompt
-com.android.music.MediaPlaybackService: boolean mQuietMode
-com.android.music.AlbumBrowserActivity: int SEARCH
-com.android.music.QueryBrowserActivity: android.widget.ListView mTrackList
-com.android.music.MusicPicker: java.lang.String mSortOrder
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_next
-com.android.music.TrackBrowserActivity: java.lang.String mSortOrder
-com.android.music.VideoBrowserActivity: java.lang.String mSortOrder
-com.android.music.TrackBrowserActivity: int Q_SELECTED
-com.android.music.ScanningProgress: int CHECK
-com.android.music.MusicBrowserActivity: android.view.View mNowPlayingView
-com.android.music.MediaPlaybackService: java.lang.String PREVIOUS_ACTION
-com.android.music.RenamePlaylist: java.lang.String mOriginalName
-com.android.music.MediaPlaybackService: java.lang.String QUEUE_CHANGED
-com.android.music.MediaButtonIntentReceiver: android.os.Handler mHandler
-com.android.music.MediaAppWidgetProvider: com.android.music.MediaAppWidgetProvider sInstance
-com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentArtistNameForAlbum
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_openFileAsync
-com.android.music.TrackBrowserActivity: android.content.BroadcastReceiver mNowPlayingListener
-com.android.music.PlaylistBrowserActivity: android.os.Handler mReScanHandler
-com.android.music.MediaPlaybackService: java.lang.String NOTIFICATION_CHANNEL_ID
-com.android.music.MediaPlaybackService: int[] mAutoShuffleList
-com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mPauseListener
-com.android.music.MediaPlaybackActivity: int REFRESH
-com.android.music.AlbumBrowserActivity: android.database.Cursor mAlbumCursor
-com.android.music.MediaButtonIntentReceiver: boolean mLaunched
-com.android.music.MusicPicker: int ALBUM_MENU
-com.android.music.MediaPlaybackActivity: android.widget.ImageButton mShuffleButton
-com.android.music.MediaPlaybackActivity: long mPosOverride
-com.android.music.MediaPlaybackActivity: int[][] keyboard
-com.android.music.MediaPlaybackService: java.lang.String CMDCYCLEREPEAT
-com.android.music.PlaylistBrowserActivity: int SEARCH_INLINE
-com.android.music.MediaPlaybackService: int REPEAT_CURRENT
-com.android.music.ArtistAlbumBrowserActivity: android.content.BroadcastReceiver mScanListener
-com.android.music.MediaPlaybackActivity: android.content.BroadcastReceiver mStatusListener
-com.android.music.AlbumBrowserActivity: android.content.BroadcastReceiver mScanListener
-com.android.music.MediaPlaybackService: int SHUFFLE_NORMAL
-com.android.music.MusicPicker: android.view.View mProgressContainer
-com.android.music.MediaPlaybackService: android.content.BroadcastReceiver mUnmountReceiver
-com.android.music.MusicPicker: int TRACK_MENU
-com.android.music.MediaPlaybackService: com.android.music.MediaAppWidgetProvider mAppWidgetProvider
-com.android.music.RenamePlaylist: android.widget.TextView mPrompt
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getQueue
-com.android.music.MusicPicker: com.android.music.MusicPicker$QueryHandler mQueryHandler
-com.android.music.MediaPlaybackService: java.lang.String CMDPAUSE
-com.android.music.MediaPlaybackService: int IDLE_DELAY
-com.android.music.CreatePlaylist: android.text.TextWatcher mTextWatcher
-com.android.music.MusicPicker: java.lang.String LIST_STATE_KEY
-com.android.music.ArtistAlbumBrowserActivity: android.database.Cursor mArtistCursor
-com.android.music.MusicPicker: android.database.Cursor mCursor
-com.android.music.TrackBrowserActivity: java.lang.String[] mCursorCols
-com.android.music.PlaylistBrowserActivity$2: com.android.music.PlaylistBrowserActivity this$0
-com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mQueueListener
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getQueuePosition
-com.android.music.RenamePlaylist: android.view.View$OnClickListener mOpenClicked
-com.android.music.MediaPlaybackService$3: com.android.music.MediaPlaybackService this$0
-com.android.music.AlbumBrowserActivity: java.lang.String mArtistId
-com.android.music.ScanningProgress: android.os.Handler mHandler
-com.android.music.MusicBrowserActivity$4: com.android.music.MusicBrowserActivity this$0
-com.android.music.MediaPlaybackActivity: android.widget.Toast mToast
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_pause
-com.android.music.MusicPicker: java.lang.String SORT_MODE_KEY
-com.android.music.MediaPlaybackService: android.os.IBinder mBinder
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_removeTrack
-com.android.music.MusicPicker: java.lang.String FOCUS_KEY
-com.android.music.MediaPlaybackService: boolean mServiceInUse
-com.android.music.MediaPlaybackService: int BOOKMARKCOLIDX
-com.android.music.MusicBrowserActivity: android.widget.TextView mArtist
-com.android.music.CreatePlaylist: android.widget.TextView mPrompt
-com.android.music.MediaPlaybackActivity: android.content.ServiceConnection osc
-com.android.music.VideoBrowserActivity: java.lang.String mWhereClause
-com.android.music.TrackBrowserActivity: java.lang.String mCurrentArtistNameForAlbum
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getRepeatMode
-com.android.music.MediaPlaybackService: int REPEAT_NONE
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_stop
-com.android.music.MediaPlaybackService: java.lang.String PLAYSTATE_CHANGED
-com.android.music.QueryBrowserActivity: int PLAY_ALBUM
-com.android.music.TrackBrowserActivity: int SEARCH_INLINE
-com.android.music.QueryBrowserActivity: java.lang.String mFilterString
-com.android.music.MusicPicker: int MY_QUERY_TOKEN
-com.android.music.MediaAppWidgetProvider: java.lang.String TAG
-com.android.music.MediaPlaybackActivity: android.widget.ImageButton mPauseButton
-com.android.music.MediaPlaybackService: int SHUFFLE_AUTO
-com.android.music.MediaPlaybackActivity: int GET_ALBUM_ART
-com.android.music.RenamePlaylist: android.widget.Button mSaveButton
-com.android.music.TrackBrowserActivity: java.lang.String mGenre
-com.android.music.PlaylistBrowserActivity: long RECENTLY_ADDED_PLAYLIST
-com.android.music.MediaPlaybackActivity: int lastY
-com.android.music.MusicPicker: java.lang.StringBuilder sFormatBuilder
-com.android.music.MediaPlaybackService: int NOW
-com.android.music.PlaylistBrowserActivity: com.android.music.PlaylistBrowserActivity$PlaylistListAdapter mAdapter
-com.android.music.ArtistAlbumBrowserActivity$2: com.android.music.ArtistAlbumBrowserActivity this$0
-com.android.music.MediaPlaybackService: int FADEIN
-com.android.music.AlbumBrowserActivity: int SEARCH_INLINE
-com.android.music.MediaPlaybackService: java.lang.String TOGGLEPAUSE_ACTION
-com.android.music.TrackBrowserActivity: int REMOVE
-com.android.music.MediaPlaybackService: android.content.BroadcastReceiver mIntentReceiver
-com.android.music.PlaylistBrowserActivity: java.lang.String TAG
-com.android.music.DeleteItems: android.widget.Button mButton
-com.android.music.MediaButtonIntentReceiver: int LONG_PRESS_DELAY
-com.android.music.QueryBrowserActivity: android.database.Cursor mQueryCursor
-com.android.music.MediaPlaybackService: java.lang.String PAUSE_ACTION
-com.android.music.MediaPlaybackService: java.lang.String CMDNAME
-com.android.music.MediaPlaybackService: int PLAYBACKSERVICE_STATUS
-com.android.music.MusicBrowserActivity: android.content.BroadcastReceiver mStatusListener
-com.android.music.MusicPicker: java.lang.Object[] sTimeArgs
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_setQueuePosition
-com.android.music.MediaPlaybackService: com.android.music.MediaPlaybackService$MultiPlayer mPlayer
-com.android.music.MediaPlaybackService: int mPlayPos
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_seek
-com.android.music.MediaPlaybackService: java.lang.String META_CHANGED
-com.android.music.AlbumBrowserActivity: android.content.BroadcastReceiver mTrackListListener
-com.android.music.MediaPlaybackActivity: com.android.music.RepeatingImageButton mPrevButton
-com.android.music.PlaylistBrowserActivity: android.widget.EditText mSearchBox
-com.android.music.MediaButtonIntentReceiver: int MSG_LONGPRESS_TIMEOUT
-com.android.music.AlbumBrowserActivity$2: com.android.music.AlbumBrowserActivity this$0
-com.android.music.MediaPlaybackActivity: int lastX
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_enqueue
-com.android.music.AlbumBrowserActivity: boolean mAdapterSent
-com.android.music.MusicPicker: long mSelectedId
-com.android.music.TrackBrowserActivity: java.lang.String mPlaylist
-com.android.music.MediaPlaybackService: int mMediaMountedCount
-com.android.music.MusicPicker: java.lang.String[] CURSOR_COLS
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_removeTracks
-com.android.music.MediaPlaybackService: android.os.Handler mMediaplayerHandler
-com.android.music.PlaylistBrowserActivity: int CHANGE_WEEKS
-com.android.music.ArtistAlbumBrowserActivity: int SEARCH
-com.android.music.MediaPickerActivity: java.lang.String mLastYear
-com.android.music.MediaPlaybackService: android.media.session.MediaSession mSession
-com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mNextListener
-com.android.music.MediaPlaybackActivity: int QUIT
-com.android.music.MediaPlaybackService: java.lang.String LOGTAG
-com.android.music.MediaPlaybackService: int REPEAT_ALL
-com.android.music.TrackBrowserActivity$6: com.android.music.TrackBrowserActivity this$0
-com.android.music.TrackBrowserActivity$5: com.android.music.TrackBrowserActivity this$0
-com.android.music.MediaPlaybackService: int IDCOLIDX
-com.android.music.DeleteItems: android.view.View$OnClickListener mButtonClicked
-com.android.music.RenamePlaylist: android.text.TextWatcher mTextWatcher
-com.android.music.MediaPlaybackActivity: boolean mOneShot
-com.android.music.MediaPlaybackActivity: int USE_AS_RINGTONE
-com.android.music.TrackBrowserActivity: java.lang.String mCurrentTrackName
-com.android.music.MediaPlaybackService: int NEXT
-com.android.music.PlaylistBrowserActivity: int RENAME_PLAYLIST
-com.android.music.TrackBrowserActivity: int Q_ALL
-com.android.music.MediaPlaybackActivity: boolean mDraggingLabel
-com.android.music.MediaAppWidgetProvider: java.lang.String CMDAPPWIDGETUPDATE
-com.android.music.ArtistAlbumBrowserActivity: int SEARCH_INLINE
-com.android.music.MusicBrowserActivity: android.view.View$OnFocusChangeListener mFocuser
-com.android.music.ArtistAlbumBrowserActivity: com.android.music.ArtistAlbumBrowserActivity$ArtistAlbumListAdapter mAdapter
-com.android.music.MediaPlaybackActivity: int mInitialX
-com.android.music.TrackBrowserActivity: android.database.Cursor mTrackCursor
-com.android.music.TrackBrowserActivity: java.lang.String mAlbumId
-com.android.music.WeekSelector: android.view.View$OnClickListener mListener
-com.android.music.QueryBrowserActivity: int EXPLORE_ARTIST
-com.android.music.DeleteItems: int[] mItemList
-com.android.music.MediaPlaybackActivity: android.widget.TextView mTrackName
-com.android.music.MediaPickerActivity: java.lang.String mFirstYear
-com.android.music.MediaPlaybackService: int mCardId
-com.android.music.MediaPlaybackService: int MAX_HISTORY_SIZE
-com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mRepeatListener
-com.android.music.AlbumBrowserActivity: com.android.music.AlbumBrowserActivity$AlbumListAdapter mAdapter
-com.android.music.PlaylistBrowserActivity: long PODCASTS_PLAYLIST
-com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentArtistName
-com.android.music.QueryBrowserActivity: int EXPLORE_ALBUM
-com.android.music.MediaPlaybackActivity: android.widget.ImageButton mQueueButton
-com.android.music.PlaylistBrowserActivity: boolean mAdapterSent
-com.android.music.TrackBrowserActivity: android.content.BroadcastReceiver mScanListener
-com.android.music.MediaPickerActivity: java.lang.String mWhereClause
-com.android.music.TrackBrowserActivity: android.content.BroadcastReceiver mTrackListListener
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getShuffleMode
-com.android.music.MediaButtonIntentReceiver: long mLastClickTime
-com.android.music.MediaPlaybackActivity: android.widget.TextView mTotalTime
-com.android.music.MediaPlaybackActivity: android.widget.TextView mArtistName
-com.android.music.TrackBrowserActivity: int SAVE_AS_PLAYLIST
-com.android.music.MediaPlaybackService: java.lang.String CMDTOGGLEPAUSE
-com.android.music.AlbumBrowserActivity$1: com.android.music.AlbumBrowserActivity this$0
-com.android.music.MediaPlaybackActivity: boolean paused
-com.android.music.MediaPlaybackActivity: boolean mDeviceHasNoDpad
-com.android.music.MediaPlaybackActivity: android.os.Handler mLabelScroller
-com.android.music.QueryBrowserActivity: com.android.music.QueryBrowserActivity$QueryListAdapter mAdapter
-com.android.music.PlaylistBrowserActivity: int DELETE_PLAYLIST
-com.android.music.TrackBrowserActivity: com.android.music.TrackBrowserActivity$TrackListAdapter mAdapter
-com.android.music.MediaPlaybackActivity: com.android.music.MediaPlaybackActivity$Worker mAlbumArtWorker
-com.android.music.TrackBrowserActivity: int mSelectedPosition
-com.android.music.MediaPlaybackService: boolean mIsSupposedToBePlaying
-com.android.music.MediaPlaybackService: int mShuffleMode
-com.android.music.MediaPlaybackService: com.android.music.MediaPlaybackService$Shuffler mRand
-com.android.music.WeekSelector: android.widget.NumberPicker mWeeks
-com.android.music.MusicPicker: boolean DBG
-com.android.music.AlbumBrowserActivity: java.lang.String mCurrentAlbumName
-com.android.music.CreatePlaylist: android.widget.Button mSaveButton
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_position
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getTrackName
-com.android.music.MediaPlaybackService: char[] hexdigits
-com.android.music.MusicPicker: android.view.View mCancelButton
-com.android.music.CreatePlaylist: android.widget.EditText mPlaylist
-com.android.music.MediaPlaybackService: int RELEASE_WAKELOCK
-com.android.music.QueryBrowserActivity: int PLAY_NOW
-com.android.music.TrackBrowserActivity$1: com.android.music.TrackBrowserActivity this$0
-com.android.music.MusicPicker: int mSortMode
-com.android.music.MusicPicker: android.media.MediaPlayer mMediaPlayer
-com.android.music.MusicBrowserActivity: int SEARCH_MUSIC
-com.android.music.QueryBrowserActivity: boolean mAdapterSent
-com.android.music.IMediaPlaybackService$Stub$Proxy: android.os.IBinder mRemote
-com.android.music.TrackBrowserActivity: java.lang.String mCurrentAlbumName
-com.android.music.QueryBrowserActivity: android.os.Handler mReScanHandler
-com.android.music.TrackBrowserActivity: android.widget.EditText mSearchBox
-com.android.music.MediaPlaybackService: java.util.Vector mHistory
-com.android.music.PlaylistBrowserActivity: long ALL_SONGS_PLAYLIST
-com.android.music.MediaPickerActivity: android.database.Cursor mCursor
-com.android.music.MediaPickerActivity: java.lang.String mSortOrder
-com.android.music.MediaPlaybackService: java.lang.String NEXT_ACTION
-com.android.music.RenamePlaylist: long mRenameId
-com.android.music.MediaPlaybackService: java.lang.String mFileToPlay
-com.android.music.MediaPlaybackActivity: int mViewWidth
-com.android.music.AlbumBrowserActivity: java.lang.String mCurrentArtistNameForAlbum
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_open
-com.android.music.MediaPlaybackActivity: android.widget.ImageView mAlbum
-com.android.music.PlaylistBrowserActivity: boolean mCreateShortcut
-com.android.music.TrackBrowserActivity: int CLEAR_PLAYLIST
-com.android.music.MusicBrowserActivity: boolean mAutoShuffle
-com.android.music.AlbumBrowserActivity: android.widget.EditText mSearchBox
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getAlbumName
-com.android.music.MediaPlaybackService: int mRepeatMode
-com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentAlbumId
-com.android.music.MediaPlaybackService: boolean mResumeAfterCall
-com.android.music.MusicPicker: android.net.Uri mBaseUri
-com.android.music.QueryBrowserActivity: int PLAY_NEXT
-com.android.music.ArtistAlbumBrowserActivity: boolean mAdapterSent
-com.android.music.MediaPlaybackService: java.lang.String SERVICECMD
-com.android.music.MediaPlaybackActivity: com.android.music.RepeatingImageButton$RepeatListener mRewListener
-com.android.music.MediaPlaybackService: int mPlayListLen
-com.android.music.MediaPlaybackActivity: android.os.Handler mHandler
-com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentAlbumName
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getArtistId
-com.android.music.MediaPlaybackService: android.os.PowerManager$WakeLock mWakeLock
-com.android.music.ArtistAlbumBrowserActivity: android.os.Handler mReScanHandler
-com.android.music.MediaPlaybackService: int SERVER_DIED
-com.android.music.MediaPlaybackActivity: android.widget.ProgressBar mProgress
-com.android.music.PlaylistBrowserActivity: int EDIT_PLAYLIST
-com.android.music.MusicPicker: long mPlayingId
-com.android.music.MediaPlaybackService: int TRACK_ENDED
-com.android.music.ArtistAlbumBrowserActivity$1: com.android.music.ArtistAlbumBrowserActivity this$0
-com.android.music.MusicBrowserActivity: android.content.ServiceConnection autoshuffle
-com.android.music.MediaAppWidgetProvider: android.content.ComponentName THIS_APPWIDGET
-com.android.music.MediaPlaybackService$5: com.android.music.MediaPlaybackService this$0
-com.android.music.MediaPlaybackActivity: android.widget.TextView mCurrentTime
-com.android.music.MediaPlaybackService: int SHUFFLE_NONE
-com.android.music.MediaPlaybackService: android.app.NotificationManager mNotificationManager
-com.android.music.TrackBrowserActivity: int PLAY_ALL
-com.android.music.StreamStarter: android.content.BroadcastReceiver mStatusListener
-com.android.music.MediaPlaybackService: android.database.Cursor mCursor
-com.android.music.MusicPicker: java.lang.String TAG
-com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mPrevListener
-com.android.music.MediaPlaybackActivity: int mTouchSlop
-com.android.music.CreatePlaylist: android.view.View$OnClickListener mOpenClicked
-com.android.music.MediaPlaybackActivity: com.android.music.MediaPlaybackActivity$AlbumArtHandler mAlbumArtHandler
-com.android.music.MediaPlaybackService: android.content.SharedPreferences mPreferences
-com.android.music.MusicPicker: com.android.music.MusicPicker$TrackListAdapter mAdapter
-com.android.music.MediaPlaybackService: android.os.Handler mDelayedStopHandler
-com.android.music.TrackBrowserActivity: android.os.Handler mReScanHandler
-com.android.music.VideoBrowserActivity: android.database.Cursor mCursor
-com.android.music.MediaPlaybackService: int LAST
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getAlbumId
-com.android.music.MediaPlaybackActivity: android.widget.SeekBar$OnSeekBarChangeListener mSeekListener
-com.android.music.MediaPlaybackActivity: int mLastX
+com.android.music.PlaylistBrowserActivity
+com.android.music.DeleteItems
+com.android.music.MediaPlaybackService
+com.android.music.TrackBrowserActivity$5
+com.android.music.WeekSelector
+com.android.music.MediaPickerActivity
+com.android.music.IMediaPlaybackService$Stub$Proxy
+com.android.music.AlbumBrowserActivity$1
+com.android.music.ArtistAlbumBrowserActivity$1
 com.android.music.TrackBrowserActivity: boolean mEditMode
-com.android.music.MediaPlaybackActivity: android.widget.TextView mAlbumName
-com.android.music.MediaPlaybackActivity: int seekmethod
-com.android.music.MusicPicker: android.view.View mListContainer
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getAudioId
-com.android.music.MediaPlaybackActivity: com.android.music.IMediaPlaybackService mService
-com.android.music.MediaPlaybackActivity: long mDuration
-com.android.music.MediaPlaybackService: int mOpenFailedCounter
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_setRepeatMode
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getArtistName
-com.android.music.AlbumBrowserActivity: java.lang.String mCurrentAlbumId
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_moveQueueItem
-com.android.music.MediaPlaybackActivity: long mStartSeekPos
-com.android.music.TrackBrowserActivity: android.widget.ListView mTrackList
-com.android.music.MusicPicker: int ARTIST_MENU
-com.android.music.MediaPlaybackService: java.lang.String ASYNC_OPEN_COMPLETE
-com.android.music.StreamStarter$2: com.android.music.StreamStarter this$0
+com.android.music.TrackBrowserActivity: java.lang.String LOGTAG
+com.android.music.MusicPicker: int MY_QUERY_TOKEN
+com.android.music.MediaPlaybackService$3: com.android.music.MediaPlaybackService this$0
+com.android.music.MediaPlaybackService: int RELEASE_WAKELOCK
+com.android.music.MediaButtonIntentReceiver: boolean mLaunched
+com.android.music.MusicPicker: com.android.music.MusicPicker$QueryHandler mQueryHandler
+com.android.music.MediaPlaybackActivity: android.widget.ImageButton mQueueButton
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getShuffleMode
+com.android.music.PlaylistBrowserActivity: boolean mCreateShortcut
+com.android.music.RenamePlaylist: android.text.TextWatcher mTextWatcher
+com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mNextListener
+com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentAlbumId
+com.android.music.MediaPlaybackService: int BOOKMARKCOLIDX
 com.android.music.MediaPlaybackService: java.lang.String CMDSTOP
-com.android.music.PlaylistBrowserActivity: android.content.BroadcastReceiver mScanListener
-com.android.music.MediaPlaybackService: java.lang.String PLAYBACK_COMPLETE
-com.android.music.MusicPicker: android.os.Parcelable mListState
-com.android.music.MediaPlaybackService: int[] mPlayList
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_setShuffleMode
-com.android.music.QueryBrowserActivity: int PLAY_ARTIST
-com.android.music.MediaPlaybackActivity: android.widget.ImageButton mRepeatButton
-com.android.music.MediaPlaybackActivity: long mLastSeekEventTime
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_openFile
-com.android.music.RenamePlaylist: android.widget.EditText mPlaylist
-com.android.music.MediaPlaybackService: android.telephony.PhoneStateListener mPhoneStateListener
-com.android.music.QueryBrowserActivity: int REQUERY
-com.android.music.MusicBrowserActivity: android.widget.TextView mTitle
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getPath
+com.android.music.MusicPicker: java.lang.String[] CURSOR_COLS
 com.android.music.MediaPlaybackActivity: com.android.music.RepeatingImageButton$RepeatListener mFfwdListener
-com.android.music.TrackBrowserActivity: long mSelectedId
-com.android.music.AlbumBrowserActivity: android.os.Handler mReScanHandler
-com.android.music.QueryBrowserActivity: int ADD_TO_QUEUE
-com.android.music.MusicPicker: java.util.Formatter sFormatter
-com.android.music.TrackBrowserActivity: int SEARCH
+com.android.music.CreatePlaylist: android.view.View$OnClickListener mOpenClicked
+com.android.music.MediaPlaybackService: com.android.music.MediaPlaybackService$MultiPlayer mPlayer
+com.android.music.MediaPlaybackService: int FADEIN
+com.android.music.TrackBrowserActivity: int mSelectedPosition
+com.android.music.MediaPlaybackService: int REPEAT_CURRENT
+com.android.music.MediaPlaybackActivity: com.android.music.MediaPlaybackActivity$Worker mAlbumArtWorker
+com.android.music.MusicPicker: java.lang.String FOCUS_KEY
+com.android.music.QueryBrowserActivity: android.os.Handler mReScanHandler
+com.android.music.MusicPicker: int mSortMode
+com.android.music.MusicPicker: long mSelectedId
+com.android.music.QueryBrowserActivity: int PLAY_NOW
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getQueue
 com.android.music.MusicPicker: boolean mListShown
-com.android.music.MediaPlaybackActivity: com.android.music.RepeatingImageButton mNextButton
-com.android.music.TrackBrowserActivity: com.android.music.TouchInterceptor$RemoveListener mRemoveListener
-com.android.music.MediaPlaybackService: java.lang.String CMDPREVIOUS
-com.android.music.PlaylistBrowserActivity: java.lang.String[] mCols
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getMediaMountedCount
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_play
-com.android.music.QueryBrowserActivity: android.content.BroadcastReceiver mScanListener
-com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mShuffleListener
-com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentArtistId
-com.android.music.ArtistAlbumBrowserActivity: android.content.BroadcastReceiver mTrackListListener
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_setQueuePosition
+com.android.music.MediaPlaybackService: java.lang.String PAUSE_ACTION
+com.android.music.MediaPlaybackService: java.lang.String CMDTOGGLEPAUSE
+com.android.music.CreatePlaylist: android.text.TextWatcher mTextWatcher
+com.android.music.MediaPlaybackService: java.lang.String QUEUE_CHANGED
+com.android.music.MediaPlaybackService: int REPEAT_ALL
+com.android.music.MediaPlaybackService: int LAST
+com.android.music.TrackBrowserActivity: android.os.Handler mReScanHandler
+com.android.music.MediaPlaybackActivity: android.os.Handler mHandler
+com.android.music.VideoBrowserActivity: android.database.Cursor mCursor
+com.android.music.TrackBrowserActivity: int SEARCH_INLINE
+com.android.music.MediaPlaybackService: java.lang.String PREVIOUS_ACTION
+com.android.music.ArtistAlbumBrowserActivity: android.database.Cursor mArtistCursor
+com.android.music.AlbumBrowserActivity: java.lang.String mCurrentArtistNameForAlbum
+com.android.music.RenamePlaylist: android.widget.TextView mPrompt
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_seek
+com.android.music.MediaPlaybackService: java.lang.String PLAYBACK_COMPLETE
+com.android.music.MediaPlaybackActivity: boolean mFromTouch
+com.android.music.MusicBrowserActivity: android.view.View mNowPlayingView
+com.android.music.MediaPlaybackService: java.lang.String CMDPAUSE
+com.android.music.PlaylistBrowserActivity: android.widget.EditText mSearchBox
+com.android.music.AlbumBrowserActivity$2: com.android.music.AlbumBrowserActivity this$0
+com.android.music.MediaPlaybackService: android.os.IBinder mBinder
+com.android.music.MediaPlaybackService$5: com.android.music.MediaPlaybackService this$0
+com.android.music.TrackBrowserActivity: android.widget.EditText mSearchBox
+com.android.music.MusicBrowserActivity$4: com.android.music.MusicBrowserActivity this$0
+com.android.music.MediaPlaybackService: int mRepeatMode
+com.android.music.MediaPlaybackActivity: com.android.music.IMediaPlaybackService mService
 com.android.music.TrackBrowserActivity: com.android.music.TouchInterceptor$DropListener mDropListener
-com.android.music.MediaPlaybackActivity: boolean mSeeking
-com.android.music.MediaPlaybackService: java.lang.String[] mCursorCols
-com.android.music.MediaPlaybackActivity: int mTextWidth
+com.android.music.MediaPlaybackActivity: int mTouchSlop
+com.android.music.MusicPicker: int TRACK_MENU
+com.android.music.MediaPickerActivity: java.lang.String mWhereClause
+com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mShuffleListener
+com.android.music.QueryBrowserActivity: int ADD_TO_QUEUE
+com.android.music.MediaPlaybackService: int IDLE_DELAY
+com.android.music.MediaPlaybackActivity: boolean mDraggingLabel
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getTrackName
+com.android.music.CreatePlaylist: android.widget.TextView mPrompt
+com.android.music.ArtistAlbumBrowserActivity$2: com.android.music.ArtistAlbumBrowserActivity this$0
+com.android.music.MusicPicker: long mPlayingId
+com.android.music.WeekSelector: android.widget.NumberPicker mWeeks
+com.android.music.MediaPlaybackActivity: com.android.music.RepeatingImageButton$RepeatListener mRewListener
+com.android.music.AlbumBrowserActivity: java.lang.String mCurrentAlbumName
+com.android.music.RenamePlaylist: java.lang.String mOriginalName
+com.android.music.ScanningProgress: int CHECK
+com.android.music.QueryBrowserActivity: int PLAY_ARTIST
+com.android.music.MediaPlaybackActivity: int[][] keyboard
+com.android.music.MediaPlaybackService: int NOW
+com.android.music.MediaPlaybackService: int NEXT
+com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mPauseListener
+com.android.music.PlaylistBrowserActivity: long ALL_SONGS_PLAYLIST
+com.android.music.MediaPlaybackService: android.media.session.MediaSession mSession
+com.android.music.PlaylistBrowserActivity: long RECENTLY_ADDED_PLAYLIST
+com.android.music.QueryBrowserActivity: boolean mAdapterSent
+com.android.music.MediaPlaybackActivity: android.widget.SeekBar$OnSeekBarChangeListener mSeekListener
+com.android.music.QueryBrowserActivity$1: com.android.music.QueryBrowserActivity this$0
+com.android.music.TrackBrowserActivity$1: com.android.music.TrackBrowserActivity this$0
+com.android.music.MediaPlaybackActivity: int QUIT
+com.android.music.ArtistAlbumBrowserActivity: android.content.BroadcastReceiver mTrackListListener
+com.android.music.MediaPlaybackService: android.content.BroadcastReceiver mIntentReceiver
+com.android.music.MediaPlaybackActivity: com.android.music.RepeatingImageButton mNextButton
+com.android.music.TrackBrowserActivity: java.lang.String mAlbumId
+com.android.music.MediaPlaybackActivity: android.widget.TextView mCurrentTime
+com.android.music.MediaPlaybackService: java.util.Vector mHistory
+com.android.music.TrackBrowserActivity: int SEARCH
+com.android.music.MediaPlaybackService: boolean mIsSupposedToBePlaying
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_moveQueueItem
+com.android.music.MusicPicker: java.lang.String LIST_STATE_KEY
+com.android.music.AlbumBrowserActivity: java.lang.String mCurrentAlbumId
+com.android.music.TrackBrowserActivity: java.lang.String mCurrentAlbumName
 com.android.music.MediaPlaybackService: int mServiceStartId
 com.android.music.MediaPlaybackService: int PODCASTCOLIDX
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_prev
-com.android.music.MediaPlaybackService: boolean mOneShot
+com.android.music.MediaPlaybackActivity: long mPosOverride
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_setRepeatMode
+com.android.music.TrackBrowserActivity: java.lang.String mGenre
+com.android.music.MediaAppWidgetProvider: android.content.ComponentName THIS_APPWIDGET
+com.android.music.RenamePlaylist: android.view.View$OnClickListener mOpenClicked
+com.android.music.MusicPicker: android.view.View mProgressContainer
+com.android.music.MediaPlaybackService: java.lang.String PLAYSTATE_CHANGED
+com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentArtistId
+com.android.music.MediaPlaybackActivity: com.android.music.MediaPlaybackActivity$AlbumArtHandler mAlbumArtHandler
+com.android.music.MediaPlaybackActivity: int USE_AS_RINGTONE
+com.android.music.MediaPlaybackActivity: android.widget.TextView mTotalTime
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getMediaMountedCount
+com.android.music.ArtistAlbumBrowserActivity: android.content.BroadcastReceiver mScanListener
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getAlbumId
+com.android.music.ScanningProgress: android.os.Handler mHandler
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_removeTracks
+com.android.music.MediaPlaybackService: java.lang.String META_CHANGED
+com.android.music.PlaylistBrowserActivity: java.lang.String[] mCols
+com.android.music.TrackBrowserActivity: long mSelectedId
+com.android.music.RenamePlaylist: long mRenameId
+com.android.music.PlaylistBrowserActivity: com.android.music.PlaylistBrowserActivity$PlaylistListAdapter mAdapter
+com.android.music.MediaPlaybackService: java.lang.String CMDCYCLEREPEAT
+com.android.music.MusicBrowserActivity: android.content.ServiceConnection autoshuffle
+com.android.music.MediaButtonIntentReceiver: int MSG_LONGPRESS_TIMEOUT
+com.android.music.MediaPlaybackActivity: android.widget.TextView mTrackName
+com.android.music.MediaButtonIntentReceiver: long mLastClickTime
+com.android.music.MediaPlaybackService: int mPlayListLen
+com.android.music.MediaPlaybackService: int REPEAT_NONE
+com.android.music.MediaPlaybackService: java.lang.String mFileToPlay
+com.android.music.MediaPlaybackActivity: int mTextWidth
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getArtistId
+com.android.music.QueryBrowserActivity: int EXPLORE_ALBUM
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_play
+com.android.music.MediaPlaybackService: int mPlayPos
+com.android.music.MusicPicker: java.lang.String TAG
+com.android.music.AlbumBrowserActivity: int SEARCH_INLINE
+com.android.music.MediaPlaybackActivity: int mLastX
+com.android.music.MediaPlaybackActivity: long mDuration
+com.android.music.ArtistAlbumBrowserActivity: com.android.music.ArtistAlbumBrowserActivity$ArtistAlbumListAdapter mAdapter
+com.android.music.DeleteItems: int[] mItemList
+com.android.music.MediaPlaybackService: int[] mAutoShuffleList
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_openFile
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getAlbumName
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_next
+com.android.music.QueryBrowserActivity: int PLAY_NEXT
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_enqueue
+com.android.music.MediaPickerActivity: android.database.Cursor mCursor
+com.android.music.AlbumBrowserActivity: android.widget.EditText mSearchBox
+com.android.music.ArtistAlbumBrowserActivity: boolean mAdapterSent
+com.android.music.MediaPlaybackService: int[] mPlayList
+com.android.music.MediaPlaybackActivity: int ALBUM_ART_DECODED
+com.android.music.MediaPlaybackActivity: android.os.Handler mLabelScroller
+com.android.music.TrackBrowserActivity$5: com.android.music.TrackBrowserActivity this$0
+com.android.music.VideoBrowserActivity: java.lang.String mWhereClause
+com.android.music.MusicBrowserActivity: boolean mAutoShuffle
 com.android.music.TrackBrowserActivity: boolean mAdapterSent
-com.android.music.TrackBrowserActivity: java.lang.String LOGTAG
+com.android.music.MediaAppWidgetProvider: java.lang.String CMDAPPWIDGETUPDATE
+com.android.music.TrackBrowserActivity: java.lang.String[] mPlaylistMemberCols
+com.android.music.MediaPlaybackService: com.android.music.MediaPlaybackService$Shuffler mRand
+com.android.music.TrackBrowserActivity$6: com.android.music.TrackBrowserActivity this$0
+com.android.music.QueryBrowserActivity: com.android.music.QueryBrowserActivity$QueryListAdapter mAdapter
+com.android.music.AlbumBrowserActivity: android.database.Cursor mAlbumCursor
+com.android.music.MediaPlaybackActivity: android.content.ServiceConnection osc
+com.android.music.AlbumBrowserActivity: android.os.Handler mReScanHandler
+com.android.music.MediaPlaybackService: int mMediaMountedCount
+com.android.music.MediaPlaybackActivity: int seekmethod
+com.android.music.TrackBrowserActivity: java.lang.String mArtistId
+com.android.music.QueryBrowserActivity: int PLAY_ALBUM
+com.android.music.PlaylistBrowserActivity: int EDIT_PLAYLIST
+com.android.music.MusicPicker: java.lang.String mSortOrder
+com.android.music.MediaPlaybackService: int SHUFFLE_NONE
+com.android.music.ArtistAlbumBrowserActivity: android.os.Handler mReScanHandler
+com.android.music.MusicPicker: android.media.MediaPlayer mMediaPlayer
+com.android.music.PlaylistBrowserActivity: android.database.Cursor mPlaylistCursor
+com.android.music.MediaPickerActivity: java.lang.String mSortOrder
+com.android.music.MediaPlaybackActivity: com.android.music.RepeatingImageButton mPrevButton
+com.android.music.CreatePlaylist: android.widget.Button mSaveButton
+com.android.music.MediaPlaybackService: java.lang.String CMDNAME
+com.android.music.MusicBrowserActivity: android.widget.TextView mTitle
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getRepeatMode
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_openFileAsync
+com.android.music.MediaPlaybackService: java.lang.String NEXT_ACTION
+com.android.music.MusicPicker: android.net.Uri mSelectedUri
+com.android.music.MediaPlaybackActivity: android.widget.ImageButton mRepeatButton
+com.android.music.TrackBrowserActivity: android.widget.ListView mTrackList
+com.android.music.MusicBrowserActivity: android.widget.TextView mArtist
+com.android.music.RenamePlaylist: android.widget.EditText mPlaylist
+com.android.music.MusicPicker: int ALBUM_MENU
+com.android.music.TrackBrowserActivity: java.lang.String[] mCursorCols
+com.android.music.TrackBrowserActivity: java.lang.String mCurrentArtistNameForAlbum
+com.android.music.AlbumBrowserActivity: int SEARCH
+com.android.music.MediaPlaybackService: com.android.music.MediaAppWidgetProvider mAppWidgetProvider
+com.android.music.MediaPlaybackActivity$13: com.android.music.MediaPlaybackActivity this$0
+com.android.music.DeleteItems: android.view.View$OnClickListener mButtonClicked
+com.android.music.VideoBrowserActivity: java.lang.String mSortOrder
+com.android.music.MediaPlaybackActivity: int lastX
+com.android.music.TrackBrowserActivity: com.android.music.TrackBrowserActivity$TrackListAdapter mAdapter
+com.android.music.AlbumBrowserActivity$1: com.android.music.AlbumBrowserActivity this$0
+com.android.music.MediaPlaybackService: int IDCOLIDX
+com.android.music.MediaPlaybackActivity: android.widget.ImageButton mPauseButton
+com.android.music.PlaylistBrowserActivity: int SEARCH_INLINE
+com.android.music.MediaPlaybackActivity: android.widget.Toast mToast
+com.android.music.MediaPickerActivity: java.lang.String mLastYear
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_open
+com.android.music.MusicBrowserActivity: android.content.BroadcastReceiver mStatusListener
+com.android.music.MusicPicker: java.lang.String SORT_MODE_KEY
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_isPlaying
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_duration
+com.android.music.MediaPlaybackService: int SHUFFLE_NORMAL
+com.android.music.MediaPlaybackService: int PLAYBACKSERVICE_STATUS
+com.android.music.MediaPlaybackActivity: boolean mSeeking
+com.android.music.WeekSelector: android.view.View$OnClickListener mListener
+com.android.music.MediaPlaybackActivity: int GET_ALBUM_ART
+com.android.music.MediaPlaybackService: int TRACK_ENDED
+com.android.music.PlaylistBrowserActivity: int RENAME_PLAYLIST
+com.android.music.TrackBrowserActivity: int CLEAR_PLAYLIST
+com.android.music.DeleteItems: android.widget.Button mButton
+com.android.music.MediaPlaybackActivity: long mStartSeekPos
+com.android.music.MusicPicker: android.view.View mOkayButton
+com.android.music.MediaPlaybackActivity: android.widget.TextView mAlbumName
+com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mPrevListener
+com.android.music.MediaPlaybackActivity: android.widget.ImageButton mShuffleButton
+com.android.music.MediaPlaybackActivity: int mInitialX
+com.android.music.MusicPicker: java.lang.Object[] sTimeArgs
+com.android.music.MediaPlaybackService: int mShuffleMode
+com.android.music.MusicPicker: android.net.Uri mBaseUri
+com.android.music.MediaPlaybackService: android.database.Cursor mCursor
+com.android.music.AlbumBrowserActivity: boolean mAdapterSent
+com.android.music.MediaButtonIntentReceiver: android.os.Handler mHandler
+com.android.music.MusicPicker: boolean DBG
+com.android.music.MediaPlaybackService: java.lang.String SERVICECMD
+com.android.music.QueryBrowserActivity: android.database.Cursor mQueryCursor
+com.android.music.MusicPicker: int ARTIST_MENU
+com.android.music.MediaPlaybackActivity: android.content.BroadcastReceiver mStatusListener
+com.android.music.TrackBrowserActivity: int Q_SELECTED
+com.android.music.MediaPlaybackService: android.os.Handler mMediaplayerHandler
+com.android.music.PlaylistBrowserActivity: long PODCASTS_PLAYLIST
+com.android.music.MediaPlaybackService: int MAX_HISTORY_SIZE
+com.android.music.MediaPlaybackActivity: android.widget.ImageView mAlbum
+com.android.music.MediaPlaybackService: java.lang.String CMDPREVIOUS
+com.android.music.MediaPickerActivity: java.lang.String mFirstYear
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getPath
+com.android.music.MediaButtonIntentReceiver: int LONG_PRESS_DELAY
+com.android.music.MusicPicker: android.view.View mListContainer
+com.android.music.MediaPlaybackService: int mOpenFailedCounter
+com.android.music.MediaPlaybackActivity: boolean mDeviceHasNoDpad
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_prev
+com.android.music.MediaPlaybackActivity: boolean mOneShot
+com.android.music.MusicPicker: android.database.Cursor mCursor
+com.android.music.MediaPlaybackActivity: long mLastSeekEventTime
+com.android.music.QueryBrowserActivity: android.widget.ListView mTrackList
+com.android.music.QueryBrowserActivity: int EXPLORE_ARTIST
+com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mRepeatListener
+com.android.music.MediaPlaybackService: android.content.SharedPreferences mPreferences
+com.android.music.ArtistAlbumBrowserActivity: int SEARCH_INLINE
+com.android.music.TrackBrowserActivity: android.content.BroadcastReceiver mTrackListListener
+com.android.music.AlbumBrowserActivity: java.lang.String mArtistId
+com.android.music.MusicPicker: java.lang.StringBuilder sFormatBuilder
+com.android.music.MusicPicker: boolean mListHasFocus
+com.android.music.MediaPlaybackService: int SHUFFLE_AUTO
+com.android.music.MediaPlaybackService: char[] hexdigits
+com.android.music.MediaPlaybackActivity: android.widget.ProgressBar mProgress
 com.android.music.ArtistAlbumBrowserActivity: android.widget.EditText mSearchBox
 com.android.music.MediaPlaybackService: java.lang.String CMDNEXT
-com.android.music.MusicPicker: android.view.View mOkayButton
+com.android.music.PlaylistBrowserActivity: android.os.Handler mReScanHandler
+com.android.music.PlaylistBrowserActivity: android.content.BroadcastReceiver mScanListener
+com.android.music.PlaylistBrowserActivity: boolean mAdapterSent
 com.android.music.IMediaPlaybackService: java.lang.String DESCRIPTOR
+com.android.music.MediaPlaybackActivity: int mViewWidth
+com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentAlbumName
+com.android.music.MediaPlaybackService: java.lang.String ASYNC_OPEN_COMPLETE
+com.android.music.AlbumBrowserActivity: com.android.music.AlbumBrowserActivity$AlbumListAdapter mAdapter
+com.android.music.PlaylistBrowserActivity: int CHANGE_WEEKS
+com.android.music.MediaPlaybackService: android.os.PowerManager$WakeLock mWakeLock
+com.android.music.TrackBrowserActivity: int Q_ALL
+com.android.music.MediaPlaybackService: boolean mOneShot
+com.android.music.MediaPlaybackActivity: android.widget.TextView mArtistName
+com.android.music.MediaPlaybackService: android.app.NotificationManager mNotificationManager
+com.android.music.PlaylistBrowserActivity: java.lang.String TAG
+com.android.music.MusicPicker: java.util.Formatter sFormatter
+com.android.music.CreatePlaylist: android.widget.EditText mPlaylist
+com.android.music.MediaAppWidgetProvider: com.android.music.MediaAppWidgetProvider sInstance
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_stop
+com.android.music.MediaPlaybackService: int mCardId
+com.android.music.IMediaPlaybackService$Stub$Proxy: android.os.IBinder mRemote
+com.android.music.MediaPlaybackService: java.lang.String TOGGLEPAUSE_ACTION
+com.android.music.MediaPlaybackActivity: android.view.View$OnClickListener mQueueListener
+com.android.music.QueryBrowserActivity: android.content.BroadcastReceiver mScanListener
+com.android.music.MediaPlaybackService: android.telephony.PhoneStateListener mPhoneStateListener
+com.android.music.MediaPlaybackService: java.lang.String[] mCursorCols
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getQueuePosition
+com.android.music.ArtistAlbumBrowserActivity$1: com.android.music.ArtistAlbumBrowserActivity this$0
+com.android.music.MediaPlaybackService: android.os.Handler mDelayedStopHandler
+com.android.music.MediaPlaybackService: boolean mResumeAfterCall
+com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentArtistName
+com.android.music.TrackBrowserActivity: com.android.music.TouchInterceptor$RemoveListener mRemoveListener
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_position
+com.android.music.PlaylistBrowserActivity$2: com.android.music.PlaylistBrowserActivity this$0
+com.android.music.MediaAppWidgetProvider: java.lang.String TAG
+com.android.music.TrackBrowserActivity: java.lang.String mSortOrder
+com.android.music.MediaPlaybackService: boolean mQuietMode
+com.android.music.TrackBrowserActivity: boolean mDeletedOneRow
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_removeTrack
+com.android.music.AlbumBrowserActivity: android.content.BroadcastReceiver mScanListener
+com.android.music.MediaPlaybackActivity: int REFRESH
+com.android.music.RenamePlaylist: android.widget.Button mSaveButton
+com.android.music.MediaPlaybackActivity: int lastY
+com.android.music.TrackBrowserActivity: java.lang.String mCurrentTrackName
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_setShuffleMode
+com.android.music.TrackBrowserActivity: android.content.BroadcastReceiver mScanListener
+com.android.music.StreamStarter: android.content.BroadcastReceiver mStatusListener
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getArtistName
+com.android.music.MusicBrowserActivity: android.view.View$OnFocusChangeListener mFocuser
+com.android.music.TrackBrowserActivity: android.database.Cursor mTrackCursor
+com.android.music.MediaPlaybackService: int SERVER_DIED
+com.android.music.DeleteItems: android.widget.TextView mPrompt
+com.android.music.PlaylistBrowserActivity: int DELETE_PLAYLIST
+com.android.music.MediaPlaybackService: java.lang.String LOGTAG
+com.android.music.TrackBrowserActivity: int SAVE_AS_PLAYLIST
+com.android.music.QueryBrowserActivity: java.lang.String mFilterString
+com.android.music.TrackBrowserActivity: java.lang.String mPlaylist
+com.android.music.TrackBrowserActivity: int REMOVE
+com.android.music.TrackBrowserActivity: int PLAY_ALL
+com.android.music.AlbumBrowserActivity: android.content.BroadcastReceiver mTrackListListener
 com.android.music.MediaButtonIntentReceiver: boolean mDown
-com.android.music.MediaPlaybackActivity$13: com.android.music.MediaPlaybackActivity this$0
-com.android.music.TrackBrowserActivity: java.lang.String mArtistId
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_isPlaying
-com.android.music.QueryBrowserActivity$1: com.android.music.QueryBrowserActivity this$0
-com.android.music.TrackBrowserActivity: java.lang.String[] mPlaylistMemberCols
-com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_duration
-com.android.music.MusicPicker: boolean mListHasFocus
-com.android.music.MediaPlaybackActivity: boolean mFromTouch
-com.android.music.MediaPlaybackService: void onStart(android.content.Intent,int)
-com.android.music.TrackBrowserActivity: void onResume()
-com.android.music.MediaPlaybackService: java.lang.String getArtistName()
-com.android.music.IMediaPlaybackService$Stub$Proxy: int getQueuePosition()
-com.android.music.MediaPlaybackService: void reloadQueue()
-com.android.music.MusicPicker: boolean setSortMode(int)
-com.android.music.IMediaPlaybackService: java.lang.String getAlbumName()
-com.android.music.TrackBrowserActivity$6: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.MediaAppWidgetProvider: com.android.music.MediaAppWidgetProvider getInstance()
-com.android.music.MusicPicker: void onRestart()
-com.android.music.IMediaPlaybackService$Default: java.lang.String getTrackName()
-com.android.music.TrackBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
-com.android.music.MusicBrowserActivity$4: MusicBrowserActivity$4(com.android.music.MusicBrowserActivity)
-com.android.music.IMediaPlaybackService$Default: void setQueuePosition(int)
-com.android.music.AlbumBrowserActivity: void toggleSearchBox()
-com.android.music.QueryBrowserActivity$1: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.IMediaPlaybackService$Default: int getShuffleMode()
-com.android.music.StreamStarter: void onCreate(android.os.Bundle)
-com.android.music.TouchInterceptor: void setDropListener(com.android.music.TouchInterceptor$DropListener)
-com.android.music.MediaPlaybackService: void ensurePlayListCapacity(int)
-com.android.music.MediaPlaybackService: int removeTracksInternal(int,int)
-com.android.music.IMediaPlaybackService$Stub$Proxy: IMediaPlaybackService$Stub$Proxy(android.os.IBinder)
-com.android.music.MediaPlaybackActivity: long refreshNow()
-com.android.music.MediaPlaybackService: void next(boolean)
-com.android.music.ArtistAlbumBrowserActivity: void onActivityResult(int,int,android.content.Intent)
-com.android.music.TrackBrowserActivity: boolean onContextItemSelected(android.view.MenuItem)
-com.android.music.ArtistAlbumBrowserActivity: boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long)
-com.android.music.ScanningProgress: ScanningProgress()
-com.android.music.MusicPicker: void onSaveInstanceState(android.os.Bundle)
-com.android.music.MediaPlaybackService: boolean isPodcast()
-com.android.music.PlaylistBrowserActivity: android.database.Cursor getPlaylistCursor(android.content.AsyncQueryHandler,java.lang.String)
-com.android.music.PlaylistBrowserActivity$2: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.ArtistAlbumBrowserActivity: void setTitle()
-com.android.music.ArtistAlbumBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.android.music.AlbumBrowserActivity: void setupSearchBox()
-com.android.music.ArtistAlbumBrowserActivity: void onResume()
-com.android.music.StreamStarter$2: StreamStarter$2(com.android.music.StreamStarter)
-com.android.music.IMediaPlaybackService: void open(int[],int)
-com.android.music.TrackBrowserActivity$1: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.TrackBrowserActivity: android.database.Cursor getTrackCursor(android.content.AsyncQueryHandler,java.lang.String)
-com.android.music.AlbumBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.android.music.MediaPlaybackActivity: void scanBackward(int,long)
-com.android.music.IMediaPlaybackService: int removeTracks(int,int)
-com.android.music.MediaPlaybackService: void setUpMediaSession()
-com.android.music.MediaPlaybackService: int getShuffleMode()
-com.android.music.AlbumBrowserActivity: void setTitle()
-com.android.music.MediaPlaybackService: void startAndFadeIn()
-com.android.music.MusicBrowserActivity: void doAutoShuffle()
-com.android.music.RenamePlaylist: void onResume()
-com.android.music.MusicBrowserActivity: void onCreate(android.os.Bundle)
-com.android.music.TrackBrowserActivity: void removeItem()
-com.android.music.TrackBrowserActivity: void setTitle()
-com.android.music.MusicBrowserActivity: MusicBrowserActivity()
-com.android.music.MediaPlaybackActivity: void onStop()
-com.android.music.MediaPlaybackActivity$13: MediaPlaybackActivity$13(com.android.music.MediaPlaybackActivity)
-com.android.music.RenamePlaylist: int idForplaylist(java.lang.String)
-com.android.music.AlbumBrowserActivity: AlbumBrowserActivity()
-com.android.music.TrackBrowserActivity$5: TrackBrowserActivity$5(com.android.music.TrackBrowserActivity)
-com.android.music.MediaPlaybackService: long duration()
-com.android.music.MusicPicker: void onStop()
-com.android.music.IMediaPlaybackService: int getQueuePosition()
-com.android.music.IMediaPlaybackService$Stub$Proxy: void play()
-com.android.music.MediaButtonIntentReceiver: void startServiceCompat(android.content.Context,android.content.Intent)
-com.android.music.IMediaPlaybackService$Stub$Proxy: void setRepeatMode(int)
-com.android.music.CreatePlaylist: java.lang.String makePlaylistName()
-com.android.music.MediaPlaybackService: int getAudioId()
-com.android.music.AlbumBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
-com.android.music.MusicBrowserActivity: void onClick(android.view.View)
-com.android.music.ScanningProgress: void onCreate(android.os.Bundle)
-com.android.music.RenamePlaylist: void onCreate(android.os.Bundle)
-com.android.music.VideoBrowserActivity: void init()
-com.android.music.WeekSelector: void onCreate(android.os.Bundle)
-com.android.music.MediaPlaybackService: java.lang.String getAlbumName()
-com.android.music.MediaPlaybackService: void openCurrent()
-com.android.music.PlaylistBrowserActivity: void playRecentlyAdded()
-com.android.music.IMediaPlaybackService$Default: void openFileAsync(java.lang.String)
-com.android.music.PlaylistBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.android.music.IMediaPlaybackService$Stub$Proxy: int getAudioId()
-com.android.music.MusicBrowserActivity: void requestNotificationPermissionIfNeeded()
-com.android.music.CreatePlaylist: void onResume()
-com.android.music.MediaPlaybackService$3: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.MediaAppWidgetProvider: void pushUpdate(android.content.Context,int[],android.widget.RemoteViews)
-com.android.music.MediaAppWidgetProvider: MediaAppWidgetProvider()
-com.android.music.IMediaPlaybackService$Stub$Proxy: int getArtistId()
-com.android.music.ArtistAlbumBrowserActivity: void doSearch()
-com.android.music.MediaPlaybackActivity: void setPauseButtonImage()
-com.android.music.QueryBrowserActivity: QueryBrowserActivity()
-com.android.music.MusicPicker: void onPause()
-com.android.music.IMediaPlaybackService$Stub$Proxy: void moveQueueItem(int,int)
-com.android.music.IMediaPlaybackService$Default: void next()
-com.android.music.AlbumBrowserActivity: void doSearch()
-com.android.music.IMediaPlaybackService$Stub: IMediaPlaybackService$Stub()
-com.android.music.ScanningProgress: void onDestroy()
-com.android.music.MediaPlaybackService: android.app.PendingIntent commandIntent(int,java.lang.String)
-com.android.music.MusicPicker: void onListItemClick(android.widget.ListView,android.view.View,int,long)
-com.android.music.AlbumBrowserActivity: void onPause()
-com.android.music.IMediaPlaybackService$Default: int getAudioId()
-com.android.music.IMediaPlaybackService: void setShuffleMode(int)
-com.android.music.MusicBrowserActivity: void onPause()
-com.android.music.MediaPlaybackActivity: boolean onPrepareOptionsMenu(android.view.Menu)
-com.android.music.MediaPlaybackActivity: boolean onTouch(android.view.View,android.view.MotionEvent)
-com.android.music.MediaPlaybackService: void pause()
-com.android.music.IMediaPlaybackService$Default: void moveQueueItem(int,int)
-com.android.music.MusicPicker: void onCreate(android.os.Bundle)
-com.android.music.MediaPlaybackService: void registerExternalStorageListener()
-com.android.music.MediaPlaybackActivity: boolean onLongClick(android.view.View)
-com.android.music.MusicBrowserActivity: void makeNowPlayingView()
-com.android.music.MediaPlaybackService: android.app.Notification buildNotification()
-com.android.music.IMediaPlaybackService: void pause()
-com.android.music.AlbumBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
-com.android.music.AlbumBrowserActivity$2: AlbumBrowserActivity$2(com.android.music.AlbumBrowserActivity)
-com.android.music.ArtistAlbumBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
-com.android.music.MediaPlaybackService$5: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.MusicBrowserActivity: void requestPhoneStatePermissionIfNeeded()
-com.android.music.PlaylistBrowserActivity: android.database.Cursor mergedCursor(android.database.Cursor)
-com.android.music.IMediaPlaybackService$Stub$Proxy: int removeTrack(int)
-com.android.music.IMediaPlaybackService: void next()
-com.android.music.MediaPlaybackService: int getMediaMountedCount()
+com.android.music.MusicBrowserActivity: int SEARCH_MUSIC
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_pause
+com.android.music.TrackBrowserActivity: android.content.BroadcastReceiver mNowPlayingListener
+com.android.music.IMediaPlaybackService$Stub: int TRANSACTION_getAudioId
+com.android.music.ArtistAlbumBrowserActivity: int SEARCH
+com.android.music.QueryBrowserActivity: int REQUERY
+com.android.music.ArtistAlbumBrowserActivity: java.lang.String mCurrentArtistNameForAlbum
+com.android.music.MediaPlaybackService: java.lang.String NOTIFICATION_CHANNEL_ID
+com.android.music.MusicPicker: android.os.Parcelable mListState
+com.android.music.MediaPlaybackActivity: boolean paused
+com.android.music.MediaPlaybackService: boolean mServiceInUse
+com.android.music.MediaPlaybackService: android.content.BroadcastReceiver mUnmountReceiver
+com.android.music.StreamStarter$2: com.android.music.StreamStarter this$0
+com.android.music.MusicPicker: android.view.View mCancelButton
+com.android.music.MusicPicker: com.android.music.MusicPicker$TrackListAdapter mAdapter
 com.android.music.IMediaPlaybackService: long duration()
-com.android.music.MediaPlaybackActivity: boolean onKeyDown(int,android.view.KeyEvent)
-com.android.music.MediaPlaybackActivity: void startPlayback()
-com.android.music.TrackBrowserActivity$5: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.CreatePlaylist: CreatePlaylist()
-com.android.music.MediaPickerActivity: void MakeCursor()
-com.android.music.MediaPlaybackService: void onRebind(android.content.Intent)
-com.android.music.MediaPlaybackActivity: boolean onCreateOptionsMenu(android.view.Menu)
-com.android.music.TrackBrowserActivity: void toggleSearchBox()
-com.android.music.RenamePlaylist: RenamePlaylist()
-com.android.music.ArtistAlbumBrowserActivity: void onPause()
-com.android.music.MediaPlaybackService: void open(java.lang.String,boolean)
-com.android.music.IMediaPlaybackService$Stub$Proxy: void openFileAsync(java.lang.String)
-com.android.music.PlaylistBrowserActivity: void setTitle()
-com.android.music.MediaPlaybackService: void doAutoShuffleUpdate()
-com.android.music.MusicPicker: boolean onOptionsItemSelected(android.view.MenuItem)
-com.android.music.MediaPlaybackActivity: void onStart()
-com.android.music.IMediaPlaybackService: void moveQueueItem(int,int)
-com.android.music.MediaPlaybackService: void open(int[],int)
-com.android.music.IMediaPlaybackService: int getMediaMountedCount()
-com.android.music.MediaPlaybackService: void closeExternalStorageFiles(java.lang.String)
-com.android.music.TouchInterceptor: TouchInterceptor(android.content.Context,android.util.AttributeSet)
-com.android.music.MediaPlaybackService: void moveQueueItem(int,int)
-com.android.music.IMediaPlaybackService$Stub$Proxy: void enqueue(int[],int)
+com.android.music.WeekSelector: void onResume()
+com.android.music.MediaPlaybackService: void enqueue(int[],int)
+com.android.music.MediaAppWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])
+com.android.music.IMediaPlaybackService$Default: void enqueue(int[],int)
+com.android.music.IMediaPlaybackService$Default: long duration()
+com.android.music.RenamePlaylist: void onCreate(android.os.Bundle)
+com.android.music.CheckableRelativeLayout: CheckableRelativeLayout(android.content.Context,android.util.AttributeSet)
+com.android.music.AlbumBrowserActivity: void setupSearchBox()
+com.android.music.IMediaPlaybackService$Default: void moveQueueItem(int,int)
+com.android.music.WeekSelector: void onSaveInstanceState(android.os.Bundle)
+com.android.music.IMediaPlaybackService$Default: int getShuffleMode()
+com.android.music.IMediaPlaybackService$Default: long position()
+com.android.music.TrackBrowserActivity: TrackBrowserActivity()
+com.android.music.MediaPlaybackService: void notifyCompat()
+com.android.music.IMediaPlaybackService$Default: void openFile(java.lang.String,boolean)
+com.android.music.WeekSelector: WeekSelector()
 com.android.music.TrackBrowserActivity: void setupSearchBox()
-com.android.music.TrackBrowserActivity: void onCreate(android.os.Bundle)
-com.android.music.ArtistAlbumBrowserActivity: void onCreate(android.os.Bundle)
-com.android.music.ArtistAlbumBrowserActivity$2: ArtistAlbumBrowserActivity$2(com.android.music.ArtistAlbumBrowserActivity)
-com.android.music.ArtistAlbumBrowserActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
-com.android.music.IMediaPlaybackService$Default: long seek(long)
+com.android.music.ArtistAlbumBrowserActivity: void onActivityResult(int,int,android.content.Intent)
 com.android.music.MusicPicker: MusicPicker()
 com.android.music.StreamStarter: void onPause()
-com.android.music.TrackBrowserActivity: void unregisterReceiverSafe(android.content.BroadcastReceiver)
-com.android.music.IMediaPlaybackService$Default: void play()
-com.android.music.MediaPlaybackService: void saveBookmarkIfNeeded()
-com.android.music.IMediaPlaybackService: void play()
-com.android.music.IMediaPlaybackService$Stub$Proxy: void stop()
-com.android.music.IMediaPlaybackService$Default: java.lang.String getPath()
-com.android.music.IMediaPlaybackService$Default: int getRepeatMode()
-com.android.music.MediaAppWidgetProvider: <clinit>()
-com.android.music.IMediaPlaybackService: boolean isPlaying()
-com.android.music.ArtistAlbumBrowserActivity: boolean onPrepareOptionsMenu(android.view.Menu)
-com.android.music.IMediaPlaybackService$Stub$Proxy: void setQueuePosition(int)
-com.android.music.WeekSelector: void onSaveInstanceState(android.os.Bundle)
-com.android.music.IMediaPlaybackService$Default: int[] getQueue()
-com.android.music.MediaPlaybackService: int removeTracks(int,int)
-com.android.music.RepeatingImageButton: RepeatingImageButton(android.content.Context,android.util.AttributeSet)
-com.android.music.MediaPlaybackService: void stopForegroundCompat(boolean)
-com.android.music.MediaPlaybackService: void onCreate()
-com.android.music.MediaButtonIntentReceiver: <clinit>()
-com.android.music.MediaPlaybackService$5: MediaPlaybackService$5(com.android.music.MediaPlaybackService)
-com.android.music.MediaPickerActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
-com.android.music.MediaAppWidgetProvider: void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[])
-com.android.music.MediaButtonIntentReceiver: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.RenamePlaylist: java.lang.String nameForId(long)
-com.android.music.IMediaPlaybackService$Stub$Proxy: int getRepeatMode()
-com.android.music.MediaPlaybackService: void prev()
-com.android.music.QueryBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
-com.android.music.MusicBrowserActivity: void init()
-com.android.music.IMediaPlaybackService$Stub$Proxy: long seek(long)
-com.android.music.MusicBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.android.music.MediaPlaybackService: void stop()
-com.android.music.IMediaPlaybackService$Stub$Proxy: void prev()
-com.android.music.AlbumBrowserActivity: void onDestroy()
-com.android.music.MediaPlaybackService: void cycleRepeat()
-com.android.music.MediaPlaybackService: long getBookmark()
-com.android.music.MusicPicker: void onClick(android.view.View)
-com.android.music.IMediaPlaybackService$Stub$Proxy: void next()
-com.android.music.AlbumBrowserActivity$1: AlbumBrowserActivity$1(com.android.music.AlbumBrowserActivity)
-com.android.music.IMediaPlaybackService$Default: int removeTrack(int)
-com.android.music.MusicPicker: void stopMediaPlayer()
-com.android.music.MediaPlaybackActivity: void setRepeatButtonImage()
-com.android.music.IMediaPlaybackService$Stub$Proxy: void open(int[],int)
-com.android.music.TrackBrowserActivity$6: TrackBrowserActivity$6(com.android.music.TrackBrowserActivity)
-com.android.music.CheckableRelativeLayout: void setChecked(boolean)
-com.android.music.IMediaPlaybackService$Stub: android.os.IBinder asBinder()
-com.android.music.PlaylistBrowserActivity$2: PlaylistBrowserActivity$2(com.android.music.PlaylistBrowserActivity)
-com.android.music.IMediaPlaybackService$Default: java.lang.String getArtistName()
-com.android.music.MediaPlaybackService: int getQueuePosition()
-com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getAlbumName()
-com.android.music.AlbumBrowserActivity: void onSaveInstanceState(android.os.Bundle)
-com.android.music.AlbumBrowserActivity$1: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.CreatePlaylist: void onSaveInstanceState(android.os.Bundle)
-com.android.music.MediaPlaybackService: int getFatVolumeIdCompat(java.lang.String)
-com.android.music.PlaylistBrowserActivity: void onDestroy()
-com.android.music.ArtistAlbumBrowserActivity: void onDestroy()
-com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getPath()
-com.android.music.ArtistAlbumBrowserActivity: void onSaveInstanceState(android.os.Bundle)
+com.android.music.ArtistAlbumBrowserActivity: void onCreate(android.os.Bundle)
+com.android.music.ArtistAlbumBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
+com.android.music.IMediaPlaybackService$Stub$Proxy: void moveQueueItem(int,int)
 com.android.music.AlbumBrowserActivity: android.database.Cursor getAlbumCursor(android.content.AsyncQueryHandler,java.lang.String)
-com.android.music.MediaPlaybackActivity: void scanForward(int,long)
-com.android.music.MediaPlaybackService: boolean onUnbind(android.content.Intent)
-com.android.music.MediaPlaybackActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.android.music.RenamePlaylist: void setSaveButton()
-com.android.music.PlaylistBrowserActivity: void onPause()
-com.android.music.IMediaPlaybackService: java.lang.String getPath()
-com.android.music.MediaAppWidgetProvider: void performUpdate(com.android.music.MediaPlaybackService,int[])
-com.android.music.AlbumBrowserActivity$2: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.IMediaPlaybackService: int[] getQueue()
-com.android.music.TrackBrowserActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
-com.android.music.MediaPlaybackService: int[] getQueue()
-com.android.music.MediaPlaybackActivity: boolean onKeyUp(int,android.view.KeyEvent)
-com.android.music.MediaPlaybackActivity: void setShuffleButtonImage()
-com.android.music.MediaPlaybackService: java.lang.String getTrackName()
-com.android.music.MediaPlaybackActivity: boolean seekMethod2(int)
-com.android.music.MediaPlaybackActivity: void cycleRepeat()
-com.android.music.MediaPlaybackService: void saveQueue(boolean)
-com.android.music.AlbumBrowserActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
+com.android.music.IMediaPlaybackService$Default: void pause()
+com.android.music.PlaylistBrowserActivity: android.database.Cursor getPlaylistCursor(android.content.AsyncQueryHandler,java.lang.String)
+com.android.music.IMediaPlaybackService: int getQueuePosition()
+com.android.music.TrackBrowserActivity: android.database.Cursor getTrackCursor(android.content.AsyncQueryHandler,java.lang.String)
+com.android.music.MediaPlaybackActivity$13: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.CreatePlaylist: void onResume()
+com.android.music.PlaylistBrowserActivity: boolean onContextItemSelected(android.view.MenuItem)
+com.android.music.WeekSelector: void onCreate(android.os.Bundle)
+com.android.music.MediaPlaybackActivity: boolean onCreateOptionsMenu(android.view.Menu)
+com.android.music.IMediaPlaybackService$Default: void stop()
+com.android.music.IMediaPlaybackService$Default: java.lang.String getArtistName()
 com.android.music.PlaylistBrowserActivity: void onActivityResult(int,int,android.content.Intent)
-com.android.music.MediaPlaybackActivity: void showToast(int)
-com.android.music.IMediaPlaybackService$Default: void openFile(java.lang.String,boolean)
-com.android.music.IMediaPlaybackService$Stub$Proxy: long duration()
-com.android.music.IMediaPlaybackService: int getAudioId()
-com.android.music.MediaPlaybackService: void stop(boolean)
-com.android.music.PlaylistBrowserActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
-com.android.music.IMediaPlaybackService$Default: java.lang.String getAlbumName()
-com.android.music.WeekSelector: WeekSelector()
-com.android.music.StreamStarter: void onResume()
-com.android.music.IMediaPlaybackService$Default: void open(int[],int)
-com.android.music.IMediaPlaybackService$Default: android.os.IBinder asBinder()
-com.android.music.IMediaPlaybackService: void enqueue(int[],int)
-com.android.music.VideoBrowserActivity: void MakeCursor()
-com.android.music.MusicPicker: boolean onCreateOptionsMenu(android.view.Menu)
-com.android.music.IMediaPlaybackService$Default: void prev()
 com.android.music.TrackBrowserActivity: void onDestroy()
-com.android.music.IMediaPlaybackService: int getShuffleMode()
-com.android.music.IMediaPlaybackService$Stub$Proxy: int[] getQueue()
-com.android.music.TrackBrowserActivity: void onPause()
-com.android.music.IMediaPlaybackService$Stub$Proxy: android.os.IBinder asBinder()
-com.android.music.PlaylistBrowserActivity: void init(android.database.Cursor)
-com.android.music.TrackBrowserActivity: void onSaveInstanceState(android.os.Bundle)
-com.android.music.MusicPicker: <clinit>()
-com.android.music.IMediaPlaybackService$Stub: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
-com.android.music.MediaPickerActivity: void onCreate(android.os.Bundle)
-com.android.music.IMediaPlaybackService: long position()
-com.android.music.ArtistAlbumBrowserActivity: android.database.Cursor getArtistCursor(android.content.AsyncQueryHandler,java.lang.String)
-com.android.music.VideoBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
-com.android.music.AlbumBrowserActivity: void onResume()
-com.android.music.MediaPlaybackActivity: android.widget.TextView textViewForContainer(android.view.View)
-com.android.music.TrackBrowserActivity: void removePlaylistItem(int)
+com.android.music.IMediaPlaybackService: int removeTracks(int,int)
+com.android.music.IMediaPlaybackService$Stub$Proxy: int getQueuePosition()
+com.android.music.MediaPlaybackService: boolean makeAutoShuffleList()
+com.android.music.PlaylistBrowserActivity: PlaylistBrowserActivity()
 com.android.music.IMediaPlaybackService$Default: void setShuffleMode(int)
-com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getTrackName()
-com.android.music.MediaPickerActivity: void init()
-com.android.music.MediaPlaybackService: boolean isPlaying()
-com.android.music.MediaPlaybackService: void notifyChange(java.lang.String)
-com.android.music.MediaPlaybackService: void startForegroundCompat()
-com.android.music.MediaPlaybackService: android.os.IBinder onBind(android.content.Intent)
-com.android.music.IMediaPlaybackService$Default: void setRepeatMode(int)
-com.android.music.IMediaPlaybackService$Default: long duration()
-com.android.music.IMediaPlaybackService$Stub$Proxy: int removeTracks(int,int)
-com.android.music.ArtistAlbumBrowserActivity: void toggleSearchBox()
-com.android.music.MediaPlaybackService: void play()
-com.android.music.QueryBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
-com.android.music.MediaPlaybackService: long position()
-com.android.music.MediaPickerActivity: void onDestroy()
-com.android.music.IMediaPlaybackService: java.lang.String getArtistName()
-com.android.music.MediaPlaybackService: MediaPlaybackService()
-com.android.music.TrackBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
-com.android.music.MediaPlaybackActivity: void onCreate(android.os.Bundle)
-com.android.music.WeekSelector: void onResume()
+com.android.music.MediaPlaybackActivity: void setShuffleButtonImage()
+com.android.music.MediaPlaybackService: void open(java.lang.String,boolean)
+com.android.music.IMediaPlaybackService$Stub$Proxy: void open(int[],int)
+com.android.music.IMediaPlaybackService$Default: java.lang.String getTrackName()
+com.android.music.ArtistAlbumBrowserActivity: android.database.Cursor getArtistCursor(android.content.AsyncQueryHandler,java.lang.String)
+com.android.music.IMediaPlaybackService: java.lang.String getTrackName()
+com.android.music.IMediaPlaybackService$Default: boolean isPlaying()
+com.android.music.IMediaPlaybackService$Stub$Proxy: void prev()
+com.android.music.MediaPlaybackActivity: void onSaveInstanceState(android.os.Bundle)
+com.android.music.MediaPlaybackService: void setShuffleMode(int)
+com.android.music.MediaButtonIntentReceiver: <clinit>()
+com.android.music.IMediaPlaybackService: long position()
+com.android.music.MusicBrowserActivity: void doAutoShuffle()
+com.android.music.ArtistAlbumBrowserActivity: void init(android.database.Cursor)
+com.android.music.MediaPlaybackActivity: void onStop()
+com.android.music.IMediaPlaybackService$Default: int getArtistId()
 com.android.music.MediaPlaybackService: boolean hasPermissionCompat(java.lang.String)
 com.android.music.MediaAppWidgetProvider: boolean hasInstances(android.content.Context)
-com.android.music.IMediaPlaybackService: int getRepeatMode()
-com.android.music.ArtistAlbumBrowserActivity$1: ArtistAlbumBrowserActivity$1(com.android.music.ArtistAlbumBrowserActivity)
-com.android.music.IMediaPlaybackService$Default: long position()
-com.android.music.DeleteItems: void onCreate(android.os.Bundle)
-com.android.music.IMediaPlaybackService$Default: int getQueuePosition()
-com.android.music.ArtistAlbumBrowserActivity$2: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.MediaPlaybackService$3: MediaPlaybackService$3(com.android.music.MediaPlaybackService)
-com.android.music.QueryBrowserActivity: void onServiceConnected(android.content.ComponentName,android.os.IBinder)
-com.android.music.ArtistAlbumBrowserActivity: ArtistAlbumBrowserActivity()
-com.android.music.MediaPlaybackActivity: void toggleShuffle()
-com.android.music.MediaPlaybackService: void updateMediaSession(java.lang.String)
-com.android.music.IMediaPlaybackService$Default: boolean isPlaying()
-com.android.music.IMediaPlaybackService$Default: IMediaPlaybackService$Default()
-com.android.music.MediaAppWidgetProvider: void notifyChange(com.android.music.MediaPlaybackService,java.lang.String)
-com.android.music.TrackBrowserActivity: void onServiceDisconnected(android.content.ComponentName)
-com.android.music.AlbumBrowserActivity: void onActivityResult(int,int,android.content.Intent)
-com.android.music.ArtistAlbumBrowserActivity: boolean onContextItemSelected(android.view.MenuItem)
-com.android.music.TouchInterceptor: void setRemoveListener(com.android.music.TouchInterceptor$RemoveListener)
-com.android.music.MediaPlaybackActivity: boolean seekMethod1(int)
-com.android.music.MediaPlaybackActivity: void queueNextRefresh(long)
-com.android.music.AlbumBrowserActivity: void onCreate(android.os.Bundle)
-com.android.music.QueryBrowserActivity: void onDestroy()
-com.android.music.MediaAppWidgetProvider: void linkButtons(android.content.Context,android.widget.RemoteViews,boolean)
-com.android.music.ArtistAlbumBrowserActivity: void init(android.database.Cursor)
-com.android.music.QueryBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.android.music.AlbumBrowserActivity: boolean onContextItemSelected(android.view.MenuItem)
-com.android.music.MusicBrowserActivity: void updateMenu()
-com.android.music.PlaylistBrowserActivity: PlaylistBrowserActivity()
-com.android.music.IMediaPlaybackService: java.lang.String getTrackName()
-com.android.music.MediaPlaybackService: boolean makeAutoShuffleList()
-com.android.music.RenamePlaylist: void onSaveInstanceState(android.os.Bundle)
-com.android.music.MediaPlaybackActivity: void onDestroy()
-com.android.music.MediaPlaybackActivity: void doPauseResume()
-com.android.music.IMediaPlaybackService$Stub$Proxy: void pause()
-com.android.music.AlbumBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
-com.android.music.CreatePlaylist: void onCreate(android.os.Bundle)
-com.android.music.IMediaPlaybackService: int getAlbumId()
-com.android.music.MusicBrowserActivity: void onResume()
-com.android.music.MediaPlaybackService: int getRepeatMode()
-com.android.music.PlaylistBrowserActivity: void toggleSearchBox()
-com.android.music.MediaPlaybackActivity: void onResume()
-com.android.music.IMediaPlaybackService$Stub$Proxy: boolean isPlaying()
-com.android.music.QueryBrowserActivity: void onActivityResult(int,int,android.content.Intent)
-com.android.music.VideoBrowserActivity: void onCreate(android.os.Bundle)
-com.android.music.MediaPlaybackService: void addToPlayList(int[],int)
-com.android.music.MediaPlaybackActivity: void onNewIntent(android.content.Intent)
-com.android.music.MediaPlaybackActivity: void onActivityResult(int,int,android.content.Intent)
-com.android.music.PlaylistBrowserActivity: void onResume()
-com.android.music.IMediaPlaybackService$Default: void pause()
-com.android.music.MediaPlaybackService: void setRepeatMode(int)
-com.android.music.PlaylistBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
-com.android.music.TrackBrowserActivity: void onActivityResult(int,int,android.content.Intent)
-com.android.music.MediaPlaybackService: int removeTrack(int)
-com.android.music.IMediaPlaybackService$Stub$Proxy: int getShuffleMode()
-com.android.music.MusicPicker: void makeListShown()
-com.android.music.IMediaPlaybackService: void setQueuePosition(int)
-com.android.music.TrackBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
-com.android.music.StreamStarter$2: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.IMediaPlaybackService$Stub$Proxy: void setShuffleMode(int)
-com.android.music.MusicBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
-com.android.music.MediaButtonIntentReceiver: MediaButtonIntentReceiver()
-com.android.music.AlbumBrowserActivity: boolean onPrepareOptionsMenu(android.view.Menu)
-com.android.music.IMediaPlaybackService: int removeTrack(int)
-com.android.music.TrackBrowserActivity: TrackBrowserActivity()
-com.android.music.MediaPlaybackActivity: MediaPlaybackActivity()
-com.android.music.StreamStarter: StreamStarter()
-com.android.music.MediaPlaybackService: int pendingFlags()
-com.android.music.QueryBrowserActivity: void onServiceDisconnected(android.content.ComponentName)
-com.android.music.IMediaPlaybackService: int getArtistId()
-com.android.music.MediaPlaybackService: int getAlbumId()
-com.android.music.MusicPicker: android.database.Cursor doQuery(boolean,java.lang.String)
-com.android.music.QueryBrowserActivity: void onPause()
-com.android.music.IMediaPlaybackService$Default: void stop()
-com.android.music.MusicBrowserActivity: void onDestroy()
-com.android.music.IMediaPlaybackService$Default: int getArtistId()
-com.android.music.TouchInterceptor: void setDragListener(com.android.music.TouchInterceptor$DragListener)
-com.android.music.QueryBrowserActivity: void onCreate(android.os.Bundle)
-com.android.music.TrackBrowserActivity: void init(android.database.Cursor)
-com.android.music.PlaylistBrowserActivity: void onCreate(android.os.Bundle)
-com.android.music.MediaPlaybackActivity$13: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.IMediaPlaybackService: void openFile(java.lang.String,boolean)
-com.android.music.MediaPlaybackService: void notifyCompat()
-com.android.music.IMediaPlaybackService: void prev()
-com.android.music.MediaPlaybackService: long seek(long)
-com.android.music.MediaPlaybackService: void openAsync(java.lang.String)
-com.android.music.IMediaPlaybackService$Stub$Proxy: int getMediaMountedCount()
-com.android.music.IMediaPlaybackService$Stub: com.android.music.IMediaPlaybackService asInterface(android.os.IBinder)
-com.android.music.PlaylistBrowserActivity: void playPodcasts()
-com.android.music.TrackBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
-com.android.music.MusicPicker: void setSelected(android.database.Cursor)
-com.android.music.TrackBrowserActivity: void onServiceConnected(android.content.ComponentName,android.os.IBinder)
+com.android.music.MusicBrowserActivity: void onCreate(android.os.Bundle)
 com.android.music.PlaylistBrowserActivity: void setupSearchBox()
-com.android.music.MusicBrowserActivity$4: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.MediaPlaybackActivity: void updateTrackInfo()
-com.android.music.ArtistAlbumBrowserActivity: void setupSearchBox()
-com.android.music.MediaPlaybackService: int getArtistId()
-com.android.music.MediaPlaybackService: void enqueue(int[],int)
-com.android.music.MusicBrowserActivity: boolean onPrepareOptionsMenu(android.view.Menu)
-com.android.music.MediaPlaybackService: void setShuffleMode(int)
-com.android.music.QueryBrowserActivity: void init(android.database.Cursor)
-com.android.music.MediaPlaybackService: void setQueuePosition(int)
-com.android.music.VideoBrowserActivity: VideoBrowserActivity()
-com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getArtistName()
-com.android.music.IMediaPlaybackService$Default: int getAlbumId()
-com.android.music.MediaPlaybackActivity: void onSaveInstanceState(android.os.Bundle)
-com.android.music.TrackBrowserActivity$1: TrackBrowserActivity$1(com.android.music.TrackBrowserActivity)
-com.android.music.MediaPlaybackService: java.lang.String getPath()
-com.android.music.ArtistAlbumBrowserActivity$1: void onReceive(android.content.Context,android.content.Intent)
-com.android.music.QueryBrowserActivity$1: QueryBrowserActivity$1(com.android.music.QueryBrowserActivity)
-com.android.music.MediaAppWidgetProvider: void defaultAppWidget(android.content.Context,int[])
-com.android.music.MusicPicker: java.lang.String makeTimeString(android.content.Context,long)
-com.android.music.IMediaPlaybackService$Stub$Proxy: long position()
-com.android.music.IMediaPlaybackService$Default: int removeTracks(int,int)
-com.android.music.MediaPickerActivity: MediaPickerActivity()
-com.android.music.CheckableRelativeLayout: CheckableRelativeLayout(android.content.Context,android.util.AttributeSet)
-com.android.music.PlaylistBrowserActivity: boolean onContextItemSelected(android.view.MenuItem)
-com.android.music.TrackBrowserActivity: void moveItem(boolean)
+com.android.music.IMediaPlaybackService$Default: void setRepeatMode(int)
+com.android.music.ArtistAlbumBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.android.music.AlbumBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
+com.android.music.IMediaPlaybackService$Default: long seek(long)
+com.android.music.MediaPlaybackActivity$13: MediaPlaybackActivity$13(com.android.music.MediaPlaybackActivity)
+com.android.music.AlbumBrowserActivity: void onActivityResult(int,int,android.content.Intent)
+com.android.music.MediaPlaybackService: android.os.IBinder onBind(android.content.Intent)
 com.android.music.IMediaPlaybackService: void openFileAsync(java.lang.String)
-com.android.music.MediaPlaybackService: void onDestroy()
-com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getInterfaceDescriptor()
-com.android.music.CreatePlaylist: int idForplaylist(java.lang.String)
-com.android.music.MediaPlaybackService: void gotoIdleState()
-com.android.music.MediaPlaybackService: void createNotificationChannel()
-com.android.music.AlbumBrowserActivity: void init(android.database.Cursor)
-com.android.music.ArtistAlbumBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
-com.android.music.TrackBrowserActivity: boolean dispatchKeyEvent(android.view.KeyEvent)
-com.android.music.QueryBrowserActivity: android.database.Cursor getQueryCursor(android.content.AsyncQueryHandler,java.lang.String)
-com.android.music.IMediaPlaybackService$Stub$Proxy: int getAlbumId()
-com.android.music.MusicPicker: void onCompletion(android.media.MediaPlayer)
-com.android.music.DeleteItems: DeleteItems()
-com.android.music.PlaylistBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
-com.android.music.IMediaPlaybackService: void setRepeatMode(int)
-com.android.music.PlaylistBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
-com.android.music.IMediaPlaybackService$Stub$Proxy: void openFile(java.lang.String,boolean)
-com.android.music.IMediaPlaybackService$Default: void enqueue(int[],int)
-com.android.music.IMediaPlaybackService: void stop()
+com.android.music.AlbumBrowserActivity$1: AlbumBrowserActivity$1(com.android.music.AlbumBrowserActivity)
+com.android.music.MusicPicker: void onSaveInstanceState(android.os.Bundle)
+com.android.music.MediaPickerActivity: MediaPickerActivity()
+com.android.music.IMediaPlaybackService: void prev()
+com.android.music.MediaAppWidgetProvider: void notifyChange(com.android.music.MediaPlaybackService,java.lang.String)
+com.android.music.VideoBrowserActivity: VideoBrowserActivity()
+com.android.music.CheckableRelativeLayout: void setChecked(boolean)
+com.android.music.MediaPlaybackService: void addToPlayList(int[],int)
+com.android.music.MediaPlaybackActivity: void queueNextRefresh(long)
+com.android.music.MediaPlaybackService: void onCreate()
+com.android.music.MediaPlaybackService: void setUpMediaSession()
+com.android.music.MediaPlaybackService$5: MediaPlaybackService$5(com.android.music.MediaPlaybackService)
+com.android.music.MediaPlaybackService: void pause()
+com.android.music.ScanningProgress: void onCreate(android.os.Bundle)
+com.android.music.TouchInterceptor: void setDropListener(com.android.music.TouchInterceptor$DropListener)
+com.android.music.ArtistAlbumBrowserActivity: void setupSearchBox()
+com.android.music.MediaPlaybackService: boolean onUnbind(android.content.Intent)
+com.android.music.IMediaPlaybackService$Stub: boolean onTransact(int,android.os.Parcel,android.os.Parcel,int)
+com.android.music.QueryBrowserActivity$1: QueryBrowserActivity$1(com.android.music.QueryBrowserActivity)
+com.android.music.MediaPlaybackActivity: void setRepeatButtonImage()
+com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getTrackName()
+com.android.music.ArtistAlbumBrowserActivity: void onSaveInstanceState(android.os.Bundle)
+com.android.music.TrackBrowserActivity$6: TrackBrowserActivity$6(com.android.music.TrackBrowserActivity)
+com.android.music.MediaPlaybackService: void cycleRepeat()
+com.android.music.IMediaPlaybackService: int getMediaMountedCount()
+com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getAlbumName()
+com.android.music.IMediaPlaybackService$Default: int getAudioId()
 com.android.music.IMediaPlaybackService$Default: int getMediaMountedCount()
+com.android.music.TrackBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.android.music.MediaPlaybackService: int getFatVolumeIdCompat(java.lang.String)
+com.android.music.IMediaPlaybackService$Stub$Proxy: int getAlbumId()
+com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getArtistName()
+com.android.music.AlbumBrowserActivity$2: AlbumBrowserActivity$2(com.android.music.AlbumBrowserActivity)
+com.android.music.MediaPickerActivity: void MakeCursor()
+com.android.music.MusicPicker: <clinit>()
+com.android.music.MediaPlaybackActivity: void onNewIntent(android.content.Intent)
+com.android.music.MediaPlaybackService: int removeTracks(int,int)
+com.android.music.TrackBrowserActivity: void removePlaylistItem(int)
+com.android.music.IMediaPlaybackService$Stub$Proxy: int getShuffleMode()
+com.android.music.RenamePlaylist: int idForplaylist(java.lang.String)
+com.android.music.MediaPlaybackService: int getMediaMountedCount()
 com.android.music.TrackBrowserActivity: void doSearch()
+com.android.music.MediaAppWidgetProvider: MediaAppWidgetProvider()
+com.android.music.PlaylistBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.android.music.MediaPlaybackService: void ensurePlayListCapacity(int)
+com.android.music.IMediaPlaybackService: java.lang.String getPath()
+com.android.music.MediaPlaybackService: void setRepeatMode(int)
+com.android.music.IMediaPlaybackService$Default: void next()
+com.android.music.IMediaPlaybackService$Stub$Proxy: long seek(long)
+com.android.music.RenamePlaylist: java.lang.String nameForId(long)
+com.android.music.MediaPlaybackActivity: void doPauseResume()
+com.android.music.QueryBrowserActivity: void onServiceConnected(android.content.ComponentName,android.os.IBinder)
+com.android.music.ArtistAlbumBrowserActivity: void onDestroy()
+com.android.music.IMediaPlaybackService$Default: int getQueuePosition()
+com.android.music.MediaPlaybackActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.android.music.PlaylistBrowserActivity: void toggleSearchBox()
+com.android.music.VideoBrowserActivity: void init()
+com.android.music.IMediaPlaybackService$Stub$Proxy: android.os.IBinder asBinder()
+com.android.music.MusicBrowserActivity: void onPause()
+com.android.music.MediaPickerActivity: void onCreate(android.os.Bundle)
+com.android.music.MediaPlaybackService: int getShuffleMode()
+com.android.music.MediaAppWidgetProvider: com.android.music.MediaAppWidgetProvider getInstance()
+com.android.music.MediaPlaybackActivity: void onResume()
+com.android.music.MusicPicker: void onClick(android.view.View)
+com.android.music.ArtistAlbumBrowserActivity: void toggleSearchBox()
+com.android.music.TrackBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
+com.android.music.MediaPickerActivity: void onDestroy()
+com.android.music.QueryBrowserActivity: void onActivityResult(int,int,android.content.Intent)
+com.android.music.MediaPlaybackService: void closeExternalStorageFiles(java.lang.String)
+com.android.music.TrackBrowserActivity: boolean onContextItemSelected(android.view.MenuItem)
+com.android.music.MusicPicker: boolean setSortMode(int)
+com.android.music.MusicPicker: void stopMediaPlayer()
+com.android.music.IMediaPlaybackService$Default: void open(int[],int)
+com.android.music.MusicBrowserActivity: void onResume()
+com.android.music.MusicPicker: android.database.Cursor doQuery(boolean,java.lang.String)
+com.android.music.MediaPlaybackActivity: void setPauseButtonImage()
+com.android.music.MediaPlaybackService: void startForegroundCompat()
+com.android.music.MusicPicker: boolean onCreateOptionsMenu(android.view.Menu)
+com.android.music.MediaPlaybackService$5: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.PlaylistBrowserActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
+com.android.music.IMediaPlaybackService: void openFile(java.lang.String,boolean)
+com.android.music.IMediaPlaybackService: int getArtistId()
+com.android.music.CreatePlaylist: void onCreate(android.os.Bundle)
+com.android.music.QueryBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
+com.android.music.AlbumBrowserActivity: void init(android.database.Cursor)
+com.android.music.IMediaPlaybackService$Stub$Proxy: long position()
+com.android.music.MediaPlaybackService: long getBookmark()
+com.android.music.MediaPlaybackService: void gotoIdleState()
+com.android.music.PlaylistBrowserActivity: android.database.Cursor mergedCursor(android.database.Cursor)
+com.android.music.MediaPlaybackService: boolean isPodcast()
+com.android.music.MediaPlaybackActivity: void onCreate(android.os.Bundle)
+com.android.music.MediaButtonIntentReceiver: MediaButtonIntentReceiver()
+com.android.music.MediaPlaybackService: int getRepeatMode()
+com.android.music.MediaPlaybackActivity: MediaPlaybackActivity()
+com.android.music.RenamePlaylist: void onResume()
+com.android.music.CreatePlaylist: void onSaveInstanceState(android.os.Bundle)
+com.android.music.IMediaPlaybackService$Default: android.os.IBinder asBinder()
+com.android.music.TrackBrowserActivity: void onResume()
+com.android.music.RepeatingImageButton: RepeatingImageButton(android.content.Context,android.util.AttributeSet)
+com.android.music.MediaPlaybackService: java.lang.String getArtistName()
+com.android.music.MusicBrowserActivity: MusicBrowserActivity()
+com.android.music.MediaPlaybackActivity: boolean onKeyDown(int,android.view.KeyEvent)
+com.android.music.ArtistAlbumBrowserActivity: void setTitle()
+com.android.music.QueryBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.android.music.IMediaPlaybackService$Stub$Proxy: int[] getQueue()
+com.android.music.TrackBrowserActivity$1: TrackBrowserActivity$1(com.android.music.TrackBrowserActivity)
+com.android.music.MediaPlaybackService: int getAlbumId()
+com.android.music.TrackBrowserActivity: void init(android.database.Cursor)
+com.android.music.QueryBrowserActivity: void onDestroy()
+com.android.music.StreamStarter$2: StreamStarter$2(com.android.music.StreamStarter)
+com.android.music.AlbumBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
+com.android.music.IMediaPlaybackService$Stub$Proxy: int removeTracks(int,int)
+com.android.music.QueryBrowserActivity: QueryBrowserActivity()
+com.android.music.IMediaPlaybackService$Default: int removeTracks(int,int)
+com.android.music.MediaPlaybackService: int[] getQueue()
+com.android.music.IMediaPlaybackService$Stub$Proxy: int getArtistId()
+com.android.music.MediaPlaybackActivity: void onActivityResult(int,int,android.content.Intent)
+com.android.music.MediaPlaybackActivity: void scanForward(int,long)
+com.android.music.MediaPlaybackService: void saveBookmarkIfNeeded()
+com.android.music.AlbumBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.android.music.TrackBrowserActivity: void onServiceConnected(android.content.ComponentName,android.os.IBinder)
+com.android.music.MediaPlaybackService: android.app.Notification buildNotification()
+com.android.music.MediaPlaybackService: void reloadQueue()
+com.android.music.AlbumBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
+com.android.music.MediaPlaybackService: void stopForegroundCompat(boolean)
+com.android.music.MediaPlaybackActivity: void startPlayback()
+com.android.music.MusicPicker: void onCompletion(android.media.MediaPlayer)
+com.android.music.TrackBrowserActivity$1: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.MediaPlaybackService$3: MediaPlaybackService$3(com.android.music.MediaPlaybackService)
+com.android.music.IMediaPlaybackService: void setQueuePosition(int)
+com.android.music.IMediaPlaybackService$Default: void play()
+com.android.music.ScanningProgress: void onDestroy()
+com.android.music.MediaPlaybackService: int getQueuePosition()
+com.android.music.MediaAppWidgetProvider: void defaultAppWidget(android.content.Context,int[])
+com.android.music.PlaylistBrowserActivity: void onDestroy()
+com.android.music.TouchInterceptor: TouchInterceptor(android.content.Context,android.util.AttributeSet)
+com.android.music.ArtistAlbumBrowserActivity: boolean onPrepareOptionsMenu(android.view.Menu)
+com.android.music.MediaPlaybackService: int removeTrack(int)
+com.android.music.IMediaPlaybackService$Stub$Proxy: boolean isPlaying()
+com.android.music.TrackBrowserActivity: void onCreate(android.os.Bundle)
+com.android.music.TrackBrowserActivity: void toggleSearchBox()
+com.android.music.AlbumBrowserActivity: void doSearch()
+com.android.music.IMediaPlaybackService$Stub$Proxy: void pause()
+com.android.music.TrackBrowserActivity: void setTitle()
+com.android.music.MediaPlaybackActivity: boolean seekMethod2(int)
+com.android.music.IMediaPlaybackService$Stub: com.android.music.IMediaPlaybackService asInterface(android.os.IBinder)
+com.android.music.IMediaPlaybackService: int removeTrack(int)
+com.android.music.ArtistAlbumBrowserActivity: void doSearch()
+com.android.music.MediaAppWidgetProvider: void performUpdate(com.android.music.MediaPlaybackService,int[])
+com.android.music.QueryBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
+com.android.music.IMediaPlaybackService$Default: int getRepeatMode()
+com.android.music.AlbumBrowserActivity: void onResume()
+com.android.music.MediaPlaybackService: MediaPlaybackService()
+com.android.music.MusicPicker: void onListItemClick(android.widget.ListView,android.view.View,int,long)
+com.android.music.MediaPlaybackService: void next(boolean)
+com.android.music.AlbumBrowserActivity: void onPause()
+com.android.music.IMediaPlaybackService$Default: void prev()
+com.android.music.MediaPlaybackActivity: boolean onLongClick(android.view.View)
+com.android.music.RenamePlaylist: void onSaveInstanceState(android.os.Bundle)
+com.android.music.AlbumBrowserActivity: void setTitle()
+com.android.music.MusicBrowserActivity: void requestNotificationPermissionIfNeeded()
+com.android.music.ArtistAlbumBrowserActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
+com.android.music.MediaPlaybackService: void setQueuePosition(int)
+com.android.music.VideoBrowserActivity: void onCreate(android.os.Bundle)
+com.android.music.MediaPlaybackActivity: boolean onPrepareOptionsMenu(android.view.Menu)
 com.android.music.IMediaPlaybackService: long seek(long)
+com.android.music.MusicBrowserActivity$4: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.PlaylistBrowserActivity: void init(android.database.Cursor)
+com.android.music.IMediaPlaybackService$Stub$Proxy: long duration()
+com.android.music.VideoBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
+com.android.music.MusicPicker: void onPause()
+com.android.music.MediaPlaybackService: long position()
+com.android.music.IMediaPlaybackService: int[] getQueue()
+com.android.music.MusicPicker: void makeListShown()
+com.android.music.IMediaPlaybackService$Default: int removeTrack(int)
+com.android.music.MediaPlaybackService: void doAutoShuffleUpdate()
+com.android.music.IMediaPlaybackService$Stub$Proxy: void setRepeatMode(int)
+com.android.music.MediaAppWidgetProvider: void linkButtons(android.content.Context,android.widget.RemoteViews,boolean)
+com.android.music.TrackBrowserActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
+com.android.music.MediaPlaybackService: void moveQueueItem(int,int)
+com.android.music.PlaylistBrowserActivity$2: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.MediaPlaybackService: void stop(boolean)
+com.android.music.PlaylistBrowserActivity: void onResume()
+com.android.music.AlbumBrowserActivity: AlbumBrowserActivity()
+com.android.music.MediaPlaybackActivity: boolean onKeyUp(int,android.view.KeyEvent)
+com.android.music.MediaPlaybackService: long duration()
+com.android.music.AlbumBrowserActivity$2: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.PlaylistBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
+com.android.music.AlbumBrowserActivity: void onCreate(android.os.Bundle)
+com.android.music.ArtistAlbumBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
+com.android.music.ArtistAlbumBrowserActivity: ArtistAlbumBrowserActivity()
+com.android.music.MusicBrowserActivity: void init()
+com.android.music.TrackBrowserActivity: void moveItem(boolean)
+com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getInterfaceDescriptor()
+com.android.music.IMediaPlaybackService$Default: int getAlbumId()
+com.android.music.RenamePlaylist: RenamePlaylist()
+com.android.music.MusicPicker: void setSelected(android.database.Cursor)
+com.android.music.MusicBrowserActivity: boolean onPrepareOptionsMenu(android.view.Menu)
+com.android.music.QueryBrowserActivity: void onCreate(android.os.Bundle)
+com.android.music.PlaylistBrowserActivity: void playRecentlyAdded()
+com.android.music.IMediaPlaybackService: java.lang.String getArtistName()
+com.android.music.MusicPicker: java.lang.String makeTimeString(android.content.Context,long)
+com.android.music.MediaPlaybackActivity: android.widget.TextView textViewForContainer(android.view.View)
+com.android.music.MediaPlaybackService: java.lang.String getPath()
+com.android.music.MediaPlaybackService: int getAudioId()
+com.android.music.IMediaPlaybackService: void moveQueueItem(int,int)
+com.android.music.MediaPlaybackService: void notifyChange(java.lang.String)
+com.android.music.QueryBrowserActivity: void onPause()
+com.android.music.IMediaPlaybackService$Stub$Proxy: int getMediaMountedCount()
+com.android.music.IMediaPlaybackService$Default: void openFileAsync(java.lang.String)
+com.android.music.MusicPicker: void onStop()
+com.android.music.StreamStarter$2: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.MediaPlaybackService: void openCurrent()
+com.android.music.MediaPlaybackService: void stop()
+com.android.music.MediaAppWidgetProvider: void pushUpdate(android.content.Context,int[],android.widget.RemoteViews)
+com.android.music.PlaylistBrowserActivity: void setTitle()
+com.android.music.ArtistAlbumBrowserActivity: boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long)
+com.android.music.MediaPlaybackService: void prev()
+com.android.music.TouchInterceptor: void setDragListener(com.android.music.TouchInterceptor$DragListener)
+com.android.music.MusicPicker: void onCreate(android.os.Bundle)
+com.android.music.QueryBrowserActivity: void onServiceDisconnected(android.content.ComponentName)
+com.android.music.IMediaPlaybackService: boolean isPlaying()
+com.android.music.StreamStarter: void onResume()
+com.android.music.MusicPicker: boolean onOptionsItemSelected(android.view.MenuItem)
+com.android.music.MediaPlaybackService: void play()
+com.android.music.MusicBrowserActivity: void requestPhoneStatePermissionIfNeeded()
+com.android.music.PlaylistBrowserActivity$2: PlaylistBrowserActivity$2(com.android.music.PlaylistBrowserActivity)
+com.android.music.StreamStarter: void onCreate(android.os.Bundle)
+com.android.music.ArtistAlbumBrowserActivity: boolean onContextItemSelected(android.view.MenuItem)
+com.android.music.IMediaPlaybackService$Stub$Proxy: void setQueuePosition(int)
+com.android.music.MusicBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
+com.android.music.MediaPlaybackService: boolean isPlaying()
+com.android.music.IMediaPlaybackService$Stub$Proxy: void openFileAsync(java.lang.String)
+com.android.music.MediaPlaybackService: void onDestroy()
+com.android.music.MediaAppWidgetProvider: <clinit>()
+com.android.music.MediaPlaybackService: void startAndFadeIn()
+com.android.music.TrackBrowserActivity: void onServiceDisconnected(android.content.ComponentName)
+com.android.music.QueryBrowserActivity: android.database.Cursor getQueryCursor(android.content.AsyncQueryHandler,java.lang.String)
+com.android.music.MediaPlaybackActivity: void onStart()
+com.android.music.AlbumBrowserActivity: void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo)
+com.android.music.AlbumBrowserActivity: boolean onPrepareOptionsMenu(android.view.Menu)
+com.android.music.IMediaPlaybackService$Default: java.lang.String getPath()
+com.android.music.IMediaPlaybackService: int getAudioId()
+com.android.music.MusicBrowserActivity: void onClick(android.view.View)
+com.android.music.IMediaPlaybackService$Stub$Proxy: IMediaPlaybackService$Stub$Proxy(android.os.IBinder)
+com.android.music.TrackBrowserActivity: void onActivityResult(int,int,android.content.Intent)
+com.android.music.AlbumBrowserActivity: void onSaveInstanceState(android.os.Bundle)
+com.android.music.TrackBrowserActivity: void onSaveInstanceState(android.os.Bundle)
+com.android.music.MusicBrowserActivity$4: MusicBrowserActivity$4(com.android.music.MusicBrowserActivity)
+com.android.music.CreatePlaylist: int idForplaylist(java.lang.String)
+com.android.music.MediaPlaybackService: java.lang.String getTrackName()
+com.android.music.AlbumBrowserActivity: void toggleSearchBox()
+com.android.music.MediaPlaybackService: void registerExternalStorageListener()
+com.android.music.IMediaPlaybackService: void open(int[],int)
+com.android.music.MediaPlaybackActivity: void scanBackward(int,long)
+com.android.music.TrackBrowserActivity: void removeItem()
+com.android.music.ArtistAlbumBrowserActivity$1: ArtistAlbumBrowserActivity$1(com.android.music.ArtistAlbumBrowserActivity)
+com.android.music.MusicBrowserActivity: boolean onOptionsItemSelected(android.view.MenuItem)
+com.android.music.MediaButtonIntentReceiver: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.IMediaPlaybackService: int getRepeatMode()
+com.android.music.IMediaPlaybackService$Stub$Proxy: void next()
+com.android.music.ArtistAlbumBrowserActivity: void onResume()
+com.android.music.MediaPlaybackService: android.app.PendingIntent commandIntent(int,java.lang.String)
+com.android.music.TrackBrowserActivity: boolean onCreateOptionsMenu(android.view.Menu)
+com.android.music.ArtistAlbumBrowserActivity: void onPause()
+com.android.music.MusicPicker: void onRestart()
+com.android.music.TrackBrowserActivity$5: TrackBrowserActivity$5(com.android.music.TrackBrowserActivity)
+com.android.music.AlbumBrowserActivity: boolean onContextItemSelected(android.view.MenuItem)
+com.android.music.IMediaPlaybackService$Stub$Proxy: void setShuffleMode(int)
+com.android.music.IMediaPlaybackService$Default: java.lang.String getAlbumName()
+com.android.music.TrackBrowserActivity$6: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.IMediaPlaybackService$Stub$Proxy: int getAudioId()
+com.android.music.IMediaPlaybackService$Stub$Proxy: java.lang.String getPath()
+com.android.music.PlaylistBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
+com.android.music.VideoBrowserActivity: void MakeCursor()
+com.android.music.MediaPlaybackActivity: void cycleRepeat()
+com.android.music.DeleteItems: DeleteItems()
+com.android.music.IMediaPlaybackService$Stub$Proxy: int getRepeatMode()
+com.android.music.PlaylistBrowserActivity: void playPodcasts()
+com.android.music.MediaButtonIntentReceiver: void startServiceCompat(android.content.Context,android.content.Intent)
+com.android.music.PlaylistBrowserActivity: void onCreate(android.os.Bundle)
+com.android.music.MediaPlaybackService: void open(int[],int)
+com.android.music.IMediaPlaybackService$Stub$Proxy: void openFile(java.lang.String,boolean)
+com.android.music.ArtistAlbumBrowserActivity$2: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.MediaPlaybackActivity: void showToast(int)
+com.android.music.PlaylistBrowserActivity: void onPause()
+com.android.music.MediaPlaybackActivity: boolean onTouch(android.view.View,android.view.MotionEvent)
+com.android.music.IMediaPlaybackService: void setRepeatMode(int)
+com.android.music.MediaPlaybackActivity: boolean seekMethod1(int)
+com.android.music.MediaPlaybackActivity: void updateTrackInfo()
+com.android.music.IMediaPlaybackService$Stub$Proxy: void stop()
+com.android.music.IMediaPlaybackService$Default: IMediaPlaybackService$Default()
+com.android.music.MusicBrowserActivity: void onDestroy()
+com.android.music.MediaPickerActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
+com.android.music.IMediaPlaybackService$Default: int[] getQueue()
+com.android.music.MediaPlaybackService: void createNotificationChannel()
+com.android.music.IMediaPlaybackService: java.lang.String getAlbumName()
+com.android.music.MediaPlaybackActivity: long refreshNow()
+com.android.music.IMediaPlaybackService$Stub$Proxy: void enqueue(int[],int)
+com.android.music.IMediaPlaybackService$Stub$Proxy: int removeTrack(int)
+com.android.music.AlbumBrowserActivity: void onDestroy()
+com.android.music.IMediaPlaybackService: void stop()
+com.android.music.IMediaPlaybackService: void play()
+com.android.music.StreamStarter: StreamStarter()
+com.android.music.MediaPlaybackService$3: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.TrackBrowserActivity$5: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.MediaPlaybackService: int removeTracksInternal(int,int)
+com.android.music.IMediaPlaybackService: void pause()
+com.android.music.QueryBrowserActivity$1: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.ArtistAlbumBrowserActivity$1: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.MediaPlaybackService: void openAsync(java.lang.String)
+com.android.music.ScanningProgress: ScanningProgress()
+com.android.music.IMediaPlaybackService$Stub: android.os.IBinder asBinder()
+com.android.music.TrackBrowserActivity: void onPause()
+com.android.music.MusicBrowserActivity: void makeNowPlayingView()
+com.android.music.MediaPlaybackService: void onStart(android.content.Intent,int)
+com.android.music.TouchInterceptor: void setRemoveListener(com.android.music.TouchInterceptor$RemoveListener)
+com.android.music.QueryBrowserActivity: void init(android.database.Cursor)
+com.android.music.TrackBrowserActivity: boolean dispatchKeyEvent(android.view.KeyEvent)
+com.android.music.IMediaPlaybackService: void enqueue(int[],int)
+com.android.music.MediaPlaybackService: void onRebind(android.content.Intent)
+com.android.music.IMediaPlaybackService: int getAlbumId()
+com.android.music.TrackBrowserActivity: void unregisterReceiverSafe(android.content.BroadcastReceiver)
+com.android.music.MediaPlaybackService: long seek(long)
+com.android.music.IMediaPlaybackService$Stub$Proxy: void play()
+com.android.music.MediaPlaybackService: void updateMediaSession(java.lang.String)
+com.android.music.MusicBrowserActivity: void updateMenu()
+com.android.music.CreatePlaylist: CreatePlaylist()
+com.android.music.MediaPlaybackService: java.lang.String getAlbumName()
+com.android.music.PlaylistBrowserActivity: java.lang.Object onRetainNonConfigurationInstance()
+com.android.music.MediaPlaybackService: android.app.Notification buildLegacyNotification()
+com.android.music.ArtistAlbumBrowserActivity$2: ArtistAlbumBrowserActivity$2(com.android.music.ArtistAlbumBrowserActivity)
+com.android.music.MediaPickerActivity: void init()
+com.android.music.DeleteItems: void onCreate(android.os.Bundle)
+com.android.music.IMediaPlaybackService: void setShuffleMode(int)
+com.android.music.RenamePlaylist: void setSaveButton()
+com.android.music.MediaPlaybackService: void saveQueue(boolean)
+com.android.music.IMediaPlaybackService$Default: void setQueuePosition(int)
+com.android.music.IMediaPlaybackService: void next()
+com.android.music.MediaPlaybackService: int getArtistId()
+com.android.music.MediaPlaybackActivity: void toggleShuffle()
+com.android.music.IMediaPlaybackService$Stub: IMediaPlaybackService$Stub()
+com.android.music.TrackBrowserActivity: void onListItemClick(android.widget.ListView,android.view.View,int,long)
+com.android.music.IMediaPlaybackService: int getShuffleMode()
+com.android.music.CreatePlaylist: java.lang.String makePlaylistName()
+com.android.music.MediaPlaybackActivity: void onDestroy()
+com.android.music.AlbumBrowserActivity$1: void onReceive(android.content.Context,android.content.Intent)
+com.android.music.MediaPlaybackService: int pendingFlags()

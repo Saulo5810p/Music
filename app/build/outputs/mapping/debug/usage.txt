@@ -45,17 +45,14 @@ com.android.music.R$drawable:
     public static int indicator_ic_mp_playing_large
     public static int list_selector
     public static int main_menu_button
-    public static int stat_notify_musicplayer
     private void <init>()
 com.android.music.R$id:
-    public static int artistalbum
     public static int message
     public static int spinner
     private void <init>()
 com.android.music.R$layout:
     public static int audio_player_common
     public static int sd_error
-    public static int statusbar
     public static int track_list_item_common
     private void <init>()
 com.android.music.R$plurals:
@@ -73,7 +70,6 @@ com.android.music.R$string:
     public static int musicbrowserlabel
     public static int musicshortcutlabel
     public static int no_tracks_title
-    public static int notification_artist_album
     public static int playlists_menu
     public static int scanning
     public static int search_settings_description

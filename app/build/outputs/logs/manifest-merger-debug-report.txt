@@ -62,7 +62,9 @@ INJECTED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifes
 	android:allowTaskReparenting
 		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:31:9-44
 	android:icon
-		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:18-52
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:55-89
+	android:theme
+		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:18-54
 	android:taskAffinity
 		ADDED from /data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:30:9-50
 activity#com.android.music.MusicBrowserActivity

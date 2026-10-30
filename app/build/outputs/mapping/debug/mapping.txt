@@ -3,8 +3,8 @@
 # min_api: 4
 # common_typos_disable
 # {"id":"com.android.tools.r8.mapping","version":"2.2"}
-# pg_map_id: 2ed0c33
-# pg_map_hash: SHA-256 2ed0c33967828ae3774ea9323e3486fe91b769f9fc452fcb4b0929556c2f12b8
+# pg_map_id: 806bd8f
+# pg_map_hash: SHA-256 806bd8f2bd52a393c1167a75871b7989febf1a052d4d76d97777400624222834
 com.android.music.AlbumBrowserActivity -> com.android.music.AlbumBrowserActivity:
 # {"id":"sourceFile","fileName":"AlbumBrowserActivity.java"}
     0:0:com.android.music.AlbumBrowserActivity$AlbumListAdapter -$$Nest$fgetmAdapter(com.android.music.AlbumBrowserActivity) -> -$$Nest$fgetmAdapter
@@ -2690,360 +2690,384 @@ com.android.music.MediaPlaybackService -> com.android.music.MediaPlaybackService
       # {"id":"com.android.tools.r8.synthesized"}
     0:0:int -$$Nest$smgetFatVolumeIdCompat(java.lang.String) -> -$$Nest$smgetFatVolumeIdCompat
       # {"id":"com.android.tools.r8.synthesized"}
-    116:116:void <init>() -> <init>
     117:117:void <init>() -> <init>
     118:118:void <init>() -> <init>
     119:119:void <init>() -> <init>
-    121:121:void <init>() -> <init>
+    120:120:void <init>() -> <init>
     122:122:void <init>() -> <init>
     123:123:void <init>() -> <init>
-    125:125:void <init>() -> <init>
-    127:127:void <init>() -> <init>
+    124:124:void <init>() -> <init>
+    126:126:void <init>() -> <init>
     128:128:void <init>() -> <init>
     129:129:void <init>() -> <init>
-    144:144:void <init>() -> <init>
-    146:146:void <init>() -> <init>
+    130:130:void <init>() -> <init>
+    145:145:void <init>() -> <init>
     147:147:void <init>() -> <init>
     148:148:void <init>() -> <init>
     149:149:void <init>() -> <init>
     150:150:void <init>() -> <init>
-    178:178:void <init>() -> <init>
-    183:183:void <init>() -> <init>
-    213:213:void <init>() -> <init>
-    265:265:void <init>() -> <init>
-    296:296:void <init>() -> <init>
+    151:151:void <init>() -> <init>
+    179:179:void <init>() -> <init>
+    184:184:void <init>() -> <init>
+    214:214:void <init>() -> <init>
+    266:266:void <init>() -> <init>
     297:297:void <init>() -> <init>
-    391:391:void <init>() -> <init>
-    635:635:void <init>() -> <init>
-    2189:2189:void <init>() -> <init>
-    1032:1032:void addToPlayList(int[],int) -> addToPlayList
-    1033:1033:void addToPlayList(int[],int) -> addToPlayList
-    1034:1034:void addToPlayList(int[],int) -> addToPlayList
-    1035:1035:void addToPlayList(int[],int) -> addToPlayList
-    1037:1037:void addToPlayList(int[],int) -> addToPlayList
-    1038:1038:void addToPlayList(int[],int) -> addToPlayList
-    1039:1039:void addToPlayList(int[],int) -> addToPlayList
-    1043:1043:void addToPlayList(int[],int) -> addToPlayList
-    1044:1044:void addToPlayList(int[],int) -> addToPlayList
-    1045:1045:void addToPlayList(int[],int) -> addToPlayList
-    1049:1049:void addToPlayList(int[],int) -> addToPlayList
-    1050:1050:void addToPlayList(int[],int) -> addToPlayList
-    1052:1052:void addToPlayList(int[],int) -> addToPlayList
-    1053:1053:void addToPlayList(int[],int) -> addToPlayList
-    875:875:android.app.Notification buildNotification() -> buildNotification
+    298:298:void <init>() -> <init>
+    392:392:void <init>() -> <init>
+    636:636:void <init>() -> <init>
+    2236:2236:void <init>() -> <init>
+    1079:1079:void addToPlayList(int[],int) -> addToPlayList
+    1080:1080:void addToPlayList(int[],int) -> addToPlayList
+    1081:1081:void addToPlayList(int[],int) -> addToPlayList
+    1082:1082:void addToPlayList(int[],int) -> addToPlayList
+    1084:1084:void addToPlayList(int[],int) -> addToPlayList
+    1085:1085:void addToPlayList(int[],int) -> addToPlayList
+    1086:1086:void addToPlayList(int[],int) -> addToPlayList
+    1090:1090:void addToPlayList(int[],int) -> addToPlayList
+    1091:1091:void addToPlayList(int[],int) -> addToPlayList
+    1092:1092:void addToPlayList(int[],int) -> addToPlayList
+    1096:1096:void addToPlayList(int[],int) -> addToPlayList
+    1097:1097:void addToPlayList(int[],int) -> addToPlayList
+    1099:1099:void addToPlayList(int[],int) -> addToPlayList
+    1100:1100:void addToPlayList(int[],int) -> addToPlayList
+    967:967:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    968:968:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    969:969:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    971:971:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    972:972:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    974:974:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    975:975:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    976:976:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    977:977:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    979:979:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    980:980:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    981:981:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    983:983:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    984:984:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    987:987:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    988:988:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    989:989:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    990:990:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    991:991:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
+    993:993:android.app.Notification buildLegacyNotification() -> buildLegacyNotification
     876:876:android.app.Notification buildNotification() -> buildNotification
-    878:878:android.app.Notification buildNotification() -> buildNotification
-    880:880:android.app.Notification buildNotification() -> buildNotification
-    882:882:android.app.Notification buildNotification() -> buildNotification
+    877:877:android.app.Notification buildNotification() -> buildNotification
+    879:879:android.app.Notification buildNotification() -> buildNotification
+    881:881:android.app.Notification buildNotification() -> buildNotification
     883:883:android.app.Notification buildNotification() -> buildNotification
-    887:887:android.app.Notification buildNotification() -> buildNotification
-    889:889:android.app.Notification buildNotification() -> buildNotification
+    884:884:android.app.Notification buildNotification() -> buildNotification
+    888:888:android.app.Notification buildNotification() -> buildNotification
     890:890:android.app.Notification buildNotification() -> buildNotification
-    892:892:android.app.Notification buildNotification() -> buildNotification
+    891:891:android.app.Notification buildNotification() -> buildNotification
     893:893:android.app.Notification buildNotification() -> buildNotification
     894:894:android.app.Notification buildNotification() -> buildNotification
     895:895:android.app.Notification buildNotification() -> buildNotification
-    898:898:android.app.Notification buildNotification() -> buildNotification
-    901:901:android.app.Notification buildNotification() -> buildNotification
+    896:896:android.app.Notification buildNotification() -> buildNotification
+    899:899:android.app.Notification buildNotification() -> buildNotification
     902:902:android.app.Notification buildNotification() -> buildNotification
-    904:904:android.app.Notification buildNotification() -> buildNotification
-    906:906:android.app.Notification buildNotification() -> buildNotification
+    903:903:android.app.Notification buildNotification() -> buildNotification
+    905:905:android.app.Notification buildNotification() -> buildNotification
     907:907:android.app.Notification buildNotification() -> buildNotification
     908:908:android.app.Notification buildNotification() -> buildNotification
     909:909:android.app.Notification buildNotification() -> buildNotification
     910:910:android.app.Notification buildNotification() -> buildNotification
     911:911:android.app.Notification buildNotification() -> buildNotification
     912:912:android.app.Notification buildNotification() -> buildNotification
-    914:914:android.app.Notification buildNotification() -> buildNotification
+    913:913:android.app.Notification buildNotification() -> buildNotification
     915:915:android.app.Notification buildNotification() -> buildNotification
-    920:920:android.app.Notification buildNotification() -> buildNotification
+    916:916:android.app.Notification buildNotification() -> buildNotification
     921:921:android.app.Notification buildNotification() -> buildNotification
     922:922:android.app.Notification buildNotification() -> buildNotification
     923:923:android.app.Notification buildNotification() -> buildNotification
-    925:925:android.app.Notification buildNotification() -> buildNotification
+    924:924:android.app.Notification buildNotification() -> buildNotification
     926:926:android.app.Notification buildNotification() -> buildNotification
     927:927:android.app.Notification buildNotification() -> buildNotification
     928:928:android.app.Notification buildNotification() -> buildNotification
-    930:930:android.app.Notification buildNotification() -> buildNotification
+    929:929:android.app.Notification buildNotification() -> buildNotification
     931:931:android.app.Notification buildNotification() -> buildNotification
     932:932:android.app.Notification buildNotification() -> buildNotification
-    935:935:android.app.Notification buildNotification() -> buildNotification
-    937:937:android.app.Notification buildNotification() -> buildNotification
+    933:933:android.app.Notification buildNotification() -> buildNotification
+    936:936:android.app.Notification buildNotification() -> buildNotification
     938:938:android.app.Notification buildNotification() -> buildNotification
-    940:940:android.app.Notification buildNotification() -> buildNotification
+    939:939:android.app.Notification buildNotification() -> buildNotification
     941:941:android.app.Notification buildNotification() -> buildNotification
-    943:943:android.app.Notification buildNotification() -> buildNotification
-    946:946:android.app.Notification buildNotification() -> buildNotification
+    942:942:android.app.Notification buildNotification() -> buildNotification
+    944:944:android.app.Notification buildNotification() -> buildNotification
     947:947:android.app.Notification buildNotification() -> buildNotification
     948:948:android.app.Notification buildNotification() -> buildNotification
-    951:951:android.app.Notification buildNotification() -> buildNotification
+    949:949:android.app.Notification buildNotification() -> buildNotification
     952:952:android.app.Notification buildNotification() -> buildNotification
     953:953:android.app.Notification buildNotification() -> buildNotification
     954:954:android.app.Notification buildNotification() -> buildNotification
-    957:957:android.app.Notification buildNotification() -> buildNotification
-    658:658:void closeExternalStorageFiles(java.lang.String) -> closeExternalStorageFiles
+    955:955:android.app.Notification buildNotification() -> buildNotification
+    958:958:android.app.Notification buildNotification() -> buildNotification
     659:659:void closeExternalStorageFiles(java.lang.String) -> closeExternalStorageFiles
     660:660:void closeExternalStorageFiles(java.lang.String) -> closeExternalStorageFiles
     661:661:void closeExternalStorageFiles(java.lang.String) -> closeExternalStorageFiles
-    973:973:android.app.PendingIntent commandIntent(int,java.lang.String) -> commandIntent
-    974:974:android.app.PendingIntent commandIntent(int,java.lang.String) -> commandIntent
-    975:975:android.app.PendingIntent commandIntent(int,java.lang.String) -> commandIntent
-    746:746:void createNotificationChannel() -> createNotificationChannel
+    662:662:void closeExternalStorageFiles(java.lang.String) -> closeExternalStorageFiles
+    1009:1009:android.app.PendingIntent commandIntent(int,java.lang.String) -> commandIntent
+    1010:1010:android.app.PendingIntent commandIntent(int,java.lang.String) -> commandIntent
+    1011:1011:android.app.PendingIntent commandIntent(int,java.lang.String) -> commandIntent
     747:747:void createNotificationChannel() -> createNotificationChannel
-    749:749:void createNotificationChannel() -> createNotificationChannel
-    751:751:void createNotificationChannel() -> createNotificationChannel
+    748:748:void createNotificationChannel() -> createNotificationChannel
+    750:750:void createNotificationChannel() -> createNotificationChannel
     752:752:void createNotificationChannel() -> createNotificationChannel
-    754:754:void createNotificationChannel() -> createNotificationChannel
-    1770:1770:void cycleRepeat() -> cycleRepeat
-    1772:1772:void cycleRepeat() -> cycleRepeat
-    1773:1773:void cycleRepeat() -> cycleRepeat
-    1775:1775:void cycleRepeat() -> cycleRepeat
-    1776:1776:void cycleRepeat() -> cycleRepeat
-    1778:1778:void cycleRepeat() -> cycleRepeat
-    1781:1781:void cycleRepeat() -> cycleRepeat
-    1782:1782:void cycleRepeat() -> cycleRepeat
-    1783:1783:void cycleRepeat() -> cycleRepeat
-    1586:1586:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1588:1588:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1589:1589:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1590:1590:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1593:1593:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1594:1594:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1596:1596:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1597:1597:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1598:1598:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1599:1599:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1600:1600:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1602:1602:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1603:1603:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1605:1605:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
-    1902:1902:long duration() -> duration
-    1903:1903:long duration() -> duration
-    1905:1905:long duration() -> duration
-    1065:1065:void enqueue(int[],int) -> enqueue
-    1066:1066:void enqueue(int[],int) -> enqueue
-    1067:1067:void enqueue(int[],int) -> enqueue
-    1068:1068:void enqueue(int[],int) -> enqueue
-    1071:1071:void enqueue(int[],int) -> enqueue
-    1072:1072:void enqueue(int[],int) -> enqueue
-    1073:1073:void enqueue(int[],int) -> enqueue
-    1074:1074:void enqueue(int[],int) -> enqueue
-    1075:1075:void enqueue(int[],int) -> enqueue
-    1076:1076:void enqueue(int[],int) -> enqueue
-    1077:1077:void enqueue(int[],int) -> enqueue
-    1078:1078:void enqueue(int[],int) -> enqueue
-    1081:1081:void enqueue(int[],int) -> enqueue
-    1082:1082:void enqueue(int[],int) -> enqueue
-    1083:1083:void enqueue(int[],int) -> enqueue
-    1084:1084:void enqueue(int[],int) -> enqueue
-    1085:1085:void enqueue(int[],int) -> enqueue
-    1087:1087:void enqueue(int[],int) -> enqueue
-    1088:1088:void enqueue(int[],int) -> enqueue
-    1015:1015:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
-    1019:1019:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
-    1020:1020:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
-    1021:1021:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
-    1022:1022:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
-    1024:1024:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
-    1028:1028:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
-    1862:1862:int getAlbumId() -> getAlbumId
-    1863:1863:int getAlbumId() -> getAlbumId
-    1864:1864:int getAlbumId() -> getAlbumId
-    1866:1866:int getAlbumId() -> getAlbumId
-    1867:1867:int getAlbumId() -> getAlbumId
-    1853:1853:java.lang.String getAlbumName() -> getAlbumName
-    1854:1854:java.lang.String getAlbumName() -> getAlbumName
-    1855:1855:java.lang.String getAlbumName() -> getAlbumName
-    1857:1857:java.lang.String getAlbumName() -> getAlbumName
-    1858:1858:java.lang.String getAlbumName() -> getAlbumName
-    1844:1844:int getArtistId() -> getArtistId
-    1845:1845:int getArtistId() -> getArtistId
-    1846:1846:int getArtistId() -> getArtistId
-    1848:1848:int getArtistId() -> getArtistId
-    1849:1849:int getArtistId() -> getArtistId
-    1835:1835:java.lang.String getArtistName() -> getArtistName
-    1836:1836:java.lang.String getArtistName() -> getArtistName
-    1837:1837:java.lang.String getArtistName() -> getArtistName
-    1839:1839:java.lang.String getArtistName() -> getArtistName
-    1840:1840:java.lang.String getArtistName() -> getArtistName
-    1802:1802:int getAudioId() -> getAudioId
-    1803:1803:int getAudioId() -> getAudioId
-    1804:1804:int getAudioId() -> getAudioId
-    1806:1806:int getAudioId() -> getAudioId
-    1807:1807:int getAudioId() -> getAudioId
-    1889:1889:long getBookmark() -> getBookmark
-    1890:1890:long getBookmark() -> getBookmark
-    1891:1891:long getBookmark() -> getBookmark
-    1893:1893:long getBookmark() -> getBookmark
-    1894:1894:long getBookmark() -> getBookmark
-    172:172:int getFatVolumeIdCompat(java.lang.String) -> getFatVolumeIdCompat
+    753:753:void createNotificationChannel() -> createNotificationChannel
+    755:755:void createNotificationChannel() -> createNotificationChannel
+    1817:1817:void cycleRepeat() -> cycleRepeat
+    1819:1819:void cycleRepeat() -> cycleRepeat
+    1820:1820:void cycleRepeat() -> cycleRepeat
+    1822:1822:void cycleRepeat() -> cycleRepeat
+    1823:1823:void cycleRepeat() -> cycleRepeat
+    1825:1825:void cycleRepeat() -> cycleRepeat
+    1828:1828:void cycleRepeat() -> cycleRepeat
+    1829:1829:void cycleRepeat() -> cycleRepeat
+    1830:1830:void cycleRepeat() -> cycleRepeat
+    1633:1633:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1635:1635:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1636:1636:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1637:1637:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1640:1640:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1641:1641:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1643:1643:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1644:1644:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1645:1645:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1646:1646:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1647:1647:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1649:1649:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1650:1650:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1652:1652:void doAutoShuffleUpdate() -> doAutoShuffleUpdate
+    1949:1949:long duration() -> duration
+    1950:1950:long duration() -> duration
+    1952:1952:long duration() -> duration
+    1112:1112:void enqueue(int[],int) -> enqueue
+    1113:1113:void enqueue(int[],int) -> enqueue
+    1114:1114:void enqueue(int[],int) -> enqueue
+    1115:1115:void enqueue(int[],int) -> enqueue
+    1118:1118:void enqueue(int[],int) -> enqueue
+    1119:1119:void enqueue(int[],int) -> enqueue
+    1120:1120:void enqueue(int[],int) -> enqueue
+    1121:1121:void enqueue(int[],int) -> enqueue
+    1122:1122:void enqueue(int[],int) -> enqueue
+    1123:1123:void enqueue(int[],int) -> enqueue
+    1124:1124:void enqueue(int[],int) -> enqueue
+    1125:1125:void enqueue(int[],int) -> enqueue
+    1128:1128:void enqueue(int[],int) -> enqueue
+    1129:1129:void enqueue(int[],int) -> enqueue
+    1130:1130:void enqueue(int[],int) -> enqueue
+    1131:1131:void enqueue(int[],int) -> enqueue
+    1132:1132:void enqueue(int[],int) -> enqueue
+    1134:1134:void enqueue(int[],int) -> enqueue
+    1135:1135:void enqueue(int[],int) -> enqueue
+    1062:1062:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
+    1066:1066:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
+    1067:1067:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
+    1068:1068:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
+    1069:1069:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
+    1071:1071:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
+    1075:1075:void ensurePlayListCapacity(int) -> ensurePlayListCapacity
+    1909:1909:int getAlbumId() -> getAlbumId
+    1910:1910:int getAlbumId() -> getAlbumId
+    1911:1911:int getAlbumId() -> getAlbumId
+    1913:1913:int getAlbumId() -> getAlbumId
+    1914:1914:int getAlbumId() -> getAlbumId
+    1900:1900:java.lang.String getAlbumName() -> getAlbumName
+    1901:1901:java.lang.String getAlbumName() -> getAlbumName
+    1902:1902:java.lang.String getAlbumName() -> getAlbumName
+    1904:1904:java.lang.String getAlbumName() -> getAlbumName
+    1905:1905:java.lang.String getAlbumName() -> getAlbumName
+    1891:1891:int getArtistId() -> getArtistId
+    1892:1892:int getArtistId() -> getArtistId
+    1893:1893:int getArtistId() -> getArtistId
+    1895:1895:int getArtistId() -> getArtistId
+    1896:1896:int getArtistId() -> getArtistId
+    1882:1882:java.lang.String getArtistName() -> getArtistName
+    1883:1883:java.lang.String getArtistName() -> getArtistName
+    1884:1884:java.lang.String getArtistName() -> getArtistName
+    1886:1886:java.lang.String getArtistName() -> getArtistName
+    1887:1887:java.lang.String getArtistName() -> getArtistName
+    1849:1849:int getAudioId() -> getAudioId
+    1850:1850:int getAudioId() -> getAudioId
+    1851:1851:int getAudioId() -> getAudioId
+    1853:1853:int getAudioId() -> getAudioId
+    1854:1854:int getAudioId() -> getAudioId
+    1936:1936:long getBookmark() -> getBookmark
+    1937:1937:long getBookmark() -> getBookmark
+    1938:1938:long getBookmark() -> getBookmark
+    1940:1940:long getBookmark() -> getBookmark
+    1941:1941:long getBookmark() -> getBookmark
     173:173:int getFatVolumeIdCompat(java.lang.String) -> getFatVolumeIdCompat
-    175:175:int getFatVolumeIdCompat(java.lang.String) -> getFatVolumeIdCompat
-    1786:1786:int getMediaMountedCount() -> getMediaMountedCount
-    1794:1794:java.lang.String getPath() -> getPath
-    1180:1180:int[] getQueue() -> getQueue
-    1181:1181:int[] getQueue() -> getQueue
-    1182:1182:int[] getQueue() -> getQueue
-    1183:1183:int[] getQueue() -> getQueue
-    1184:1184:int[] getQueue() -> getQueue
-    1186:1186:int[] getQueue() -> getQueue
-    1187:1187:int[] getQueue() -> getQueue
-    1815:1815:int getQueuePosition() -> getQueuePosition
-    1816:1816:int getQueuePosition() -> getQueuePosition
-    1817:1817:int getQueuePosition() -> getQueuePosition
-    1761:1761:int getRepeatMode() -> getRepeatMode
-    1751:1751:int getShuffleMode() -> getShuffleMode
-    1871:1871:java.lang.String getTrackName() -> getTrackName
-    1872:1872:java.lang.String getTrackName() -> getTrackName
-    1873:1873:java.lang.String getTrackName() -> getTrackName
-    1875:1875:java.lang.String getTrackName() -> getTrackName
-    1876:1876:java.lang.String getTrackName() -> getTrackName
-    1550:1550:void gotoIdleState() -> gotoIdleState
-    1551:1551:void gotoIdleState() -> gotoIdleState
-    1552:1552:void gotoIdleState() -> gotoIdleState
-    1553:1553:void gotoIdleState() -> gotoIdleState
-    1007:1007:boolean hasPermissionCompat(java.lang.String) -> hasPermissionCompat
-    1008:1008:boolean hasPermissionCompat(java.lang.String) -> hasPermissionCompat
-    1010:1010:boolean hasPermissionCompat(java.lang.String) -> hasPermissionCompat
-    1393:1393:boolean isPlaying() -> isPlaying
-    1880:1880:boolean isPodcast() -> isPodcast
-    1881:1881:boolean isPodcast() -> isPodcast
-    1882:1882:boolean isPodcast() -> isPodcast
-    1884:1884:boolean isPodcast() -> isPodcast
-    1885:1885:boolean isPodcast() -> isPodcast
-    1624:1624:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1625:1625:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1627:1627:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1630:1630:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1631:1631:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1633:1633:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1634:1634:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1635:1635:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1636:1636:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1637:1637:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1639:1639:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1640:1640:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1641:1641:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1643:1643:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1644:1644:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1646:1646:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1647:1647:boolean makeAutoShuffleList() -> makeAutoShuffleList
-    1141:1141:void moveQueueItem(int,int) -> moveQueueItem
-    1142:1142:void moveQueueItem(int,int) -> moveQueueItem
-    1143:1143:void moveQueueItem(int,int) -> moveQueueItem
-    1145:1145:void moveQueueItem(int,int) -> moveQueueItem
-    1146:1146:void moveQueueItem(int,int) -> moveQueueItem
-    1148:1148:void moveQueueItem(int,int) -> moveQueueItem
-    1149:1149:void moveQueueItem(int,int) -> moveQueueItem
-    1150:1150:void moveQueueItem(int,int) -> moveQueueItem
-    1151:1151:void moveQueueItem(int,int) -> moveQueueItem
-    1153:1153:void moveQueueItem(int,int) -> moveQueueItem
-    1154:1154:void moveQueueItem(int,int) -> moveQueueItem
-    1155:1155:void moveQueueItem(int,int) -> moveQueueItem
-    1156:1156:void moveQueueItem(int,int) -> moveQueueItem
-    1157:1157:void moveQueueItem(int,int) -> moveQueueItem
-    1159:1159:void moveQueueItem(int,int) -> moveQueueItem
-    1160:1160:void moveQueueItem(int,int) -> moveQueueItem
-    1161:1161:void moveQueueItem(int,int) -> moveQueueItem
-    1162:1162:void moveQueueItem(int,int) -> moveQueueItem
-    1164:1164:void moveQueueItem(int,int) -> moveQueueItem
-    1165:1165:void moveQueueItem(int,int) -> moveQueueItem
-    1166:1166:void moveQueueItem(int,int) -> moveQueueItem
-    1167:1167:void moveQueueItem(int,int) -> moveQueueItem
-    1168:1168:void moveQueueItem(int,int) -> moveQueueItem
-    1171:1171:void moveQueueItem(int,int) -> moveQueueItem
-    1172:1172:void moveQueueItem(int,int) -> moveQueueItem
-    1173:1173:void moveQueueItem(int,int) -> moveQueueItem
-    1453:1453:void next(boolean) -> next
-    1454:1454:void next(boolean) -> next
-    1456:1456:void next(boolean) -> next
-    1457:1457:void next(boolean) -> next
-    1458:1458:void next(boolean) -> next
-    1461:1461:void next(boolean) -> next
-    1462:1462:void next(boolean) -> next
-    1467:1467:void next(boolean) -> next
-    1468:1468:void next(boolean) -> next
-    1470:1470:void next(boolean) -> next
-    1471:1471:void next(boolean) -> next
-    1474:1474:void next(boolean) -> next
-    1478:1478:void next(boolean) -> next
-    1479:1479:void next(boolean) -> next
-    1480:1480:void next(boolean) -> next
-    1481:1481:void next(boolean) -> next
-    1484:1484:void next(boolean) -> next
-    1485:1485:void next(boolean) -> next
-    1486:1486:void next(boolean) -> next
-    1487:1487:void next(boolean) -> next
-    1488:1488:void next(boolean) -> next
-    1489:1489:void next(boolean) -> next
-    1490:1490:void next(boolean) -> next
-    1497:1497:void next(boolean) -> next
-    1499:1499:void next(boolean) -> next
+    174:174:int getFatVolumeIdCompat(java.lang.String) -> getFatVolumeIdCompat
+    176:176:int getFatVolumeIdCompat(java.lang.String) -> getFatVolumeIdCompat
+    1833:1833:int getMediaMountedCount() -> getMediaMountedCount
+    1841:1841:java.lang.String getPath() -> getPath
+    1227:1227:int[] getQueue() -> getQueue
+    1228:1228:int[] getQueue() -> getQueue
+    1229:1229:int[] getQueue() -> getQueue
+    1230:1230:int[] getQueue() -> getQueue
+    1231:1231:int[] getQueue() -> getQueue
+    1233:1233:int[] getQueue() -> getQueue
+    1234:1234:int[] getQueue() -> getQueue
+    1862:1862:int getQueuePosition() -> getQueuePosition
+    1863:1863:int getQueuePosition() -> getQueuePosition
+    1864:1864:int getQueuePosition() -> getQueuePosition
+    1808:1808:int getRepeatMode() -> getRepeatMode
+    1798:1798:int getShuffleMode() -> getShuffleMode
+    1918:1918:java.lang.String getTrackName() -> getTrackName
+    1919:1919:java.lang.String getTrackName() -> getTrackName
+    1920:1920:java.lang.String getTrackName() -> getTrackName
+    1922:1922:java.lang.String getTrackName() -> getTrackName
+    1923:1923:java.lang.String getTrackName() -> getTrackName
+    1597:1597:void gotoIdleState() -> gotoIdleState
+    1598:1598:void gotoIdleState() -> gotoIdleState
+    1599:1599:void gotoIdleState() -> gotoIdleState
+    1600:1600:void gotoIdleState() -> gotoIdleState
+    1054:1054:boolean hasPermissionCompat(java.lang.String) -> hasPermissionCompat
+    1055:1055:boolean hasPermissionCompat(java.lang.String) -> hasPermissionCompat
+    1057:1057:boolean hasPermissionCompat(java.lang.String) -> hasPermissionCompat
+    1440:1440:boolean isPlaying() -> isPlaying
+    1927:1927:boolean isPodcast() -> isPodcast
+    1928:1928:boolean isPodcast() -> isPodcast
+    1929:1929:boolean isPodcast() -> isPodcast
+    1931:1931:boolean isPodcast() -> isPodcast
+    1932:1932:boolean isPodcast() -> isPodcast
+    1671:1671:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1672:1672:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1674:1674:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1677:1677:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1678:1678:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1680:1680:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1681:1681:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1682:1682:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1683:1683:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1684:1684:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1686:1686:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1687:1687:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1688:1688:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1690:1690:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1691:1691:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1693:1693:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1694:1694:boolean makeAutoShuffleList() -> makeAutoShuffleList
+    1188:1188:void moveQueueItem(int,int) -> moveQueueItem
+    1189:1189:void moveQueueItem(int,int) -> moveQueueItem
+    1190:1190:void moveQueueItem(int,int) -> moveQueueItem
+    1192:1192:void moveQueueItem(int,int) -> moveQueueItem
+    1193:1193:void moveQueueItem(int,int) -> moveQueueItem
+    1195:1195:void moveQueueItem(int,int) -> moveQueueItem
+    1196:1196:void moveQueueItem(int,int) -> moveQueueItem
+    1197:1197:void moveQueueItem(int,int) -> moveQueueItem
+    1198:1198:void moveQueueItem(int,int) -> moveQueueItem
+    1200:1200:void moveQueueItem(int,int) -> moveQueueItem
+    1201:1201:void moveQueueItem(int,int) -> moveQueueItem
+    1202:1202:void moveQueueItem(int,int) -> moveQueueItem
+    1203:1203:void moveQueueItem(int,int) -> moveQueueItem
+    1204:1204:void moveQueueItem(int,int) -> moveQueueItem
+    1206:1206:void moveQueueItem(int,int) -> moveQueueItem
+    1207:1207:void moveQueueItem(int,int) -> moveQueueItem
+    1208:1208:void moveQueueItem(int,int) -> moveQueueItem
+    1209:1209:void moveQueueItem(int,int) -> moveQueueItem
+    1211:1211:void moveQueueItem(int,int) -> moveQueueItem
+    1212:1212:void moveQueueItem(int,int) -> moveQueueItem
+    1213:1213:void moveQueueItem(int,int) -> moveQueueItem
+    1214:1214:void moveQueueItem(int,int) -> moveQueueItem
+    1215:1215:void moveQueueItem(int,int) -> moveQueueItem
+    1218:1218:void moveQueueItem(int,int) -> moveQueueItem
+    1219:1219:void moveQueueItem(int,int) -> moveQueueItem
+    1220:1220:void moveQueueItem(int,int) -> moveQueueItem
+    1500:1500:void next(boolean) -> next
     1501:1501:void next(boolean) -> next
-    1502:1502:void next(boolean) -> next
     1503:1503:void next(boolean) -> next
-    1507:1507:void next(boolean) -> next
+    1504:1504:void next(boolean) -> next
+    1505:1505:void next(boolean) -> next
     1508:1508:void next(boolean) -> next
-    1511:1511:void next(boolean) -> next
-    1512:1512:void next(boolean) -> next
+    1509:1509:void next(boolean) -> next
     1514:1514:void next(boolean) -> next
     1515:1515:void next(boolean) -> next
-    1516:1516:void next(boolean) -> next
     1517:1517:void next(boolean) -> next
     1518:1518:void next(boolean) -> next
     1521:1521:void next(boolean) -> next
-    1522:1522:void next(boolean) -> next
-    1523:1523:void next(boolean) -> next
-    1524:1524:void next(boolean) -> next
+    1525:1525:void next(boolean) -> next
     1526:1526:void next(boolean) -> next
+    1527:1527:void next(boolean) -> next
     1528:1528:void next(boolean) -> next
-    1530:1530:void next(boolean) -> next
     1531:1531:void next(boolean) -> next
     1532:1532:void next(boolean) -> next
     1533:1533:void next(boolean) -> next
     1534:1534:void next(boolean) -> next
     1535:1535:void next(boolean) -> next
-    1538:1538:void next(boolean) -> next
-    1541:1541:void next(boolean) -> next
-    1542:1542:void next(boolean) -> next
-    1543:1543:void next(boolean) -> next
+    1536:1536:void next(boolean) -> next
+    1537:1537:void next(boolean) -> next
     1544:1544:void next(boolean) -> next
-    1545:1545:void next(boolean) -> next
     1546:1546:void next(boolean) -> next
-    1547:1547:void next(boolean) -> next
-    722:722:void notifyChange(java.lang.String) -> notifyChange
+    1548:1548:void next(boolean) -> next
+    1549:1549:void next(boolean) -> next
+    1550:1550:void next(boolean) -> next
+    1554:1554:void next(boolean) -> next
+    1555:1555:void next(boolean) -> next
+    1558:1558:void next(boolean) -> next
+    1559:1559:void next(boolean) -> next
+    1561:1561:void next(boolean) -> next
+    1562:1562:void next(boolean) -> next
+    1563:1563:void next(boolean) -> next
+    1564:1564:void next(boolean) -> next
+    1565:1565:void next(boolean) -> next
+    1568:1568:void next(boolean) -> next
+    1569:1569:void next(boolean) -> next
+    1570:1570:void next(boolean) -> next
+    1571:1571:void next(boolean) -> next
+    1573:1573:void next(boolean) -> next
+    1575:1575:void next(boolean) -> next
+    1577:1577:void next(boolean) -> next
+    1578:1578:void next(boolean) -> next
+    1579:1579:void next(boolean) -> next
+    1580:1580:void next(boolean) -> next
+    1581:1581:void next(boolean) -> next
+    1582:1582:void next(boolean) -> next
+    1585:1585:void next(boolean) -> next
+    1588:1588:void next(boolean) -> next
+    1589:1589:void next(boolean) -> next
+    1590:1590:void next(boolean) -> next
+    1591:1591:void next(boolean) -> next
+    1592:1592:void next(boolean) -> next
+    1593:1593:void next(boolean) -> next
+    1594:1594:void next(boolean) -> next
     723:723:void notifyChange(java.lang.String) -> notifyChange
     724:724:void notifyChange(java.lang.String) -> notifyChange
     725:725:void notifyChange(java.lang.String) -> notifyChange
     726:726:void notifyChange(java.lang.String) -> notifyChange
     727:727:void notifyChange(java.lang.String) -> notifyChange
-    729:729:void notifyChange(java.lang.String) -> notifyChange
+    728:728:void notifyChange(java.lang.String) -> notifyChange
     730:730:void notifyChange(java.lang.String) -> notifyChange
-    732:732:void notifyChange(java.lang.String) -> notifyChange
-    736:736:void notifyChange(java.lang.String) -> notifyChange
-    738:738:void notifyChange(java.lang.String) -> notifyChange
+    731:731:void notifyChange(java.lang.String) -> notifyChange
+    733:733:void notifyChange(java.lang.String) -> notifyChange
+    737:737:void notifyChange(java.lang.String) -> notifyChange
     739:739:void notifyChange(java.lang.String) -> notifyChange
     740:740:void notifyChange(java.lang.String) -> notifyChange
-    742:742:void notifyChange(java.lang.String) -> notifyChange
-    989:989:void notifyCompat() -> notifyCompat
-    990:990:void notifyCompat() -> notifyCompat
-    991:991:void notifyCompat() -> notifyCompat
-    993:993:void notifyCompat() -> notifyCompat
-    556:556:android.os.IBinder onBind(android.content.Intent) -> onBind
+    741:741:void notifyChange(java.lang.String) -> notifyChange
+    743:743:void notifyChange(java.lang.String) -> notifyChange
+    1028:1028:void notifyCompat() -> notifyCompat
+    1029:1029:void notifyCompat() -> notifyCompat
+    1031:1031:void notifyCompat() -> notifyCompat
+    1033:1033:void notifyCompat() -> notifyCompat
+    1034:1034:void notifyCompat() -> notifyCompat
+    1036:1036:void notifyCompat() -> notifyCompat
+    1037:1037:void notifyCompat() -> notifyCompat
+    1038:1038:void notifyCompat() -> notifyCompat
+    1040:1040:void notifyCompat() -> notifyCompat
     557:557:android.os.IBinder onBind(android.content.Intent) -> onBind
     558:558:android.os.IBinder onBind(android.content.Intent) -> onBind
-    301:301:void onCreate() -> onCreate
-    303:303:void onCreate() -> onCreate
+    559:559:android.os.IBinder onBind(android.content.Intent) -> onBind
+    302:302:void onCreate() -> onCreate
     304:304:void onCreate() -> onCreate
-    306:306:void onCreate() -> onCreate
-    309:309:void onCreate() -> onCreate
+    305:305:void onCreate() -> onCreate
+    307:307:void onCreate() -> onCreate
     310:310:void onCreate() -> onCreate
-    312:312:void onCreate() -> onCreate
+    311:311:void onCreate() -> onCreate
     313:313:void onCreate() -> onCreate
     314:314:void onCreate() -> onCreate
-    317:317:void onCreate() -> onCreate
-    319:319:void onCreate() -> onCreate
-    321:321:void onCreate() -> onCreate
+    315:315:void onCreate() -> onCreate
+    318:318:void onCreate() -> onCreate
+    320:320:void onCreate() -> onCreate
     322:322:void onCreate() -> onCreate
     323:323:void onCreate() -> onCreate
     324:324:void onCreate() -> onCreate
@@ -3051,255 +3075,255 @@ com.android.music.MediaPlaybackService -> com.android.music.MediaPlaybackService
     326:326:void onCreate() -> onCreate
     327:327:void onCreate() -> onCreate
     328:328:void onCreate() -> onCreate
-    330:330:void onCreate() -> onCreate
-    333:333:void onCreate() -> onCreate
+    329:329:void onCreate() -> onCreate
+    331:331:void onCreate() -> onCreate
     334:334:void onCreate() -> onCreate
     335:335:void onCreate() -> onCreate
-    337:337:void onCreate() -> onCreate
+    336:336:void onCreate() -> onCreate
     338:338:void onCreate() -> onCreate
     339:339:void onCreate() -> onCreate
-    343:343:void onCreate() -> onCreate
+    340:340:void onCreate() -> onCreate
     344:344:void onCreate() -> onCreate
     345:345:void onCreate() -> onCreate
-    350:350:void onDestroy() -> onDestroy
+    346:346:void onCreate() -> onCreate
     351:351:void onDestroy() -> onDestroy
-    354:354:void onDestroy() -> onDestroy
+    352:352:void onDestroy() -> onDestroy
     355:355:void onDestroy() -> onDestroy
     356:356:void onDestroy() -> onDestroy
-    360:360:void onDestroy() -> onDestroy
+    357:357:void onDestroy() -> onDestroy
     361:361:void onDestroy() -> onDestroy
-    364:364:void onDestroy() -> onDestroy
+    362:362:void onDestroy() -> onDestroy
     365:365:void onDestroy() -> onDestroy
-    367:367:void onDestroy() -> onDestroy
+    366:366:void onDestroy() -> onDestroy
     368:368:void onDestroy() -> onDestroy
     369:369:void onDestroy() -> onDestroy
-    372:372:void onDestroy() -> onDestroy
+    370:370:void onDestroy() -> onDestroy
     373:373:void onDestroy() -> onDestroy
     374:374:void onDestroy() -> onDestroy
-    377:377:void onDestroy() -> onDestroy
+    375:375:void onDestroy() -> onDestroy
     378:378:void onDestroy() -> onDestroy
     379:379:void onDestroy() -> onDestroy
     380:380:void onDestroy() -> onDestroy
-    382:382:void onDestroy() -> onDestroy
+    381:381:void onDestroy() -> onDestroy
     383:383:void onDestroy() -> onDestroy
     384:384:void onDestroy() -> onDestroy
     385:385:void onDestroy() -> onDestroy
-    387:387:void onDestroy() -> onDestroy
+    386:386:void onDestroy() -> onDestroy
     388:388:void onDestroy() -> onDestroy
     389:389:void onDestroy() -> onDestroy
-    563:563:void onRebind(android.content.Intent) -> onRebind
+    390:390:void onDestroy() -> onDestroy
     564:564:void onRebind(android.content.Intent) -> onRebind
     565:565:void onRebind(android.content.Intent) -> onRebind
-    569:569:void onStart(android.content.Intent,int) -> onStart
+    566:566:void onRebind(android.content.Intent) -> onRebind
     570:570:void onStart(android.content.Intent,int) -> onStart
-    572:572:void onStart(android.content.Intent,int) -> onStart
+    571:571:void onStart(android.content.Intent,int) -> onStart
     573:573:void onStart(android.content.Intent,int) -> onStart
     574:574:void onStart(android.content.Intent,int) -> onStart
     575:575:void onStart(android.content.Intent,int) -> onStart
     576:576:void onStart(android.content.Intent,int) -> onStart
-    579:579:void onStart(android.content.Intent,int) -> onStart
+    577:577:void onStart(android.content.Intent,int) -> onStart
     580:580:void onStart(android.content.Intent,int) -> onStart
-    582:582:void onStart(android.content.Intent,int) -> onStart
+    581:581:void onStart(android.content.Intent,int) -> onStart
     583:583:void onStart(android.content.Intent,int) -> onStart
     584:584:void onStart(android.content.Intent,int) -> onStart
     585:585:void onStart(android.content.Intent,int) -> onStart
     586:586:void onStart(android.content.Intent,int) -> onStart
     587:587:void onStart(android.content.Intent,int) -> onStart
     588:588:void onStart(android.content.Intent,int) -> onStart
-    590:590:void onStart(android.content.Intent,int) -> onStart
-    592:592:void onStart(android.content.Intent,int) -> onStart
+    589:589:void onStart(android.content.Intent,int) -> onStart
+    591:591:void onStart(android.content.Intent,int) -> onStart
     593:593:void onStart(android.content.Intent,int) -> onStart
     594:594:void onStart(android.content.Intent,int) -> onStart
     595:595:void onStart(android.content.Intent,int) -> onStart
     596:596:void onStart(android.content.Intent,int) -> onStart
     597:597:void onStart(android.content.Intent,int) -> onStart
     598:598:void onStart(android.content.Intent,int) -> onStart
-    603:603:void onStart(android.content.Intent,int) -> onStart
+    599:599:void onStart(android.content.Intent,int) -> onStart
     604:604:void onStart(android.content.Intent,int) -> onStart
     605:605:void onStart(android.content.Intent,int) -> onStart
     606:606:void onStart(android.content.Intent,int) -> onStart
-    610:610:boolean onUnbind(android.content.Intent) -> onUnbind
-    613:613:boolean onUnbind(android.content.Intent) -> onUnbind
-    615:615:boolean onUnbind(android.content.Intent) -> onUnbind
-    618:618:boolean onUnbind(android.content.Intent) -> onUnbind
-    624:624:boolean onUnbind(android.content.Intent) -> onUnbind
+    607:607:void onStart(android.content.Intent,int) -> onStart
+    611:611:boolean onUnbind(android.content.Intent) -> onUnbind
+    614:614:boolean onUnbind(android.content.Intent) -> onUnbind
+    616:616:boolean onUnbind(android.content.Intent) -> onUnbind
+    619:619:boolean onUnbind(android.content.Intent) -> onUnbind
     625:625:boolean onUnbind(android.content.Intent) -> onUnbind
     626:626:boolean onUnbind(android.content.Intent) -> onUnbind
     627:627:boolean onUnbind(android.content.Intent) -> onUnbind
-    631:631:boolean onUnbind(android.content.Intent) -> onUnbind
+    628:628:boolean onUnbind(android.content.Intent) -> onUnbind
     632:632:boolean onUnbind(android.content.Intent) -> onUnbind
-    1098:1098:void open(int[],int) -> open
-    1099:1099:void open(int[],int) -> open
-    1100:1100:void open(int[],int) -> open
-    1102:1102:void open(int[],int) -> open
-    1103:1103:void open(int[],int) -> open
-    1104:1104:void open(int[],int) -> open
-    1105:1105:void open(int[],int) -> open
-    1107:1107:void open(int[],int) -> open
-    1108:1108:void open(int[],int) -> open
-    1109:1109:void open(int[],int) -> open
-    1110:1110:void open(int[],int) -> open
-    1111:1111:void open(int[],int) -> open
-    1115:1115:void open(int[],int) -> open
-    1116:1116:void open(int[],int) -> open
-    1117:1117:void open(int[],int) -> open
-    1119:1119:void open(int[],int) -> open
-    1120:1120:void open(int[],int) -> open
-    1121:1121:void open(int[],int) -> open
-    1123:1123:void open(int[],int) -> open
-    1125:1125:void open(int[],int) -> open
-    1127:1127:void open(int[],int) -> open
-    1128:1128:void open(int[],int) -> open
-    1129:1129:void open(int[],int) -> open
-    1130:1130:void open(int[],int) -> open
-    1132:1132:void open(int[],int) -> open
-    1133:1133:void open(int[],int) -> open
-    1246:1246:void open(java.lang.String,boolean) -> open
-    1247:1247:void open(java.lang.String,boolean) -> open
-    1248:1248:void open(java.lang.String,boolean) -> open
-    1251:1251:void open(java.lang.String,boolean) -> open
-    1252:1252:void open(java.lang.String,boolean) -> open
-    1253:1253:void open(java.lang.String,boolean) -> open
-    1254:1254:void open(java.lang.String,boolean) -> open
-    1255:1255:void open(java.lang.String,boolean) -> open
-    1259:1259:void open(java.lang.String,boolean) -> open
-    1261:1261:void open(java.lang.String,boolean) -> open
-    1265:1265:void open(java.lang.String,boolean) -> open
-    1266:1266:void open(java.lang.String,boolean) -> open
-    1267:1267:void open(java.lang.String,boolean) -> open
-    1268:1268:void open(java.lang.String,boolean) -> open
-    1270:1270:void open(java.lang.String,boolean) -> open
-    1271:1271:void open(java.lang.String,boolean) -> open
-    1272:1272:void open(java.lang.String,boolean) -> open
-    1276:1276:void open(java.lang.String,boolean) -> open
-    1277:1277:void open(java.lang.String,boolean) -> open
-    1278:1278:void open(java.lang.String,boolean) -> open
-    1279:1279:void open(java.lang.String,boolean) -> open
-    1280:1280:void open(java.lang.String,boolean) -> open
-    1282:1282:void open(java.lang.String,boolean) -> open
-    1283:1283:void open(java.lang.String,boolean) -> open
-    1284:1284:void open(java.lang.String,boolean) -> open
-    1285:1285:void open(java.lang.String,boolean) -> open
-    1286:1286:void open(java.lang.String,boolean) -> open
-    1289:1289:void open(java.lang.String,boolean) -> open
-    1290:1290:void open(java.lang.String,boolean) -> open
-    1292:1292:void open(java.lang.String,boolean) -> open
+    633:633:boolean onUnbind(android.content.Intent) -> onUnbind
+    1145:1145:void open(int[],int) -> open
+    1146:1146:void open(int[],int) -> open
+    1147:1147:void open(int[],int) -> open
+    1149:1149:void open(int[],int) -> open
+    1150:1150:void open(int[],int) -> open
+    1151:1151:void open(int[],int) -> open
+    1152:1152:void open(int[],int) -> open
+    1154:1154:void open(int[],int) -> open
+    1155:1155:void open(int[],int) -> open
+    1156:1156:void open(int[],int) -> open
+    1157:1157:void open(int[],int) -> open
+    1158:1158:void open(int[],int) -> open
+    1162:1162:void open(int[],int) -> open
+    1163:1163:void open(int[],int) -> open
+    1164:1164:void open(int[],int) -> open
+    1166:1166:void open(int[],int) -> open
+    1167:1167:void open(int[],int) -> open
+    1168:1168:void open(int[],int) -> open
+    1170:1170:void open(int[],int) -> open
+    1172:1172:void open(int[],int) -> open
+    1174:1174:void open(int[],int) -> open
+    1175:1175:void open(int[],int) -> open
+    1176:1176:void open(int[],int) -> open
+    1177:1177:void open(int[],int) -> open
+    1179:1179:void open(int[],int) -> open
+    1180:1180:void open(int[],int) -> open
     1293:1293:void open(java.lang.String,boolean) -> open
     1294:1294:void open(java.lang.String,boolean) -> open
     1295:1295:void open(java.lang.String,boolean) -> open
-    1296:1296:void open(java.lang.String,boolean) -> open
-    1297:1297:void open(java.lang.String,boolean) -> open
+    1298:1298:void open(java.lang.String,boolean) -> open
     1299:1299:void open(java.lang.String,boolean) -> open
+    1300:1300:void open(java.lang.String,boolean) -> open
     1301:1301:void open(java.lang.String,boolean) -> open
-    1303:1303:void open(java.lang.String,boolean) -> open
-    1304:1304:void open(java.lang.String,boolean) -> open
-    1305:1305:void open(java.lang.String,boolean) -> open
-    1309:1309:void open(java.lang.String,boolean) -> open
-    1311:1311:void open(java.lang.String,boolean) -> open
+    1302:1302:void open(java.lang.String,boolean) -> open
+    1306:1306:void open(java.lang.String,boolean) -> open
+    1308:1308:void open(java.lang.String,boolean) -> open
     1312:1312:void open(java.lang.String,boolean) -> open
-    1221:1221:void openAsync(java.lang.String) -> openAsync
-    1222:1222:void openAsync(java.lang.String) -> openAsync
-    1223:1223:void openAsync(java.lang.String) -> openAsync
-    1226:1226:void openAsync(java.lang.String) -> openAsync
-    1227:1227:void openAsync(java.lang.String) -> openAsync
-    1228:1228:void openAsync(java.lang.String) -> openAsync
-    1229:1229:void openAsync(java.lang.String) -> openAsync
-    1231:1231:void openAsync(java.lang.String) -> openAsync
-    1232:1232:void openAsync(java.lang.String) -> openAsync
-    1233:1233:void openAsync(java.lang.String) -> openAsync
-    1234:1234:void openAsync(java.lang.String) -> openAsync
-    1235:1235:void openAsync(java.lang.String) -> openAsync
-    1236:1236:void openAsync(java.lang.String) -> openAsync
-    1191:1191:void openCurrent() -> openCurrent
-    1192:1192:void openCurrent() -> openCurrent
-    1193:1193:void openCurrent() -> openCurrent
-    1194:1194:void openCurrent() -> openCurrent
-    1196:1196:void openCurrent() -> openCurrent
-    1197:1197:void openCurrent() -> openCurrent
-    1199:1199:void openCurrent() -> openCurrent
-    1201:1201:void openCurrent() -> openCurrent
-    1203:1203:void openCurrent() -> openCurrent
-    1206:1206:void openCurrent() -> openCurrent
-    1207:1207:void openCurrent() -> openCurrent
-    1208:1208:void openCurrent() -> openCurrent
-    1210:1210:void openCurrent() -> openCurrent
-    1211:1211:void openCurrent() -> openCurrent
-    1214:1214:void openCurrent() -> openCurrent
-    1217:1217:void openCurrent() -> openCurrent
-    1218:1218:void openCurrent() -> openCurrent
-    1376:1376:void pause() -> pause
-    1377:1377:void pause() -> pause
-    1378:1378:void pause() -> pause
-    1379:1379:void pause() -> pause
-    1380:1380:void pause() -> pause
-    1381:1381:void pause() -> pause
-    1382:1382:void pause() -> pause
-    1384:1384:void pause() -> pause
-    1385:1385:void pause() -> pause
-    964:964:int pendingFlags() -> pendingFlags
-    965:965:int pendingFlags() -> pendingFlags
-    966:966:int pendingFlags() -> pendingFlags
-    968:968:int pendingFlags() -> pendingFlags
-    1318:1318:void play() -> play
-    1320:1320:void play() -> play
-    1321:1321:void play() -> play
-    1322:1322:void play() -> play
-    1323:1323:void play() -> play
-    1326:1326:void play() -> play
-    1328:1328:void play() -> play
-    1329:1329:void play() -> play
-    1333:1333:void play() -> play
-    1335:1335:void play() -> play
-    1336:1336:void play() -> play
-    1338:1338:void play() -> play
-    1342:1342:void play() -> play
-    1344:1344:void play() -> play
-    1912:1912:long position() -> position
-    1913:1913:long position() -> position
-    1915:1915:long position() -> position
-    1421:1421:void prev() -> prev
-    1422:1422:void prev() -> prev
-    1424:1424:void prev() -> prev
-    1425:1425:void prev() -> prev
-    1426:1426:void prev() -> prev
-    1428:1428:void prev() -> prev
-    1430:1430:void prev() -> prev
-    1431:1431:void prev() -> prev
-    1433:1433:void prev() -> prev
-    1435:1435:void prev() -> prev
-    1436:1436:void prev() -> prev
-    1437:1437:void prev() -> prev
-    1438:1438:void prev() -> prev
-    1439:1439:void prev() -> prev
-    1441:1441:void prev() -> prev
-    1444:1444:void prev() -> prev
-    1445:1445:void prev() -> prev
-    1446:1446:void prev() -> prev
-    1447:1447:void prev() -> prev
-    1448:1448:void prev() -> prev
-    1449:1449:void prev() -> prev
-    1450:1450:void prev() -> prev
-    669:669:void registerExternalStorageListener() -> registerExternalStorageListener
+    1313:1313:void open(java.lang.String,boolean) -> open
+    1314:1314:void open(java.lang.String,boolean) -> open
+    1315:1315:void open(java.lang.String,boolean) -> open
+    1317:1317:void open(java.lang.String,boolean) -> open
+    1318:1318:void open(java.lang.String,boolean) -> open
+    1319:1319:void open(java.lang.String,boolean) -> open
+    1323:1323:void open(java.lang.String,boolean) -> open
+    1324:1324:void open(java.lang.String,boolean) -> open
+    1325:1325:void open(java.lang.String,boolean) -> open
+    1326:1326:void open(java.lang.String,boolean) -> open
+    1327:1327:void open(java.lang.String,boolean) -> open
+    1329:1329:void open(java.lang.String,boolean) -> open
+    1330:1330:void open(java.lang.String,boolean) -> open
+    1331:1331:void open(java.lang.String,boolean) -> open
+    1332:1332:void open(java.lang.String,boolean) -> open
+    1333:1333:void open(java.lang.String,boolean) -> open
+    1336:1336:void open(java.lang.String,boolean) -> open
+    1337:1337:void open(java.lang.String,boolean) -> open
+    1339:1339:void open(java.lang.String,boolean) -> open
+    1340:1340:void open(java.lang.String,boolean) -> open
+    1341:1341:void open(java.lang.String,boolean) -> open
+    1342:1342:void open(java.lang.String,boolean) -> open
+    1343:1343:void open(java.lang.String,boolean) -> open
+    1344:1344:void open(java.lang.String,boolean) -> open
+    1346:1346:void open(java.lang.String,boolean) -> open
+    1348:1348:void open(java.lang.String,boolean) -> open
+    1350:1350:void open(java.lang.String,boolean) -> open
+    1351:1351:void open(java.lang.String,boolean) -> open
+    1352:1352:void open(java.lang.String,boolean) -> open
+    1356:1356:void open(java.lang.String,boolean) -> open
+    1358:1358:void open(java.lang.String,boolean) -> open
+    1359:1359:void open(java.lang.String,boolean) -> open
+    1268:1268:void openAsync(java.lang.String) -> openAsync
+    1269:1269:void openAsync(java.lang.String) -> openAsync
+    1270:1270:void openAsync(java.lang.String) -> openAsync
+    1273:1273:void openAsync(java.lang.String) -> openAsync
+    1274:1274:void openAsync(java.lang.String) -> openAsync
+    1275:1275:void openAsync(java.lang.String) -> openAsync
+    1276:1276:void openAsync(java.lang.String) -> openAsync
+    1278:1278:void openAsync(java.lang.String) -> openAsync
+    1279:1279:void openAsync(java.lang.String) -> openAsync
+    1280:1280:void openAsync(java.lang.String) -> openAsync
+    1281:1281:void openAsync(java.lang.String) -> openAsync
+    1282:1282:void openAsync(java.lang.String) -> openAsync
+    1283:1283:void openAsync(java.lang.String) -> openAsync
+    1238:1238:void openCurrent() -> openCurrent
+    1239:1239:void openCurrent() -> openCurrent
+    1240:1240:void openCurrent() -> openCurrent
+    1241:1241:void openCurrent() -> openCurrent
+    1243:1243:void openCurrent() -> openCurrent
+    1244:1244:void openCurrent() -> openCurrent
+    1246:1246:void openCurrent() -> openCurrent
+    1248:1248:void openCurrent() -> openCurrent
+    1250:1250:void openCurrent() -> openCurrent
+    1253:1253:void openCurrent() -> openCurrent
+    1254:1254:void openCurrent() -> openCurrent
+    1255:1255:void openCurrent() -> openCurrent
+    1257:1257:void openCurrent() -> openCurrent
+    1258:1258:void openCurrent() -> openCurrent
+    1261:1261:void openCurrent() -> openCurrent
+    1264:1264:void openCurrent() -> openCurrent
+    1265:1265:void openCurrent() -> openCurrent
+    1423:1423:void pause() -> pause
+    1424:1424:void pause() -> pause
+    1425:1425:void pause() -> pause
+    1426:1426:void pause() -> pause
+    1427:1427:void pause() -> pause
+    1428:1428:void pause() -> pause
+    1429:1429:void pause() -> pause
+    1431:1431:void pause() -> pause
+    1432:1432:void pause() -> pause
+    1000:1000:int pendingFlags() -> pendingFlags
+    1001:1001:int pendingFlags() -> pendingFlags
+    1002:1002:int pendingFlags() -> pendingFlags
+    1004:1004:int pendingFlags() -> pendingFlags
+    1365:1365:void play() -> play
+    1367:1367:void play() -> play
+    1368:1368:void play() -> play
+    1369:1369:void play() -> play
+    1370:1370:void play() -> play
+    1373:1373:void play() -> play
+    1375:1375:void play() -> play
+    1376:1376:void play() -> play
+    1380:1380:void play() -> play
+    1382:1382:void play() -> play
+    1383:1383:void play() -> play
+    1385:1385:void play() -> play
+    1389:1389:void play() -> play
+    1391:1391:void play() -> play
+    1959:1959:long position() -> position
+    1960:1960:long position() -> position
+    1962:1962:long position() -> position
+    1468:1468:void prev() -> prev
+    1469:1469:void prev() -> prev
+    1471:1471:void prev() -> prev
+    1472:1472:void prev() -> prev
+    1473:1473:void prev() -> prev
+    1475:1475:void prev() -> prev
+    1477:1477:void prev() -> prev
+    1478:1478:void prev() -> prev
+    1480:1480:void prev() -> prev
+    1482:1482:void prev() -> prev
+    1483:1483:void prev() -> prev
+    1484:1484:void prev() -> prev
+    1485:1485:void prev() -> prev
+    1486:1486:void prev() -> prev
+    1488:1488:void prev() -> prev
+    1491:1491:void prev() -> prev
+    1492:1492:void prev() -> prev
+    1493:1493:void prev() -> prev
+    1494:1494:void prev() -> prev
+    1495:1495:void prev() -> prev
+    1496:1496:void prev() -> prev
+    1497:1497:void prev() -> prev
     670:670:void registerExternalStorageListener() -> registerExternalStorageListener
-    689:689:void registerExternalStorageListener() -> registerExternalStorageListener
+    671:671:void registerExternalStorageListener() -> registerExternalStorageListener
     690:690:void registerExternalStorageListener() -> registerExternalStorageListener
     691:691:void registerExternalStorageListener() -> registerExternalStorageListener
     692:692:void registerExternalStorageListener() -> registerExternalStorageListener
     693:693:void registerExternalStorageListener() -> registerExternalStorageListener
     694:694:void registerExternalStorageListener() -> registerExternalStorageListener
-    696:696:void registerExternalStorageListener() -> registerExternalStorageListener
-    699:699:void registerExternalStorageListener() -> registerExternalStorageListener
-    443:443:void reloadQueue() -> reloadQueue
-    445:445:void reloadQueue() -> reloadQueue
+    695:695:void registerExternalStorageListener() -> registerExternalStorageListener
+    697:697:void registerExternalStorageListener() -> registerExternalStorageListener
+    700:700:void registerExternalStorageListener() -> registerExternalStorageListener
+    444:444:void reloadQueue() -> reloadQueue
     446:446:void reloadQueue() -> reloadQueue
     447:447:void reloadQueue() -> reloadQueue
     448:448:void reloadQueue() -> reloadQueue
     449:449:void reloadQueue() -> reloadQueue
-    451:451:void reloadQueue() -> reloadQueue
-    454:454:void reloadQueue() -> reloadQueue
-    456:456:void reloadQueue() -> reloadQueue
+    450:450:void reloadQueue() -> reloadQueue
+    452:452:void reloadQueue() -> reloadQueue
+    455:455:void reloadQueue() -> reloadQueue
     457:457:void reloadQueue() -> reloadQueue
-    459:459:void reloadQueue() -> reloadQueue
+    458:458:void reloadQueue() -> reloadQueue
     460:460:void reloadQueue() -> reloadQueue
     461:461:void reloadQueue() -> reloadQueue
     462:462:void reloadQueue() -> reloadQueue
@@ -3310,233 +3334,236 @@ com.android.music.MediaPlaybackService -> com.android.music.MediaPlaybackService
     467:467:void reloadQueue() -> reloadQueue
     468:468:void reloadQueue() -> reloadQueue
     469:469:void reloadQueue() -> reloadQueue
-    471:471:void reloadQueue() -> reloadQueue
+    470:470:void reloadQueue() -> reloadQueue
     472:472:void reloadQueue() -> reloadQueue
     473:473:void reloadQueue() -> reloadQueue
     474:474:void reloadQueue() -> reloadQueue
-    477:477:void reloadQueue() -> reloadQueue
+    475:475:void reloadQueue() -> reloadQueue
     478:478:void reloadQueue() -> reloadQueue
-    480:480:void reloadQueue() -> reloadQueue
-    483:483:void reloadQueue() -> reloadQueue
-    485:485:void reloadQueue() -> reloadQueue
+    479:479:void reloadQueue() -> reloadQueue
+    481:481:void reloadQueue() -> reloadQueue
+    484:484:void reloadQueue() -> reloadQueue
     486:486:void reloadQueue() -> reloadQueue
-    488:488:void reloadQueue() -> reloadQueue
+    487:487:void reloadQueue() -> reloadQueue
     489:489:void reloadQueue() -> reloadQueue
-    491:491:void reloadQueue() -> reloadQueue
-    498:498:void reloadQueue() -> reloadQueue
-    501:501:void reloadQueue() -> reloadQueue
-    503:503:void reloadQueue() -> reloadQueue
+    490:490:void reloadQueue() -> reloadQueue
+    492:492:void reloadQueue() -> reloadQueue
+    499:499:void reloadQueue() -> reloadQueue
+    502:502:void reloadQueue() -> reloadQueue
     504:504:void reloadQueue() -> reloadQueue
-    508:508:void reloadQueue() -> reloadQueue
+    505:505:void reloadQueue() -> reloadQueue
     509:509:void reloadQueue() -> reloadQueue
-    522:522:void reloadQueue() -> reloadQueue
+    510:510:void reloadQueue() -> reloadQueue
     523:523:void reloadQueue() -> reloadQueue
     524:524:void reloadQueue() -> reloadQueue
     525:525:void reloadQueue() -> reloadQueue
     526:526:void reloadQueue() -> reloadQueue
-    528:528:void reloadQueue() -> reloadQueue
+    527:527:void reloadQueue() -> reloadQueue
     529:529:void reloadQueue() -> reloadQueue
-    532:532:void reloadQueue() -> reloadQueue
+    530:530:void reloadQueue() -> reloadQueue
     533:533:void reloadQueue() -> reloadQueue
-    535:535:void reloadQueue() -> reloadQueue
+    534:534:void reloadQueue() -> reloadQueue
     536:536:void reloadQueue() -> reloadQueue
     537:537:void reloadQueue() -> reloadQueue
-    539:539:void reloadQueue() -> reloadQueue
-    541:541:void reloadQueue() -> reloadQueue
+    538:538:void reloadQueue() -> reloadQueue
+    540:540:void reloadQueue() -> reloadQueue
     542:542:void reloadQueue() -> reloadQueue
     543:543:void reloadQueue() -> reloadQueue
-    545:545:void reloadQueue() -> reloadQueue
+    544:544:void reloadQueue() -> reloadQueue
     546:546:void reloadQueue() -> reloadQueue
     547:547:void reloadQueue() -> reloadQueue
-    550:550:void reloadQueue() -> reloadQueue
-    552:552:void reloadQueue() -> reloadQueue
-    1712:1712:int removeTrack(int) -> removeTrack
-    1713:1713:int removeTrack(int) -> removeTrack
-    1714:1714:int removeTrack(int) -> removeTrack
-    1715:1715:int removeTrack(int) -> removeTrack
-    1716:1716:int removeTrack(int) -> removeTrack
-    1717:1717:int removeTrack(int) -> removeTrack
-    1720:1720:int removeTrack(int) -> removeTrack
-    1721:1721:int removeTrack(int) -> removeTrack
-    1722:1722:int removeTrack(int) -> removeTrack
-    1724:1724:int removeTrack(int) -> removeTrack
-    1659:1659:int removeTracks(int,int) -> removeTracks
-    1660:1660:int removeTracks(int,int) -> removeTracks
-    1661:1661:int removeTracks(int,int) -> removeTracks
-    1663:1663:int removeTracks(int,int) -> removeTracks
-    1667:1667:int removeTracksInternal(int,int) -> removeTracksInternal
-    1668:1668:int removeTracksInternal(int,int) -> removeTracksInternal
-    1669:1669:int removeTracksInternal(int,int) -> removeTracksInternal
-    1670:1670:int removeTracksInternal(int,int) -> removeTracksInternal
-    1672:1672:int removeTracksInternal(int,int) -> removeTracksInternal
-    1673:1673:int removeTracksInternal(int,int) -> removeTracksInternal
-    1674:1674:int removeTracksInternal(int,int) -> removeTracksInternal
-    1675:1675:int removeTracksInternal(int,int) -> removeTracksInternal
-    1676:1676:int removeTracksInternal(int,int) -> removeTracksInternal
-    1677:1677:int removeTracksInternal(int,int) -> removeTracksInternal
-    1679:1679:int removeTracksInternal(int,int) -> removeTracksInternal
-    1680:1680:int removeTracksInternal(int,int) -> removeTracksInternal
-    1681:1681:int removeTracksInternal(int,int) -> removeTracksInternal
-    1683:1683:int removeTracksInternal(int,int) -> removeTracksInternal
-    1685:1685:int removeTracksInternal(int,int) -> removeTracksInternal
-    1686:1686:int removeTracksInternal(int,int) -> removeTracksInternal
-    1687:1687:int removeTracksInternal(int,int) -> removeTracksInternal
-    1688:1688:int removeTracksInternal(int,int) -> removeTracksInternal
-    1690:1690:int removeTracksInternal(int,int) -> removeTracksInternal
-    1691:1691:int removeTracksInternal(int,int) -> removeTracksInternal
-    1693:1693:int removeTracksInternal(int,int) -> removeTracksInternal
-    1694:1694:int removeTracksInternal(int,int) -> removeTracksInternal
-    1695:1695:int removeTracksInternal(int,int) -> removeTracksInternal
-    1696:1696:int removeTracksInternal(int,int) -> removeTracksInternal
-    1697:1697:int removeTracksInternal(int,int) -> removeTracksInternal
-    1701:1701:int removeTracksInternal(int,int) -> removeTracksInternal
-    1702:1702:int removeTracksInternal(int,int) -> removeTracksInternal
-    1557:1557:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1558:1558:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1559:1559:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1560:1560:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1561:1561:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1565:1565:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1567:1567:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1569:1569:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1573:1573:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1574:1574:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1575:1575:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1576:1576:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1577:1577:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1579:1579:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1580:1580:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    1581:1581:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
-    399:399:void saveQueue(boolean) -> saveQueue
+    548:548:void reloadQueue() -> reloadQueue
+    551:551:void reloadQueue() -> reloadQueue
+    553:553:void reloadQueue() -> reloadQueue
+    1759:1759:int removeTrack(int) -> removeTrack
+    1760:1760:int removeTrack(int) -> removeTrack
+    1761:1761:int removeTrack(int) -> removeTrack
+    1762:1762:int removeTrack(int) -> removeTrack
+    1763:1763:int removeTrack(int) -> removeTrack
+    1764:1764:int removeTrack(int) -> removeTrack
+    1767:1767:int removeTrack(int) -> removeTrack
+    1768:1768:int removeTrack(int) -> removeTrack
+    1769:1769:int removeTrack(int) -> removeTrack
+    1771:1771:int removeTrack(int) -> removeTrack
+    1706:1706:int removeTracks(int,int) -> removeTracks
+    1707:1707:int removeTracks(int,int) -> removeTracks
+    1708:1708:int removeTracks(int,int) -> removeTracks
+    1710:1710:int removeTracks(int,int) -> removeTracks
+    1714:1714:int removeTracksInternal(int,int) -> removeTracksInternal
+    1715:1715:int removeTracksInternal(int,int) -> removeTracksInternal
+    1716:1716:int removeTracksInternal(int,int) -> removeTracksInternal
+    1717:1717:int removeTracksInternal(int,int) -> removeTracksInternal
+    1719:1719:int removeTracksInternal(int,int) -> removeTracksInternal
+    1720:1720:int removeTracksInternal(int,int) -> removeTracksInternal
+    1721:1721:int removeTracksInternal(int,int) -> removeTracksInternal
+    1722:1722:int removeTracksInternal(int,int) -> removeTracksInternal
+    1723:1723:int removeTracksInternal(int,int) -> removeTracksInternal
+    1724:1724:int removeTracksInternal(int,int) -> removeTracksInternal
+    1726:1726:int removeTracksInternal(int,int) -> removeTracksInternal
+    1727:1727:int removeTracksInternal(int,int) -> removeTracksInternal
+    1728:1728:int removeTracksInternal(int,int) -> removeTracksInternal
+    1730:1730:int removeTracksInternal(int,int) -> removeTracksInternal
+    1732:1732:int removeTracksInternal(int,int) -> removeTracksInternal
+    1733:1733:int removeTracksInternal(int,int) -> removeTracksInternal
+    1734:1734:int removeTracksInternal(int,int) -> removeTracksInternal
+    1735:1735:int removeTracksInternal(int,int) -> removeTracksInternal
+    1737:1737:int removeTracksInternal(int,int) -> removeTracksInternal
+    1738:1738:int removeTracksInternal(int,int) -> removeTracksInternal
+    1740:1740:int removeTracksInternal(int,int) -> removeTracksInternal
+    1741:1741:int removeTracksInternal(int,int) -> removeTracksInternal
+    1742:1742:int removeTracksInternal(int,int) -> removeTracksInternal
+    1743:1743:int removeTracksInternal(int,int) -> removeTracksInternal
+    1744:1744:int removeTracksInternal(int,int) -> removeTracksInternal
+    1748:1748:int removeTracksInternal(int,int) -> removeTracksInternal
+    1749:1749:int removeTracksInternal(int,int) -> removeTracksInternal
+    1604:1604:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1605:1605:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1606:1606:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1607:1607:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1608:1608:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1612:1612:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1614:1614:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1616:1616:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1620:1620:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1621:1621:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1622:1622:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1623:1623:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1624:1624:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1626:1626:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1627:1627:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
+    1628:1628:void saveBookmarkIfNeeded() -> saveBookmarkIfNeeded
     400:400:void saveQueue(boolean) -> saveQueue
-    402:402:void saveQueue(boolean) -> saveQueue
-    404:404:void saveQueue(boolean) -> saveQueue
+    401:401:void saveQueue(boolean) -> saveQueue
+    403:403:void saveQueue(boolean) -> saveQueue
     405:405:void saveQueue(boolean) -> saveQueue
-    413:413:void saveQueue(boolean) -> saveQueue
+    406:406:void saveQueue(boolean) -> saveQueue
     414:414:void saveQueue(boolean) -> saveQueue
     415:415:void saveQueue(boolean) -> saveQueue
     416:416:void saveQueue(boolean) -> saveQueue
     417:417:void saveQueue(boolean) -> saveQueue
-    419:419:void saveQueue(boolean) -> saveQueue
+    418:418:void saveQueue(boolean) -> saveQueue
     420:420:void saveQueue(boolean) -> saveQueue
     421:421:void saveQueue(boolean) -> saveQueue
     422:422:void saveQueue(boolean) -> saveQueue
     423:423:void saveQueue(boolean) -> saveQueue
     424:424:void saveQueue(boolean) -> saveQueue
-    428:428:void saveQueue(boolean) -> saveQueue
+    425:425:void saveQueue(boolean) -> saveQueue
     429:429:void saveQueue(boolean) -> saveQueue
-    431:431:void saveQueue(boolean) -> saveQueue
+    430:430:void saveQueue(boolean) -> saveQueue
     432:432:void saveQueue(boolean) -> saveQueue
     433:433:void saveQueue(boolean) -> saveQueue
-    435:435:void saveQueue(boolean) -> saveQueue
+    434:434:void saveQueue(boolean) -> saveQueue
     436:436:void saveQueue(boolean) -> saveQueue
     437:437:void saveQueue(boolean) -> saveQueue
-    440:440:void saveQueue(boolean) -> saveQueue
-    1924:1924:long seek(long) -> seek
-    1925:1925:long seek(long) -> seek
-    1926:1926:long seek(long) -> seek
-    1927:1927:long seek(long) -> seek
-    1929:1929:long seek(long) -> seek
-    1825:1825:void setQueuePosition(int) -> setQueuePosition
-    1826:1826:void setQueuePosition(int) -> setQueuePosition
-    1827:1827:void setQueuePosition(int) -> setQueuePosition
-    1828:1828:void setQueuePosition(int) -> setQueuePosition
-    1829:1829:void setQueuePosition(int) -> setQueuePosition
-    1830:1830:void setQueuePosition(int) -> setQueuePosition
-    1831:1831:void setQueuePosition(int) -> setQueuePosition
-    1832:1832:void setQueuePosition(int) -> setQueuePosition
-    1755:1755:void setRepeatMode(int) -> setRepeatMode
-    1756:1756:void setRepeatMode(int) -> setRepeatMode
-    1757:1757:void setRepeatMode(int) -> setRepeatMode
-    1758:1758:void setRepeatMode(int) -> setRepeatMode
-    1759:1759:void setRepeatMode(int) -> setRepeatMode
-    1728:1728:void setShuffleMode(int) -> setShuffleMode
-    1729:1729:void setShuffleMode(int) -> setShuffleMode
-    1730:1730:void setShuffleMode(int) -> setShuffleMode
-    1732:1732:void setShuffleMode(int) -> setShuffleMode
-    1733:1733:void setShuffleMode(int) -> setShuffleMode
-    1734:1734:void setShuffleMode(int) -> setShuffleMode
-    1735:1735:void setShuffleMode(int) -> setShuffleMode
-    1736:1736:void setShuffleMode(int) -> setShuffleMode
-    1737:1737:void setShuffleMode(int) -> setShuffleMode
-    1738:1738:void setShuffleMode(int) -> setShuffleMode
-    1739:1739:void setShuffleMode(int) -> setShuffleMode
-    1740:1740:void setShuffleMode(int) -> setShuffleMode
-    1741:1741:void setShuffleMode(int) -> setShuffleMode
-    1744:1744:void setShuffleMode(int) -> setShuffleMode
-    1747:1747:void setShuffleMode(int) -> setShuffleMode
-    1748:1748:void setShuffleMode(int) -> setShuffleMode
-    1749:1749:void setShuffleMode(int) -> setShuffleMode
-    760:760:void setUpMediaSession() -> setUpMediaSession
+    438:438:void saveQueue(boolean) -> saveQueue
+    441:441:void saveQueue(boolean) -> saveQueue
+    1971:1971:long seek(long) -> seek
+    1972:1972:long seek(long) -> seek
+    1973:1973:long seek(long) -> seek
+    1974:1974:long seek(long) -> seek
+    1976:1976:long seek(long) -> seek
+    1872:1872:void setQueuePosition(int) -> setQueuePosition
+    1873:1873:void setQueuePosition(int) -> setQueuePosition
+    1874:1874:void setQueuePosition(int) -> setQueuePosition
+    1875:1875:void setQueuePosition(int) -> setQueuePosition
+    1876:1876:void setQueuePosition(int) -> setQueuePosition
+    1877:1877:void setQueuePosition(int) -> setQueuePosition
+    1878:1878:void setQueuePosition(int) -> setQueuePosition
+    1879:1879:void setQueuePosition(int) -> setQueuePosition
+    1802:1802:void setRepeatMode(int) -> setRepeatMode
+    1803:1803:void setRepeatMode(int) -> setRepeatMode
+    1804:1804:void setRepeatMode(int) -> setRepeatMode
+    1805:1805:void setRepeatMode(int) -> setRepeatMode
+    1806:1806:void setRepeatMode(int) -> setRepeatMode
+    1775:1775:void setShuffleMode(int) -> setShuffleMode
+    1776:1776:void setShuffleMode(int) -> setShuffleMode
+    1777:1777:void setShuffleMode(int) -> setShuffleMode
+    1779:1779:void setShuffleMode(int) -> setShuffleMode
+    1780:1780:void setShuffleMode(int) -> setShuffleMode
+    1781:1781:void setShuffleMode(int) -> setShuffleMode
+    1782:1782:void setShuffleMode(int) -> setShuffleMode
+    1783:1783:void setShuffleMode(int) -> setShuffleMode
+    1784:1784:void setShuffleMode(int) -> setShuffleMode
+    1785:1785:void setShuffleMode(int) -> setShuffleMode
+    1786:1786:void setShuffleMode(int) -> setShuffleMode
+    1787:1787:void setShuffleMode(int) -> setShuffleMode
+    1788:1788:void setShuffleMode(int) -> setShuffleMode
+    1791:1791:void setShuffleMode(int) -> setShuffleMode
+    1794:1794:void setShuffleMode(int) -> setShuffleMode
+    1795:1795:void setShuffleMode(int) -> setShuffleMode
+    1796:1796:void setShuffleMode(int) -> setShuffleMode
     761:761:void setUpMediaSession() -> setUpMediaSession
-    763:763:void setUpMediaSession() -> setUpMediaSession
+    762:762:void setUpMediaSession() -> setUpMediaSession
     764:764:void setUpMediaSession() -> setUpMediaSession
-    797:797:void setUpMediaSession() -> setUpMediaSession
-    799:799:void setUpMediaSession() -> setUpMediaSession
+    765:765:void setUpMediaSession() -> setUpMediaSession
+    798:798:void setUpMediaSession() -> setUpMediaSession
     800:800:void setUpMediaSession() -> setUpMediaSession
-    210:210:void startAndFadeIn() -> startAndFadeIn
+    801:801:void setUpMediaSession() -> setUpMediaSession
     211:211:void startAndFadeIn() -> startAndFadeIn
-    979:979:void startForegroundCompat() -> startForegroundCompat
-    980:980:void startForegroundCompat() -> startForegroundCompat
-    982:982:void startForegroundCompat() -> startForegroundCompat
-    983:983:void startForegroundCompat() -> startForegroundCompat
-    984:984:void startForegroundCompat() -> startForegroundCompat
-    986:986:void startForegroundCompat() -> startForegroundCompat
-    1347:1347:void stop(boolean) -> stop
-    1348:1348:void stop(boolean) -> stop
-    1350:1350:void stop(boolean) -> stop
-    1351:1351:void stop(boolean) -> stop
-    1352:1352:void stop(boolean) -> stop
-    1353:1353:void stop(boolean) -> stop
-    1355:1355:void stop(boolean) -> stop
-    1356:1356:void stop(boolean) -> stop
-    1358:1358:void stop(boolean) -> stop
-    1360:1360:void stop(boolean) -> stop
-    1361:1361:void stop(boolean) -> stop
-    1363:1363:void stop(boolean) -> stop
-    1369:1369:void stop() -> stop
-    1370:1370:void stop() -> stop
-    997:997:void stopForegroundCompat(boolean) -> stopForegroundCompat
-    998:998:void stopForegroundCompat(boolean) -> stopForegroundCompat
-    999:999:void stopForegroundCompat(boolean) -> stopForegroundCompat
-    1000:1000:void stopForegroundCompat(boolean) -> stopForegroundCompat
-    1001:1001:void stopForegroundCompat(boolean) -> stopForegroundCompat
-    1003:1003:void stopForegroundCompat(boolean) -> stopForegroundCompat
-    809:809:void updateMediaSession(java.lang.String) -> updateMediaSession
+    212:212:void startAndFadeIn() -> startAndFadeIn
+    1015:1015:void startForegroundCompat() -> startForegroundCompat
+    1016:1016:void startForegroundCompat() -> startForegroundCompat
+    1017:1017:void startForegroundCompat() -> startForegroundCompat
+    1019:1019:void startForegroundCompat() -> startForegroundCompat
+    1020:1020:void startForegroundCompat() -> startForegroundCompat
+    1021:1021:void startForegroundCompat() -> startForegroundCompat
+    1023:1023:void startForegroundCompat() -> startForegroundCompat
+    1025:1025:void startForegroundCompat() -> startForegroundCompat
+    1394:1394:void stop(boolean) -> stop
+    1395:1395:void stop(boolean) -> stop
+    1397:1397:void stop(boolean) -> stop
+    1398:1398:void stop(boolean) -> stop
+    1399:1399:void stop(boolean) -> stop
+    1400:1400:void stop(boolean) -> stop
+    1402:1402:void stop(boolean) -> stop
+    1403:1403:void stop(boolean) -> stop
+    1405:1405:void stop(boolean) -> stop
+    1407:1407:void stop(boolean) -> stop
+    1408:1408:void stop(boolean) -> stop
+    1410:1410:void stop(boolean) -> stop
+    1416:1416:void stop() -> stop
+    1417:1417:void stop() -> stop
+    1044:1044:void stopForegroundCompat(boolean) -> stopForegroundCompat
+    1045:1045:void stopForegroundCompat(boolean) -> stopForegroundCompat
+    1046:1046:void stopForegroundCompat(boolean) -> stopForegroundCompat
+    1047:1047:void stopForegroundCompat(boolean) -> stopForegroundCompat
+    1048:1048:void stopForegroundCompat(boolean) -> stopForegroundCompat
+    1050:1050:void stopForegroundCompat(boolean) -> stopForegroundCompat
     810:810:void updateMediaSession(java.lang.String) -> updateMediaSession
-    818:818:void updateMediaSession(java.lang.String) -> updateMediaSession
+    811:811:void updateMediaSession(java.lang.String) -> updateMediaSession
     819:819:void updateMediaSession(java.lang.String) -> updateMediaSession
-    821:821:void updateMediaSession(java.lang.String) -> updateMediaSession
+    820:820:void updateMediaSession(java.lang.String) -> updateMediaSession
     822:822:void updateMediaSession(java.lang.String) -> updateMediaSession
     823:823:void updateMediaSession(java.lang.String) -> updateMediaSession
     824:824:void updateMediaSession(java.lang.String) -> updateMediaSession
     825:825:void updateMediaSession(java.lang.String) -> updateMediaSession
-    827:827:void updateMediaSession(java.lang.String) -> updateMediaSession
-    831:831:void updateMediaSession(java.lang.String) -> updateMediaSession
+    826:826:void updateMediaSession(java.lang.String) -> updateMediaSession
+    828:828:void updateMediaSession(java.lang.String) -> updateMediaSession
     832:832:void updateMediaSession(java.lang.String) -> updateMediaSession
     833:833:void updateMediaSession(java.lang.String) -> updateMediaSession
     834:834:void updateMediaSession(java.lang.String) -> updateMediaSession
-    836:836:void updateMediaSession(java.lang.String) -> updateMediaSession
+    835:835:void updateMediaSession(java.lang.String) -> updateMediaSession
     837:837:void updateMediaSession(java.lang.String) -> updateMediaSession
     838:838:void updateMediaSession(java.lang.String) -> updateMediaSession
     839:839:void updateMediaSession(java.lang.String) -> updateMediaSession
-    841:841:void updateMediaSession(java.lang.String) -> updateMediaSession
+    840:840:void updateMediaSession(java.lang.String) -> updateMediaSession
     842:842:void updateMediaSession(java.lang.String) -> updateMediaSession
     843:843:void updateMediaSession(java.lang.String) -> updateMediaSession
-    846:846:void updateMediaSession(java.lang.String) -> updateMediaSession
-    848:848:void updateMediaSession(java.lang.String) -> updateMediaSession
+    844:844:void updateMediaSession(java.lang.String) -> updateMediaSession
+    847:847:void updateMediaSession(java.lang.String) -> updateMediaSession
     849:849:void updateMediaSession(java.lang.String) -> updateMediaSession
     850:850:void updateMediaSession(java.lang.String) -> updateMediaSession
     851:851:void updateMediaSession(java.lang.String) -> updateMediaSession
     852:852:void updateMediaSession(java.lang.String) -> updateMediaSession
     853:853:void updateMediaSession(java.lang.String) -> updateMediaSession
     854:854:void updateMediaSession(java.lang.String) -> updateMediaSession
-    856:856:void updateMediaSession(java.lang.String) -> updateMediaSession
-    860:860:void updateMediaSession(java.lang.String) -> updateMediaSession
+    855:855:void updateMediaSession(java.lang.String) -> updateMediaSession
+    857:857:void updateMediaSession(java.lang.String) -> updateMediaSession
     861:861:void updateMediaSession(java.lang.String) -> updateMediaSession
-    866:866:void updateMediaSession(java.lang.String) -> updateMediaSession
+    862:862:void updateMediaSession(java.lang.String) -> updateMediaSession
     867:867:void updateMediaSession(java.lang.String) -> updateMediaSession
-    869:869:void updateMediaSession(java.lang.String) -> updateMediaSession
+    868:868:void updateMediaSession(java.lang.String) -> updateMediaSession
+    870:870:void updateMediaSession(java.lang.String) -> updateMediaSession
 com.android.music.MediaPlaybackService$$ExternalSyntheticApiModelOutline0 -> com.android.music.MediaPlaybackService$$ExternalSyntheticApiModelOutline0:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
@@ -3704,56 +3731,55 @@ com.android.music.MediaPlaybackService$$ExternalSyntheticApiModelOutline9 -> com
       # {"id":"com.android.tools.r8.synthesized"}
 com.android.music.MediaPlaybackService$1 -> com.android.music.MediaPlaybackService$1:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    183:183:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    186:186:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+    184:184:void <init>(com.android.music.MediaPlaybackService) -> <init>
     187:187:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
     188:188:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
     189:189:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
     190:190:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
     191:191:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
-    193:193:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
-    195:195:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+    192:192:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+    194:194:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
     196:196:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
     197:197:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
-    199:199:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
-    202:202:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+    198:198:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+    200:200:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
     203:203:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
-    206:206:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+    204:204:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+    207:207:void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
 com.android.music.MediaPlaybackService$2 -> com.android.music.MediaPlaybackService$2:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    213:213:void <init>(com.android.music.MediaPlaybackService) -> <init>
     214:214:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    217:217:void handleMessage(android.os.Message) -> handleMessage
-    219:219:void handleMessage(android.os.Message) -> handleMessage
+    215:215:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    218:218:void handleMessage(android.os.Message) -> handleMessage
     220:220:void handleMessage(android.os.Message) -> handleMessage
     221:221:void handleMessage(android.os.Message) -> handleMessage
     222:222:void handleMessage(android.os.Message) -> handleMessage
     223:223:void handleMessage(android.os.Message) -> handleMessage
-    225:225:void handleMessage(android.os.Message) -> handleMessage
+    224:224:void handleMessage(android.os.Message) -> handleMessage
     226:226:void handleMessage(android.os.Message) -> handleMessage
     227:227:void handleMessage(android.os.Message) -> handleMessage
-    229:229:void handleMessage(android.os.Message) -> handleMessage
-    231:231:void handleMessage(android.os.Message) -> handleMessage
-    233:233:void handleMessage(android.os.Message) -> handleMessage
-    235:235:void handleMessage(android.os.Message) -> handleMessage
+    228:228:void handleMessage(android.os.Message) -> handleMessage
+    230:230:void handleMessage(android.os.Message) -> handleMessage
+    232:232:void handleMessage(android.os.Message) -> handleMessage
+    234:234:void handleMessage(android.os.Message) -> handleMessage
     236:236:void handleMessage(android.os.Message) -> handleMessage
-    242:242:void handleMessage(android.os.Message) -> handleMessage
-    244:244:void handleMessage(android.os.Message) -> handleMessage
-    246:246:void handleMessage(android.os.Message) -> handleMessage
+    237:237:void handleMessage(android.os.Message) -> handleMessage
+    243:243:void handleMessage(android.os.Message) -> handleMessage
+    245:245:void handleMessage(android.os.Message) -> handleMessage
     247:247:void handleMessage(android.os.Message) -> handleMessage
     248:248:void handleMessage(android.os.Message) -> handleMessage
     249:249:void handleMessage(android.os.Message) -> handleMessage
     250:250:void handleMessage(android.os.Message) -> handleMessage
-    252:252:void handleMessage(android.os.Message) -> handleMessage
+    251:251:void handleMessage(android.os.Message) -> handleMessage
     253:253:void handleMessage(android.os.Message) -> handleMessage
-    255:255:void handleMessage(android.os.Message) -> handleMessage
-    257:257:void handleMessage(android.os.Message) -> handleMessage
+    254:254:void handleMessage(android.os.Message) -> handleMessage
+    256:256:void handleMessage(android.os.Message) -> handleMessage
     258:258:void handleMessage(android.os.Message) -> handleMessage
-    262:262:void handleMessage(android.os.Message) -> handleMessage
+    259:259:void handleMessage(android.os.Message) -> handleMessage
+    263:263:void handleMessage(android.os.Message) -> handleMessage
 com.android.music.MediaPlaybackService$3 -> com.android.music.MediaPlaybackService$3:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    265:265:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    268:268:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    266:266:void <init>(com.android.music.MediaPlaybackService) -> <init>
     269:269:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     270:270:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     271:271:void onReceive(android.content.Context,android.content.Intent) -> onReceive
@@ -3762,8 +3788,8 @@ com.android.music.MediaPlaybackService$3 -> com.android.music.MediaPlaybackServi
     274:274:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     275:275:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     276:276:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    278:278:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    280:280:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    277:277:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    279:279:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     281:281:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     282:282:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     283:283:void onReceive(android.content.Context,android.content.Intent) -> onReceive
@@ -3771,50 +3797,51 @@ com.android.music.MediaPlaybackService$3 -> com.android.music.MediaPlaybackServi
     285:285:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     286:286:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     287:287:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    290:290:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    288:288:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     291:291:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    293:293:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    292:292:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    294:294:void onReceive(android.content.Context,android.content.Intent) -> onReceive
 com.android.music.MediaPlaybackService$4 -> com.android.music.MediaPlaybackService$4:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    635:635:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    639:639:void handleMessage(android.os.Message) -> handleMessage
+    636:636:void <init>(com.android.music.MediaPlaybackService) -> <init>
     640:640:void handleMessage(android.os.Message) -> handleMessage
     641:641:void handleMessage(android.os.Message) -> handleMessage
-    646:646:void handleMessage(android.os.Message) -> handleMessage
+    642:642:void handleMessage(android.os.Message) -> handleMessage
     647:647:void handleMessage(android.os.Message) -> handleMessage
     648:648:void handleMessage(android.os.Message) -> handleMessage
+    649:649:void handleMessage(android.os.Message) -> handleMessage
 com.android.music.MediaPlaybackService$5 -> com.android.music.MediaPlaybackService$5:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    670:670:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    673:673:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    671:671:void <init>(com.android.music.MediaPlaybackService) -> <init>
     674:674:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     675:675:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     676:676:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    679:679:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    677:677:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     680:680:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     681:681:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     682:682:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     683:683:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     684:684:void onReceive(android.content.Context,android.content.Intent) -> onReceive
     685:685:void onReceive(android.content.Context,android.content.Intent) -> onReceive
-    687:687:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    686:686:void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    688:688:void onReceive(android.content.Context,android.content.Intent) -> onReceive
 com.android.music.MediaPlaybackService$6 -> com.android.music.MediaPlaybackService$6:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    764:764:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    772:772:void onPause() -> onPause
+    765:765:void <init>(com.android.music.MediaPlaybackService) -> <init>
     773:773:void onPause() -> onPause
-    767:767:void onPlay() -> onPlay
+    774:774:void onPause() -> onPause
     768:768:void onPlay() -> onPlay
-    787:787:void onSeekTo(long) -> onSeekTo
+    769:769:void onPlay() -> onPlay
     788:788:void onSeekTo(long) -> onSeekTo
     789:789:void onSeekTo(long) -> onSeekTo
-    777:777:void onSkipToNext() -> onSkipToNext
+    790:790:void onSeekTo(long) -> onSeekTo
     778:778:void onSkipToNext() -> onSkipToNext
-    782:782:void onSkipToPrevious() -> onSkipToPrevious
+    779:779:void onSkipToNext() -> onSkipToNext
     783:783:void onSkipToPrevious() -> onSkipToPrevious
-    793:793:void onStop() -> onStop
+    784:784:void onSkipToPrevious() -> onSkipToPrevious
     794:794:void onStop() -> onStop
     795:795:void onStop() -> onStop
+    796:796:void onStop() -> onStop
 com.android.music.MediaPlaybackService$MultiPlayer -> com.android.music.MediaPlaybackService$MultiPlayer:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
     0:0:android.os.Handler -$$Nest$fgetmHandler(com.android.music.MediaPlaybackService$MultiPlayer) -> -$$Nest$fgetmHandler
@@ -3825,149 +3852,149 @@ com.android.music.MediaPlaybackService$MultiPlayer -> com.android.music.MediaPla
       # {"id":"com.android.tools.r8.synthesized"}
     0:0:void -$$Nest$fputmMediaPlayer(com.android.music.MediaPlaybackService$MultiPlayer,android.media.MediaPlayer) -> -$$Nest$fputmMediaPlayer
       # {"id":"com.android.tools.r8.synthesized"}
-    1937:1937:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    1939:1939:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    1941:1941:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    1942:1942:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    1943:1943:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    2022:2022:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    2035:2035:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    2041:2041:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    2062:2062:long duration() -> duration
-    1994:1994:boolean isInitialized() -> isInitialized
-    2015:2015:void pause() -> pause
-    2016:2016:void pause() -> pause
-    2066:2066:long position() -> position
-    2010:2010:void release() -> release
-    2011:2011:void release() -> release
-    2012:2012:void release() -> release
-    2070:2070:long seek(long) -> seek
-    2071:2071:long seek(long) -> seek
-    1969:1969:void setDataSource(java.lang.String) -> setDataSource
-    1970:1970:void setDataSource(java.lang.String) -> setDataSource
-    1971:1971:void setDataSource(java.lang.String) -> setDataSource
-    1972:1972:void setDataSource(java.lang.String) -> setDataSource
-    1974:1974:void setDataSource(java.lang.String) -> setDataSource
-    1976:1976:void setDataSource(java.lang.String) -> setDataSource
-    1977:1977:void setDataSource(java.lang.String) -> setDataSource
-    1978:1978:void setDataSource(java.lang.String) -> setDataSource
-    1980:1980:void setDataSource(java.lang.String) -> setDataSource
-    1981:1981:void setDataSource(java.lang.String) -> setDataSource
-    1982:1982:void setDataSource(java.lang.String) -> setDataSource
-    1984:1984:void setDataSource(java.lang.String) -> setDataSource
-    1985:1985:void setDataSource(java.lang.String) -> setDataSource
-    1986:1986:void setDataSource(java.lang.String) -> setDataSource
-    1987:1987:void setDataSource(java.lang.String) -> setDataSource
-    1988:1988:void setDataSource(java.lang.String) -> setDataSource
-    1990:1990:void setDataSource(java.lang.String) -> setDataSource
-    1991:1991:void setDataSource(java.lang.String) -> setDataSource
-    1947:1947:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1948:1948:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1949:1949:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1950:1950:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1951:1951:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1952:1952:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1954:1954:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1955:1955:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1956:1956:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1958:1958:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1959:1959:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1960:1960:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1961:1961:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1962:1962:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1964:1964:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    1965:1965:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
-    2019:2019:void setHandler(android.os.Handler) -> setHandler
-    2020:2020:void setHandler(android.os.Handler) -> setHandler
-    2075:2075:void setVolume(float) -> setVolume
-    2076:2076:void setVolume(float) -> setVolume
-    1998:1998:void start() -> start
-    1999:1999:void start() -> start
-    2002:2002:void stop() -> stop
-    2003:2003:void stop() -> stop
-    2004:2004:void stop() -> stop
+    1984:1984:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    1986:1986:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    1988:1988:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    1989:1989:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    1990:1990:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    2069:2069:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    2082:2082:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    2088:2088:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    2109:2109:long duration() -> duration
+    2041:2041:boolean isInitialized() -> isInitialized
+    2062:2062:void pause() -> pause
+    2063:2063:void pause() -> pause
+    2113:2113:long position() -> position
+    2057:2057:void release() -> release
+    2058:2058:void release() -> release
+    2059:2059:void release() -> release
+    2117:2117:long seek(long) -> seek
+    2118:2118:long seek(long) -> seek
+    2016:2016:void setDataSource(java.lang.String) -> setDataSource
+    2017:2017:void setDataSource(java.lang.String) -> setDataSource
+    2018:2018:void setDataSource(java.lang.String) -> setDataSource
+    2019:2019:void setDataSource(java.lang.String) -> setDataSource
+    2021:2021:void setDataSource(java.lang.String) -> setDataSource
+    2023:2023:void setDataSource(java.lang.String) -> setDataSource
+    2024:2024:void setDataSource(java.lang.String) -> setDataSource
+    2025:2025:void setDataSource(java.lang.String) -> setDataSource
+    2027:2027:void setDataSource(java.lang.String) -> setDataSource
+    2028:2028:void setDataSource(java.lang.String) -> setDataSource
+    2029:2029:void setDataSource(java.lang.String) -> setDataSource
+    2031:2031:void setDataSource(java.lang.String) -> setDataSource
+    2032:2032:void setDataSource(java.lang.String) -> setDataSource
+    2033:2033:void setDataSource(java.lang.String) -> setDataSource
+    2034:2034:void setDataSource(java.lang.String) -> setDataSource
+    2035:2035:void setDataSource(java.lang.String) -> setDataSource
+    2037:2037:void setDataSource(java.lang.String) -> setDataSource
+    2038:2038:void setDataSource(java.lang.String) -> setDataSource
+    1994:1994:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    1995:1995:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    1996:1996:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    1997:1997:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    1998:1998:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    1999:1999:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2001:2001:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2002:2002:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2003:2003:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2005:2005:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2006:2006:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2007:2007:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2008:2008:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2009:2009:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2011:2011:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2012:2012:void setDataSourceAsync(java.lang.String) -> setDataSourceAsync
+    2066:2066:void setHandler(android.os.Handler) -> setHandler
+    2067:2067:void setHandler(android.os.Handler) -> setHandler
+    2122:2122:void setVolume(float) -> setVolume
+    2123:2123:void setVolume(float) -> setVolume
+    2045:2045:void start() -> start
+    2046:2046:void start() -> start
+    2049:2049:void stop() -> stop
+    2050:2050:void stop() -> stop
+    2051:2051:void stop() -> stop
 com.android.music.MediaPlaybackService$MultiPlayer$1 -> com.android.music.MediaPlaybackService$MultiPlayer$1:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    2022:2022:void <init>(com.android.music.MediaPlaybackService$MultiPlayer) -> <init>
-    2029:2029:void onCompletion(android.media.MediaPlayer) -> onCompletion
-    2030:2030:void onCompletion(android.media.MediaPlayer) -> onCompletion
-    2031:2031:void onCompletion(android.media.MediaPlayer) -> onCompletion
-    2032:2032:void onCompletion(android.media.MediaPlayer) -> onCompletion
+    2069:2069:void <init>(com.android.music.MediaPlaybackService$MultiPlayer) -> <init>
+    2076:2076:void onCompletion(android.media.MediaPlayer) -> onCompletion
+    2077:2077:void onCompletion(android.media.MediaPlayer) -> onCompletion
+    2078:2078:void onCompletion(android.media.MediaPlayer) -> onCompletion
+    2079:2079:void onCompletion(android.media.MediaPlayer) -> onCompletion
 com.android.music.MediaPlaybackService$MultiPlayer$2 -> com.android.music.MediaPlaybackService$MultiPlayer$2:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    2035:2035:void <init>(com.android.music.MediaPlaybackService$MultiPlayer) -> <init>
-    2037:2037:void onPrepared(android.media.MediaPlayer) -> onPrepared
-    2038:2038:void onPrepared(android.media.MediaPlayer) -> onPrepared
+    2082:2082:void <init>(com.android.music.MediaPlaybackService$MultiPlayer) -> <init>
+    2084:2084:void onPrepared(android.media.MediaPlayer) -> onPrepared
+    2085:2085:void onPrepared(android.media.MediaPlayer) -> onPrepared
 com.android.music.MediaPlaybackService$MultiPlayer$3 -> com.android.music.MediaPlaybackService$MultiPlayer$3:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    2041:2041:void <init>(com.android.music.MediaPlaybackService$MultiPlayer) -> <init>
-    2043:2043:boolean onError(android.media.MediaPlayer,int,int) -> onError
-    2045:2045:boolean onError(android.media.MediaPlayer,int,int) -> onError
-    2046:2046:boolean onError(android.media.MediaPlayer,int,int) -> onError
-    2050:2050:boolean onError(android.media.MediaPlayer,int,int) -> onError
-    2051:2051:boolean onError(android.media.MediaPlayer,int,int) -> onError
-    2052:2052:boolean onError(android.media.MediaPlayer,int,int) -> onError
-    2053:2053:boolean onError(android.media.MediaPlayer,int,int) -> onError
-    2057:2057:boolean onError(android.media.MediaPlayer,int,int) -> onError
+    2088:2088:void <init>(com.android.music.MediaPlaybackService$MultiPlayer) -> <init>
+    2090:2090:boolean onError(android.media.MediaPlayer,int,int) -> onError
+    2092:2092:boolean onError(android.media.MediaPlayer,int,int) -> onError
+    2093:2093:boolean onError(android.media.MediaPlayer,int,int) -> onError
+    2097:2097:boolean onError(android.media.MediaPlayer,int,int) -> onError
+    2098:2098:boolean onError(android.media.MediaPlayer,int,int) -> onError
+    2099:2099:boolean onError(android.media.MediaPlayer,int,int) -> onError
+    2100:2100:boolean onError(android.media.MediaPlayer,int,int) -> onError
+    2104:2104:boolean onError(android.media.MediaPlayer,int,int) -> onError
 com.android.music.MediaPlaybackService$ServiceStub -> com.android.music.MediaPlaybackService$ServiceStub:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
-    2087:2087:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    2088:2088:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    2089:2089:void <init>(com.android.music.MediaPlaybackService) -> <init>
-    2160:2160:long duration() -> duration
-    2142:2142:void enqueue(int[],int) -> enqueue
-    2143:2143:void enqueue(int[],int) -> enqueue
-    2133:2133:int getAlbumId() -> getAlbumId
-    2130:2130:java.lang.String getAlbumName() -> getAlbumName
-    2139:2139:int getArtistId() -> getArtistId
-    2136:2136:java.lang.String getArtistName() -> getArtistName
-    2154:2154:int getAudioId() -> getAudioId
-    2184:2184:int getMediaMountedCount() -> getMediaMountedCount
-    2151:2151:java.lang.String getPath() -> getPath
-    2145:2145:int[] getQueue() -> getQueue
-    2103:2103:int getQueuePosition() -> getQueuePosition
-    2181:2181:int getRepeatMode() -> getRepeatMode
-    2169:2169:int getShuffleMode() -> getShuffleMode
-    2127:2127:java.lang.String getTrackName() -> getTrackName
-    2109:2109:boolean isPlaying() -> isPlaying
-    2148:2148:void moveQueueItem(int,int) -> moveQueueItem
-    2149:2149:void moveQueueItem(int,int) -> moveQueueItem
-    2124:2124:void next() -> next
-    2125:2125:void next() -> next
-    2100:2100:void open(int[],int) -> open
-    2101:2101:void open(int[],int) -> open
-    2097:2097:void openFile(java.lang.String,boolean) -> openFile
-    2098:2098:void openFile(java.lang.String,boolean) -> openFile
-    2093:2093:void openFileAsync(java.lang.String) -> openFileAsync
-    2094:2094:void openFileAsync(java.lang.String) -> openFileAsync
-    2115:2115:void pause() -> pause
-    2116:2116:void pause() -> pause
-    2118:2118:void play() -> play
-    2119:2119:void play() -> play
-    2157:2157:long position() -> position
-    2121:2121:void prev() -> prev
-    2122:2122:void prev() -> prev
-    2175:2175:int removeTrack(int) -> removeTrack
-    2172:2172:int removeTracks(int,int) -> removeTracks
-    2163:2163:long seek(long) -> seek
-    2106:2106:void setQueuePosition(int) -> setQueuePosition
-    2107:2107:void setQueuePosition(int) -> setQueuePosition
-    2178:2178:void setRepeatMode(int) -> setRepeatMode
-    2179:2179:void setRepeatMode(int) -> setRepeatMode
-    2166:2166:void setShuffleMode(int) -> setShuffleMode
-    2167:2167:void setShuffleMode(int) -> setShuffleMode
-    2112:2112:void stop() -> stop
-    2113:2113:void stop() -> stop
+    2134:2134:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    2135:2135:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    2136:2136:void <init>(com.android.music.MediaPlaybackService) -> <init>
+    2207:2207:long duration() -> duration
+    2189:2189:void enqueue(int[],int) -> enqueue
+    2190:2190:void enqueue(int[],int) -> enqueue
+    2180:2180:int getAlbumId() -> getAlbumId
+    2177:2177:java.lang.String getAlbumName() -> getAlbumName
+    2186:2186:int getArtistId() -> getArtistId
+    2183:2183:java.lang.String getArtistName() -> getArtistName
+    2201:2201:int getAudioId() -> getAudioId
+    2231:2231:int getMediaMountedCount() -> getMediaMountedCount
+    2198:2198:java.lang.String getPath() -> getPath
+    2192:2192:int[] getQueue() -> getQueue
+    2150:2150:int getQueuePosition() -> getQueuePosition
+    2228:2228:int getRepeatMode() -> getRepeatMode
+    2216:2216:int getShuffleMode() -> getShuffleMode
+    2174:2174:java.lang.String getTrackName() -> getTrackName
+    2156:2156:boolean isPlaying() -> isPlaying
+    2195:2195:void moveQueueItem(int,int) -> moveQueueItem
+    2196:2196:void moveQueueItem(int,int) -> moveQueueItem
+    2171:2171:void next() -> next
+    2172:2172:void next() -> next
+    2147:2147:void open(int[],int) -> open
+    2148:2148:void open(int[],int) -> open
+    2144:2144:void openFile(java.lang.String,boolean) -> openFile
+    2145:2145:void openFile(java.lang.String,boolean) -> openFile
+    2140:2140:void openFileAsync(java.lang.String) -> openFileAsync
+    2141:2141:void openFileAsync(java.lang.String) -> openFileAsync
+    2162:2162:void pause() -> pause
+    2163:2163:void pause() -> pause
+    2165:2165:void play() -> play
+    2166:2166:void play() -> play
+    2204:2204:long position() -> position
+    2168:2168:void prev() -> prev
+    2169:2169:void prev() -> prev
+    2222:2222:int removeTrack(int) -> removeTrack
+    2219:2219:int removeTracks(int,int) -> removeTracks
+    2210:2210:long seek(long) -> seek
+    2153:2153:void setQueuePosition(int) -> setQueuePosition
+    2154:2154:void setQueuePosition(int) -> setQueuePosition
+    2225:2225:void setRepeatMode(int) -> setRepeatMode
+    2226:2226:void setRepeatMode(int) -> setRepeatMode
+    2213:2213:void setShuffleMode(int) -> setShuffleMode
+    2214:2214:void setShuffleMode(int) -> setShuffleMode
+    2159:2159:void stop() -> stop
+    2160:2160:void stop() -> stop
 com.android.music.MediaPlaybackService$Shuffler -> com.android.music.MediaPlaybackService$Shuffler:
 # {"id":"sourceFile","fileName":"MediaPlaybackService.java"}
     0:0:void <init>(com.android.music.MediaPlaybackService-IA) -> <init>
       # {"id":"com.android.tools.r8.synthesized"}
-    1610:1610:void <init>() -> <init>
-    1612:1612:void <init>() -> <init>
-    1616:1616:int nextInt(int) -> nextInt
-    1617:1617:int nextInt(int) -> nextInt
-    1618:1618:int nextInt(int) -> nextInt
-    1619:1619:int nextInt(int) -> nextInt
+    1657:1657:void <init>() -> <init>
+    1659:1659:void <init>() -> <init>
+    1663:1663:int nextInt(int) -> nextInt
+    1664:1664:int nextInt(int) -> nextInt
+    1665:1665:int nextInt(int) -> nextInt
+    1666:1666:int nextInt(int) -> nextInt
 com.android.music.MediaPlaybackService-IA -> com.android.music.MediaPlaybackService-IA:
 # {"id":"sourceFile","fileName":"R8$$SyntheticClass"}
 # {"id":"com.android.tools.r8.synthesized"}
