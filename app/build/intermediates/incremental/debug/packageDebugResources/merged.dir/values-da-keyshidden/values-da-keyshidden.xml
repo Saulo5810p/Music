@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <string msgid="6653146846093237201" name="create_playlist_create_text_prompt">"Åbn tastaturet for at give din nye afspilningsliste et navn, eller vælg Gem for at give den navnet \"%s\"."</string>
+    <string msgid="6930730254920388535" name="rename_playlist_diff_prompt">"Åbn tastaturet for at give afspilningslisten \"<ns1:g id="PLAYLIST">%s</ns1:g>\" et navn, eller vælg Gem for at give den navnet \"%s\"."</string>
+    <string msgid="7777541452078260899" name="rename_playlist_same_prompt">"Åbn tastaturet for at give afspilningslisten \"<ns1:g id="PLAYLIST">%s</ns1:g>\" et nyt navn."</string>
+</resources>

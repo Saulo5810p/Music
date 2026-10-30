@@ -4,6 +4,18 @@
         "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_repeat_off_btn.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-mdpi_ic_notif_pause.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-mdpi/ic_notif_pause.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxhdpi_ic_notif_repeat_none.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxhdpi/ic_notif_repeat_none.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxxhdpi_ic_notif_next.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxxhdpi/ic_notif_next.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_btn_music_normal.9.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/btn_music_normal.9.png"
     },
@@ -16,12 +28,44 @@
         "source": "com.android.music.app-main-13:/drawable-land-finger/btn_music_highlight.9.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-mdpi_ic_notif_previous.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-mdpi/ic_notif_previous.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/layout-finger_confirm_delete.xml.flat",
         "source": "com.android.music.app-main-13:/layout-finger/confirm_delete.xml"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-hdpi_ic_notif_play.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-hdpi/ic_notif_play.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xhdpi_ic_notif_pause.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xhdpi/ic_notif_pause.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxxhdpi_ic_notif_repeat_all.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxxhdpi/ic_notif_repeat_all.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxhdpi_ic_notif_pause.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxhdpi/ic_notif_pause.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xhdpi_ic_notif_repeat_all.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xhdpi/ic_notif_repeat_all.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxhdpi_ic_notif_next.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxhdpi/ic_notif_next.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_menu_set_as_ringtone.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/ic_menu_set_as_ringtone.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-hdpi_ic_notif_repeat_none.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-hdpi/ic_notif_repeat_none.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable_app_music.png.flat",
@@ -30,6 +74,10 @@
     {
         "merged": "com.android.music.app-debug-11:/drawable-land-finger_albumart_mp_unknown.png.flat",
         "source": "com.android.music.app-main-13:/drawable-land-finger/albumart_mp_unknown.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-hdpi_ic_notif_next.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-hdpi/ic_notif_next.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_indicator_ic_mp_playing_list.png.flat",
@@ -52,6 +100,10 @@
         "source": "com.android.music.app-main-13:/drawable-finger/appwidget_next_pressed.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-xhdpi_ic_notif_next.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xhdpi/ic_notif_next.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/layout_media_picker_activity.xml.flat",
         "source": "com.android.music.app-main-13:/layout/media_picker_activity.xml"
     },
@@ -64,12 +116,20 @@
         "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_shuffle_off_btn.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-hdpi_ic_notif_pause.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-hdpi/ic_notif_pause.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_btn_music_highlight.9.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/btn_music_highlight.9.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_appwidget_play.xml.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/appwidget_play.xml"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-anydpi-v21_ic_notif_play.xml.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-anydpi-v21/ic_notif_play.xml"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_partyshuffle_on_btn.png.flat",
@@ -80,16 +140,24 @@
         "source": "com.android.music.app-main-13:/layout-finger/track_list_item_group.xml"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-anydpi-v21_ic_notif_pause.xml.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-anydpi-v21/ic_notif_pause.xml"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-mdpi_ic_notif_repeat_all.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-mdpi/ic_notif_repeat_all.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_albumart_mp_unknown.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/albumart_mp_unknown.png"
     },
     {
-        "merged": "com.android.music.app-debug-11:/drawable_ic_notif_next.xml.flat",
-        "source": "com.android.music.app-main-13:/drawable/ic_notif_next.xml"
-    },
-    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_menu_playback.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/ic_menu_playback.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-ldpi_ic_notif_repeat_all.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-ldpi/ic_notif_repeat_all.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/layout_media_picker_activity_expanding.xml.flat",
@@ -100,6 +168,10 @@
         "source": "com.android.music.app-main-13:/drawable-finger/ic_menu_shuffle.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-hdpi_ic_notif_repeat_all.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-hdpi/ic_notif_repeat_all.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable_movie.png.flat",
         "source": "com.android.music.app-main-13:/drawable/movie.png"
     },
@@ -108,12 +180,32 @@
         "source": "com.android.music.app-main-13:/layout-keyshidden/create_playlist.xml"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-xxhdpi_ic_notif_play.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxhdpi/ic_notif_play.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxxhdpi_ic_notif_status_bar.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxxhdpi/ic_notif_status_bar.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxhdpi_ic_notif_status_bar.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxhdpi/ic_notif_status_bar.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxxhdpi_ic_notif_repeat_one.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxxhdpi/ic_notif_repeat_one.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxhdpi_ic_notif_repeat_one.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxhdpi/ic_notif_repeat_one.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/layout-finger_edit_track_list_item.xml.flat",
         "source": "com.android.music.app-main-13:/layout-finger/edit_track_list_item.xml"
     },
     {
-        "merged": "com.android.music.app-debug-11:/drawable_ic_notif_repeat_all.xml.flat",
-        "source": "com.android.music.app-main-13:/drawable/ic_notif_repeat_all.xml"
+        "merged": "com.android.music.app-debug-11:/drawable-anydpi-v21_ic_notif_repeat_all.xml.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-anydpi-v21/ic_notif_repeat_all.xml"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_song_playback.png.flat",
@@ -124,6 +216,10 @@
         "source": "com.android.music.app-main-13:/layout/scanning.xml"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-anydpi-v21_ic_notif_next.xml.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-anydpi-v21/ic_notif_next.xml"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_screen_tracks.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_screen_tracks.png"
     },
@@ -132,8 +228,8 @@
         "source": "com.android.music.app-main-13:/drawable-finger/stat_notify_musicplayer.png"
     },
     {
-        "merged": "com.android.music.app-debug-11:/drawable_ic_notif_play.xml.flat",
-        "source": "com.android.music.app-main-13:/drawable/ic_notif_play.xml"
+        "merged": "com.android.music.app-debug-11:/drawable-ldpi_ic_notif_pause.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-ldpi/ic_notif_pause.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_repeat_once_btn.png.flat",
@@ -144,8 +240,20 @@
         "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_current_playlist_btn.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-hdpi_ic_notif_previous.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-hdpi/ic_notif_previous.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xhdpi_ic_notif_play.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xhdpi/ic_notif_play.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable_ic_launcher_shortcut_music_playlist.png.flat",
         "source": "com.android.music.app-main-13:/drawable/ic_launcher_shortcut_music_playlist.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-hdpi_ic_notif_repeat_one.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-hdpi/ic_notif_repeat_one.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/layout-land-finger_music_library.xml.flat",
@@ -156,8 +264,16 @@
         "source": "com.android.music.app-main-13:/layout-finger/track_list_item_child.xml"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-mdpi_ic_notif_status_bar.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-mdpi/ic_notif_status_bar.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_screen_artists.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_screen_artists.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-mdpi_ic_notif_repeat_none.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-mdpi/ic_notif_repeat_none.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/layout-finger_audio_player.xml.flat",
@@ -168,8 +284,16 @@
         "source": "com.android.music.app-main-13:/layout/music_picker_item.xml"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-ldpi_ic_notif_repeat_one.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-ldpi/ic_notif_repeat_one.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/xml_appwidget_info.xml.flat",
         "source": "com.android.music.app-main-13:/xml/appwidget_info.xml"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-mdpi_ic_notif_repeat_one.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-mdpi/ic_notif_repeat_one.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_appwidget_inner_dither.xml.flat",
@@ -188,6 +312,14 @@
         "source": "com.android.music.app-main-13:/drawable-finger/albumart_mp_unknown_list.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-xxxhdpi_ic_notif_previous.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxxhdpi/ic_notif_previous.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxxhdpi_ic_notif_repeat_none.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxxhdpi/ic_notif_repeat_none.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_appwidget_pause.xml.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/appwidget_pause.xml"
     },
@@ -196,8 +328,20 @@
         "source": "com.android.music.app-main-13:/layout-finger/track_list_item_common.xml"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-xhdpi_ic_notif_previous.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xhdpi/ic_notif_previous.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-ldpi_ic_notif_previous.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-ldpi/ic_notif_previous.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/layout-finger_track_list_item.xml.flat",
         "source": "com.android.music.app-main-13:/layout-finger/track_list_item.xml"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-mdpi_ic_notif_next.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-mdpi/ic_notif_next.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/layout_sd_error.xml.flat",
@@ -208,20 +352,24 @@
         "source": "com.android.music.app-main-13:/layout-keysexposed/create_playlist.xml"
     },
     {
-        "merged": "com.android.music.app-debug-11:/drawable_ic_notif_status_bar.xml.flat",
-        "source": "com.android.music.app-main-13:/drawable/ic_notif_status_bar.xml"
-    },
-    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_album_playback.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_album_playback.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-anydpi-v21_ic_notif_status_bar.xml.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-anydpi-v21/ic_notif_status_bar.xml"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-anydpi-v21_ic_notif_repeat_one.xml.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-anydpi-v21/ic_notif_repeat_one.xml"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_search_category_music_song.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/ic_search_category_music_song.png"
     },
     {
-        "merged": "com.android.music.app-debug-11:/drawable_ic_notif_repeat_one.xml.flat",
-        "source": "com.android.music.app-main-13:/drawable/ic_notif_repeat_one.xml"
+        "merged": "com.android.music.app-debug-11:/drawable-xxhdpi_ic_notif_repeat_all.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxhdpi/ic_notif_repeat_all.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_screen_albums.png.flat",
@@ -230,6 +378,14 @@
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_album_border_large.9.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/album_border_large.9.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-anydpi-v21_ic_notif_repeat_none.xml.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-anydpi-v21/ic_notif_repeat_none.xml"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-hdpi_ic_notif_status_bar.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-hdpi/ic_notif_status_bar.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/layout_music_picker.xml.flat",
@@ -244,20 +400,28 @@
         "source": "com.android.music.app-main-13:/xml/searchable.xml"
     },
     {
-        "merged": "com.android.music.app-debug-11:/drawable_ic_notif_previous.xml.flat",
-        "source": "com.android.music.app-main-13:/drawable/ic_notif_previous.xml"
-    },
-    {
-        "merged": "com.android.music.app-debug-11:/drawable_ic_notif_pause.xml.flat",
-        "source": "com.android.music.app-main-13:/drawable/ic_notif_pause.xml"
+        "merged": "com.android.music.app-debug-11:/drawable-ldpi_ic_notif_status_bar.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-ldpi/ic_notif_status_bar.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_indicator_ic_mp_playing_large.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/indicator_ic_mp_playing_large.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-xhdpi_ic_notif_repeat_one.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xhdpi/ic_notif_repeat_one.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-ldpi_ic_notif_play.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-ldpi/ic_notif_play.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_main_menu_button.xml.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/main_menu_button.xml"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xhdpi_ic_notif_status_bar.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xhdpi/ic_notif_status_bar.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_appwidget_bg.9.png.flat",
@@ -268,12 +432,12 @@
         "source": "com.android.music.app-main-13:/layout/statusbar.xml"
     },
     {
-        "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_artist_playback.png.flat",
-        "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_artist_playback.png"
-    },
-    {
         "merged": "com.android.music.app-debug-11:/layout-finger_audio_player_common.xml.flat",
         "source": "com.android.music.app-main-13:/layout-finger/audio_player_common.xml"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_artist_playback.png.flat",
+        "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_artist_playback.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable_app_video.png.flat",
@@ -298,6 +462,10 @@
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_shuffle_on_btn.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/ic_mp_shuffle_on_btn.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-xxxhdpi_ic_notif_play.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxxhdpi/ic_notif_play.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_mp_song_list.png.flat",
@@ -332,12 +500,20 @@
         "source": "com.android.music.app-main-13:/drawable-finger/appwidget_inner.9.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-xxxhdpi_ic_notif_pause.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxxhdpi/ic_notif_pause.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_appwidget_next_normal.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/appwidget_next_normal.png"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_menu_delete.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/ic_menu_delete.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-anydpi-v21_ic_notif_previous.xml.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-anydpi-v21/ic_notif_previous.xml"
     },
     {
         "merged": "com.android.music.app-debug-11:/drawable-finger_ic_slide_keyboard.png.flat",
@@ -376,6 +552,22 @@
         "source": "com.android.music.app-main-13:/drawable/midi.png"
     },
     {
+        "merged": "com.android.music.app-debug-11:/drawable-xxhdpi_ic_notif_previous.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xxhdpi/ic_notif_previous.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-ldpi_ic_notif_next.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-ldpi/ic_notif_next.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-mdpi_ic_notif_play.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-mdpi/ic_notif_play.png"
+    },
+    {
+        "merged": "com.android.music.app-debug-11:/drawable-ldpi_ic_notif_repeat_none.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-ldpi/ic_notif_repeat_none.png"
+    },
+    {
         "merged": "com.android.music.app-debug-11:/drawable-finger_appwidget_pause_focused.png.flat",
         "source": "com.android.music.app-main-13:/drawable-finger/appwidget_pause_focused.png"
     },
@@ -384,7 +576,7 @@
         "source": "com.android.music.app-main-13:/layout-finger/album_appwidget.xml"
     },
     {
-        "merged": "com.android.music.app-debug-11:/drawable_ic_notif_repeat_none.xml.flat",
-        "source": "com.android.music.app-main-13:/drawable/ic_notif_repeat_none.xml"
+        "merged": "com.android.music.app-debug-11:/drawable-xhdpi_ic_notif_repeat_none.png.flat",
+        "source": "com.android.music.app-pngs-7:/drawable-xhdpi/ic_notif_repeat_none.png"
     }
 ]
