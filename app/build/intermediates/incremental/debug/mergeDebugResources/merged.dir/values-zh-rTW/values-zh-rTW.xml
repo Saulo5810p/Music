@@ -38,13 +38,6 @@
     <string msgid="6880186414437237653" name="all_title">"所有媒體"</string>
     <string msgid="8490372367259160067" name="artists_title">"演出者"</string>
     <string msgid="5248122473075843289" name="browse_menu">"演出者"</string>
-    <string msgid="881409763997275156" name="call_notification_answer_action">"接聽"</string>
-    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"視訊"</string>
-    <string msgid="3229508546291798546" name="call_notification_decline_action">"拒接"</string>
-    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"掛斷"</string>
-    <string msgid="6107532579223922871" name="call_notification_incoming_text">"來電"</string>
-    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"通話中"</string>
-    <string msgid="59049573811482460" name="call_notification_screening_text">"正在過濾來電"</string>
     <string msgid="886559484711947520" name="cancel">"取消"</string>
     <string msgid="4565515100924905315" name="clear_playlist">"清除播放清單"</string>
     <string msgid="8149755205483279143" name="create_playlist_create_text">"儲存"</string>
@@ -117,7 +110,6 @@
     <string msgid="2912837715658975248" name="sort_by_album">"專輯"</string>
     <string msgid="4607024967813199992" name="sort_by_artist">"演出者"</string>
     <string msgid="7662999005554152565" name="sort_by_track">"曲目"</string>
-    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="3367150884806639224" name="streamloadingtext">"連線到 <ns1:g id="HOST">%s</ns1:g>"</string>
     <string msgid="6942246568246092330" name="tracks_menu">"樂曲"</string>
     <string msgid="3229389424532295124" name="tracks_title">"樂曲"</string>

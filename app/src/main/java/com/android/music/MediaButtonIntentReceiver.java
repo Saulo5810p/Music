@@ -23,10 +23,9 @@ import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.util.Log;
 import android.view.KeyEvent;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
-
-import androidx.core.content.ContextCompat;
 
 /**
  * 
@@ -59,6 +58,15 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
         }
     };
     
+    /** Inicia o service em foreground no Android 8+ (API 26); antes, startService normal. */
+    private static void startServiceCompat(Context context, Intent intent) {
+        if (Build.VERSION.SDK_INT >= 26) {
+            context.startForegroundService(intent);
+        } else {
+            context.startService(intent);
+        }
+    }
+
     @Override
     public void onReceive(Context context, Intent intent) {
         String intentAction = intent.getAction();
@@ -66,7 +74,7 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
             Intent i = new Intent(context, MediaPlaybackService.class);
             i.setAction(MediaPlaybackService.SERVICECMD);
             i.putExtra(MediaPlaybackService.CMDNAME, MediaPlaybackService.CMDPAUSE);
-            ContextCompat.startForegroundService(context, i);
+            startServiceCompat(context, i);
         } else if (Intent.ACTION_MEDIA_BUTTON.equals(intentAction)) {
             KeyEvent event = (KeyEvent)
                     intent.getParcelableExtra(Intent.EXTRA_KEY_EVENT);
@@ -119,11 +127,11 @@ public class MediaButtonIntentReceiver extends BroadcastReceiver {
                         if (keycode == KeyEvent.KEYCODE_HEADSETHOOK &&
                                 eventtime - mLastClickTime < 300) {
                             i.putExtra(MediaPlaybackService.CMDNAME, MediaPlaybackService.CMDNEXT);
-                            ContextCompat.startForegroundService(context, i);
+                            startServiceCompat(context, i);
                             mLastClickTime = 0;
                         } else {
                             i.putExtra(MediaPlaybackService.CMDNAME, command);
-                            ContextCompat.startForegroundService(context, i);
+                            startServiceCompat(context, i);
                             mLastClickTime = eventtime;
                         }
 

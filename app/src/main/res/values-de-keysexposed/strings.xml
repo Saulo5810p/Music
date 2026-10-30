@@ -17,5 +17,5 @@
     xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="create_playlist_create_text_prompt" msgid="942607395076646686">"Name der Playlist"</string>
     <string name="rename_playlist_same_prompt" msgid="6311998573141605099">"\"<xliff:g id="PLAYLIST">%s</xliff:g>\" umbenennen in"</string>
-    <string name="rename_playlist_diff_prompt" msgid="621210762456614321">"\"<xliff:g id="PLAYLIST">%s</xliff:g>\" umbenennen in"</string>
+    <string name="rename_playlist_diff_prompt" formatted="false" msgid="621210762456614321">"\"<xliff:g id="PLAYLIST">%s</xliff:g>\" umbenennen in"</string>
 </resources>

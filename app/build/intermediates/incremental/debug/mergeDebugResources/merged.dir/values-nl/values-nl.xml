@@ -38,13 +38,6 @@
     <string msgid="6880186414437237653" name="all_title">"Alle media"</string>
     <string msgid="8490372367259160067" name="artists_title">"Artiesten"</string>
     <string msgid="5248122473075843289" name="browse_menu">"Artiesten"</string>
-    <string msgid="881409763997275156" name="call_notification_answer_action">"Beantwoorden"</string>
-    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
-    <string msgid="3229508546291798546" name="call_notification_decline_action">"Weigeren"</string>
-    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Ophangen"</string>
-    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Inkomend gesprek"</string>
-    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Actief gesprek"</string>
-    <string msgid="59049573811482460" name="call_notification_screening_text">"Een inkomend gesprek screenen"</string>
     <string msgid="886559484711947520" name="cancel">"Annuleren"</string>
     <string msgid="4565515100924905315" name="clear_playlist">"Afspeellijst wissen"</string>
     <string msgid="8149755205483279143" name="create_playlist_create_text">"Opslaan"</string>
@@ -117,7 +110,6 @@
     <string msgid="2912837715658975248" name="sort_by_album">"Albums"</string>
     <string msgid="4607024967813199992" name="sort_by_artist">"Artiesten"</string>
     <string msgid="7662999005554152565" name="sort_by_track">"Tracks"</string>
-    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="3367150884806639224" name="streamloadingtext">"Verbinding maken met <ns1:g id="HOST">%s</ns1:g>"</string>
     <string msgid="6942246568246092330" name="tracks_menu">"Nummers"</string>
     <string msgid="3229389424532295124" name="tracks_title">"Nummers"</string>

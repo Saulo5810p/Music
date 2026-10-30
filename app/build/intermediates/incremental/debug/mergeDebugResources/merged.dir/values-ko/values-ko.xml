@@ -38,13 +38,6 @@
     <string msgid="6880186414437237653" name="all_title">"전체 미디어"</string>
     <string msgid="8490372367259160067" name="artists_title">"아티스트"</string>
     <string msgid="5248122473075843289" name="browse_menu">"아티스트"</string>
-    <string msgid="881409763997275156" name="call_notification_answer_action">"통화"</string>
-    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"동영상"</string>
-    <string msgid="3229508546291798546" name="call_notification_decline_action">"거절"</string>
-    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"전화 끊기"</string>
-    <string msgid="6107532579223922871" name="call_notification_incoming_text">"수신 전화"</string>
-    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"진행 중인 통화"</string>
-    <string msgid="59049573811482460" name="call_notification_screening_text">"수신 전화 검사 중"</string>
     <string msgid="886559484711947520" name="cancel">"취소"</string>
     <string msgid="4565515100924905315" name="clear_playlist">"재생 목록 지우기"</string>
     <string msgid="8149755205483279143" name="create_playlist_create_text">"저장"</string>
@@ -115,7 +108,6 @@
     <string msgid="2912837715658975248" name="sort_by_album">"앨범"</string>
     <string msgid="4607024967813199992" name="sort_by_artist">"아티스트"</string>
     <string msgid="7662999005554152565" name="sort_by_track">"트랙"</string>
-    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
     <string msgid="3367150884806639224" name="streamloadingtext">"<ns1:g id="HOST">%s</ns1:g>에 연결 중"</string>
     <string msgid="6942246568246092330" name="tracks_menu">"노래"</string>
     <string msgid="3229389424532295124" name="tracks_title">"노래"</string>

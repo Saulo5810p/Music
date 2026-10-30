@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-zh-rTW-keysexposed/values-zh-rTW-keysexposed.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-2:/values-zh-rTW-keysexposed/values-zh-rTW-keysexposed.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-zh-rTW-keysexposed/strings.xml",
@@ -9,15 +9,15 @@
                         "startLines": "17,19,18",
                         "startColumns": "4,4,4",
                         "startOffsets": "801,1030,900",
-                        "endColumns": "98,128,129",
-                        "endOffsets": "895,1154,1025"
+                        "endColumns": "98,146,129",
+                        "endOffsets": "895,1172,1025"
                     },
                     "to": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
-                        "startOffsets": "105,204,329",
-                        "endColumns": "98,124,125",
-                        "endOffsets": "199,324,450"
+                        "startOffsets": "105,204,347",
+                        "endColumns": "98,142,125",
+                        "endOffsets": "199,342,468"
                     }
                 }
             ]

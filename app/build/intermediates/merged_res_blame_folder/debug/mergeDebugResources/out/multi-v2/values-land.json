@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-land/values-land.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-2:/values-land/values-land.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-land/dimens.xml",

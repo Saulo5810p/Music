@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-ru-keysexposed/values-ru-keysexposed.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-2:/values-ru-keysexposed/values-ru-keysexposed.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-ru-keysexposed/strings.xml",
@@ -9,15 +9,15 @@
                         "startLines": "17,19,18",
                         "startColumns": "4,4,4",
                         "startOffsets": "801,1055,912",
-                        "endColumns": "110,141,142",
-                        "endOffsets": "907,1192,1050"
+                        "endColumns": "110,159,142",
+                        "endOffsets": "907,1210,1050"
                     },
                     "to": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
-                        "startOffsets": "105,216,354",
-                        "endColumns": "110,137,138",
-                        "endOffsets": "211,349,488"
+                        "startOffsets": "105,216,372",
+                        "endColumns": "110,155,138",
+                        "endOffsets": "211,367,506"
                     }
                 }
             ]

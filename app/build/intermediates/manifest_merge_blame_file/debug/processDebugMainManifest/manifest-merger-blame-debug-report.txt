@@ -1,0 +1,577 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!--
+3 Copyright (C) 2007 The Android Open Source Project
+4
+5     Licensed under the Apache License, Version 2.0 (the "License");
+6     you may not use this file except in compliance with the License.
+7     You may obtain a copy of the License at
+8  
+9          http://www.apache.org/licenses/LICENSE-2.0
+10  
+11     Unless required by applicable law or agreed to in writing, software
+12     distributed under the License is distributed on an "AS IS" BASIS,
+13     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+14     See the License for the specific language governing permissions and
+15     limitations under the License.
+16-->
+17<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+18    package="com.android.music"
+19    android:versionCode="1"
+20    android:versionName="1.6-modern" >
+21
+22    <uses-sdk
+23        android:minSdkVersion="4"
+24        android:targetSdkVersion="34" />
+25
+26    <uses-permission android:name="android.permission.WAKE_LOCK" />
+26-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:18:5-68
+26-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:18:22-65
+27    <uses-permission android:name="android.permission.INTERNET" />
+27-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:19:5-67
+27-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:19:22-64
+28    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+28-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:20:5-75
+28-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:20:22-72
+29    <uses-permission
+29-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:21:5-107
+30        android:name="android.permission.READ_EXTERNAL_STORAGE"
+30-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:21:22-77
+31        android:maxSdkVersion="32" />
+31-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:21:78-104
+32    <uses-permission
+32-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:22:5-108
+33        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+33-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:22:22-78
+34        android:maxSdkVersion="28" />
+34-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:22:79-105
+35    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+35-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:23:5-77
+35-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:23:22-74
+36    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+36-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:24:5-92
+36-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:24:22-89
+37    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+37-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:25:5-77
+37-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:25:22-74
+38    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+38-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:26:5-75
+38-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:26:22-72
+39
+40    <application
+40-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:5-230:19
+41        android:allowTaskReparenting="true"
+41-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:31:9-44
+42        android:debuggable="true"
+43        android:extractNativeLibs="true"
+44        android:icon="@drawable/app_music"
+44-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:28:18-52
+45        android:label="@string/musicbrowserlabel"
+45-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:29:9-50
+46        android:taskAffinity="android.task.music" >
+46-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:30:9-50
+47        <activity
+47-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:32:9-42:19
+48            android:name="com.android.music.MusicBrowserActivity"
+48-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:32:19-54
+49            android:exported="true" >
+49-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:32:55-78
+50            <intent-filter>
+50-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:33:13-37:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:34:17-69
+51-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:34:25-66
+52
+53                <category android:name="android.intent.category.DEFAULT" />
+53-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+53-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+54                <category android:name="android.intent.category.LAUNCHER" />
+54-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:36:17-77
+54-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:36:27-74
+55            </intent-filter>
+56
+57            <meta-data
+57-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:38:14-41:16
+58                android:name="android.app.default_searchable"
+58-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:39:17-62
+59                android:value=".QueryBrowserActivity" />
+59-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:40:17-54
+60        </activity>
+61
+62        <receiver
+62-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:43:9-48:20
+63            android:name="com.android.music.MediaButtonIntentReceiver"
+63-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:43:19-59
+64            android:exported="true" >
+64-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:43:60-83
+65            <intent-filter>
+65-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:44:13-47:29
+66                <action android:name="android.intent.action.MEDIA_BUTTON" />
+66-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:45:17-77
+66-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:45:25-74
+67                <action android:name="android.media.AUDIO_BECOMING_NOISY" />
+67-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:46:17-77
+67-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:46:25-74
+68            </intent-filter>
+69        </receiver>
+70        <!--
+71             This is the "current music playing" panel, which has special
+72             launch behavior.  We clear its task affinity, so it will not
+73             be associated with the main media task and if launched
+74             from a notification will not bring the rest of the media app
+75             to the foreground.  We make it singleTask so that when others
+76             launch it (such as media) we will launch in to our own task.
+77             We set clearTaskOnLaunch because the user
+78             can go to a playlist from this activity, so if they later return
+79             to it we want it back in its initial state.  We exclude from
+80             recents since this is accessible through a notification when
+81             appropriate.
+82        -->
+83        <activity
+83-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:60:9-82:20
+84            android:name="com.android.music.MediaPlaybackActivity"
+84-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:60:19-55
+85            android:clearTaskOnLaunch="true"
+85-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:65:17-49
+86            android:excludeFromRecents="true"
+86-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:66:17-50
+87            android:exported="true"
+87-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:67:17-40
+88            android:label="@string/mediaplaybacklabel"
+88-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:62:17-59
+89            android:launchMode="singleTask"
+89-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:64:17-48
+90            android:taskAffinity=""
+90-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:63:17-40
+91            android:theme="@android:style/Theme.NoTitleBar" >
+91-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:61:17-64
+92            <intent-filter>
+92-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:68:13-77:29
+93                <action android:name="android.intent.action.VIEW" />
+93-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:69:17-69
+93-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:69:25-66
+94
+95                <category android:name="android.intent.category.DEFAULT" />
+95-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+95-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+96
+97                <data android:scheme="content" />
+97-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+97-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:23-47
+98                <data android:scheme="file" />
+98-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+98-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:23-47
+99                <data android:mimeType="audio/*" />
+99-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+99-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+100                <data android:mimeType="application/ogg" />
+100-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+100-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+101                <data android:mimeType="application/x-ogg" />
+101-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+101-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+102                <data android:mimeType="application/itunes" />
+102-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+102-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+103            </intent-filter>
+104            <intent-filter>
+104-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:78:13-81:29
+105                <action android:name="com.android.music.PLAYBACK_VIEWER" />
+105-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:79:17-76
+105-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:79:25-73
+106
+107                <category android:name="android.intent.category.DEFAULT" />
+107-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+107-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+108            </intent-filter>
+109        </activity>
+110        <activity
+110-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:9-95:20
+111            android:name="com.android.music.StreamStarter"
+111-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:19-47
+112            android:exported="true"
+112-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:92-115
+113            android:theme="@android:style/Theme.Dialog" >
+113-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:83:48-91
+114            <intent-filter>
+114-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:84:13-94:29
+115                <action android:name="android.intent.action.VIEW" />
+115-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:69:17-69
+115-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:69:25-66
+116
+117                <category android:name="android.intent.category.DEFAULT" />
+117-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+117-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+118                <category android:name="android.intent.category.BROWSABLE" />
+118-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:87:17-78
+118-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:87:27-75
+119
+120                <data android:scheme="http" />
+120-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+120-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:23-47
+121                <data android:mimeType="audio/mp3" />
+121-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+121-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+122                <data android:mimeType="audio/x-mp3" />
+122-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+122-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+123                <data android:mimeType="audio/mpeg" />
+123-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+123-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+124                <data android:mimeType="audio/mp4" />
+124-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+124-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+125                <data android:mimeType="audio/mp4a-latm" />
+125-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+125-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+126            </intent-filter>
+127        </activity>
+128        <activity
+128-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:96:9-102:20
+129            android:name="com.android.music.ArtistAlbumBrowserActivity"
+129-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:96:19-60
+130            android:exported="true" >
+130-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:96:61-84
+131            <intent-filter>
+131-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:97:13-101:29
+132                <action android:name="android.intent.action.PICK" />
+132-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:17-69
+132-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:25-66
+133
+134                <category android:name="android.intent.category.DEFAULT" />
+134-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+134-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+135
+136                <data android:mimeType="vnd.android.cursor.dir/artistalbum" />
+136-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+136-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+137            </intent-filter>
+138        </activity>
+139        <activity
+139-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:103:9-109:20
+140            android:name="com.android.music.AlbumBrowserActivity"
+140-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:103:19-54
+141            android:exported="true" >
+141-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:103:55-78
+142            <intent-filter>
+142-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:104:13-108:29
+143                <action android:name="android.intent.action.PICK" />
+143-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:17-69
+143-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:25-66
+144
+145                <category android:name="android.intent.category.DEFAULT" />
+145-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+145-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+146
+147                <data android:mimeType="vnd.android.cursor.dir/album" />
+147-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+147-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+148            </intent-filter>
+149        </activity>
+150        <activity
+150-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:110:9-117:20
+151            android:name="com.android.music.TrackBrowserActivity"
+151-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:110:19-54
+152            android:exported="true" >
+152-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:110:55-78
+153            <intent-filter>
+153-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:111:13-116:29
+154                <action android:name="android.intent.action.EDIT" />
+154-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:112:17-69
+154-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:112:25-66
+155                <action android:name="android.intent.action.PICK" />
+155-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:17-69
+155-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:25-66
+156
+157                <category android:name="android.intent.category.DEFAULT" />
+157-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+157-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+158
+159                <data android:mimeType="vnd.android.cursor.dir/track" />
+159-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+159-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+160            </intent-filter>
+161        </activity>
+162        <activity
+162-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:118:9-129:20
+163            android:name="com.android.music.QueryBrowserActivity"
+163-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:118:19-54
+164            android:exported="true"
+164-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:120:17-40
+165            android:theme="@android:style/Theme.NoTitleBar" >
+165-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:119:17-64
+166            <intent-filter>
+166-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:121:13-124:29
+167                <action android:name="android.intent.action.SEARCH" />
+167-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:122:17-71
+167-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:122:25-68
+168
+169                <category android:name="android.intent.category.DEFAULT" />
+169-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+169-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+170            </intent-filter>
+171
+172            <meta-data
+172-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:125:13-128:15
+173                android:name="android.app.searchable"
+173-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:126:17-54
+174                android:resource="@xml/searchable" />
+174-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:127:17-51
+175        </activity>
+176        <activity
+176-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:9-141:20
+177            android:name="com.android.music.PlaylistBrowserActivity"
+177-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:19-57
+178            android:exported="true"
+178-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:100-123
+179            android:label="@string/musicbrowserlabel" >
+179-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:130:58-99
+180            <intent-filter>
+180-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:131:13-135:29
+181                <action android:name="android.intent.action.PICK" />
+181-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:17-69
+181-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:25-66
+182
+183                <category android:name="android.intent.category.DEFAULT" />
+183-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+183-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+184
+185                <data android:mimeType="vnd.android.cursor.dir/playlist" />
+185-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+185-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+186            </intent-filter>
+187            <intent-filter>
+187-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:136:13-140:29
+188                <action android:name="android.intent.action.VIEW" />
+188-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:69:17-69
+188-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:69:25-66
+189
+190                <category android:name="android.intent.category.DEFAULT" />
+190-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+190-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+191
+192                <data android:mimeType="vnd.android.cursor.dir/playlist" />
+192-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+192-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+193            </intent-filter>
+194        </activity>
+195
+196        <activity-alias
+196-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:142:9-153:26
+197            android:name="com.android.music.PlaylistShortcutActivity"
+197-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:142:25-64
+198            android:exported="true"
+198-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:146:13-36
+199            android:icon="@drawable/ic_launcher_shortcut_music_playlist"
+199-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:145:13-73
+200            android:label="@string/musicshortcutlabel"
+200-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:144:13-55
+201            android:targetActivity="com.android.music.PlaylistBrowserActivity" >
+201-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:143:13-61
+202            <intent-filter>
+202-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:148:13-151:29
+203                <action android:name="android.intent.action.CREATE_SHORTCUT" />
+203-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:149:17-80
+203-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:149:25-77
+204
+205                <category android:name="android.intent.category.DEFAULT" />
+205-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+205-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+206            </intent-filter>
+207        </activity-alias>
+208
+209        <activity
+209-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:154:9-171:20
+210            android:name="com.android.music.VideoBrowserActivity"
+210-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:154:19-54
+211            android:exported="true"
+211-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:158:13-36
+212            android:icon="@drawable/app_video"
+212-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:157:13-47
+213            android:label="@string/videobrowserlabel"
+213-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:156:13-54
+214            android:taskAffinity="android.task.video" >
+214-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:155:13-54
+215            <intent-filter>
+215-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:159:13-163:29
+216                <action android:name="android.intent.action.PICK" />
+216-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:17-69
+216-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:25-66
+217
+218                <category android:name="android.intent.category.DEFAULT" />
+218-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+218-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+219
+220                <data android:mimeType="vnd.android.cursor.dir/video" />
+220-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+220-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+221            </intent-filter>
+222            <!--
+223            <intent-filter>
+224                <action android:name="android.intent.action.MAIN" />
+225                <category android:name="android.intent.category.DEFAULT" />
+226                <category android:name="android.intent.category.LAUNCHER" />
+227            </intent-filter>
+228            -->
+229        </activity>
+230        <activity
+230-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:172:9-194:20
+231            android:name="com.android.music.MediaPickerActivity"
+231-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:172:19-53
+232            android:exported="false"
+232-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:172:95-119
+233            android:label="@string/mediapickerlabel" >
+233-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:172:54-94
+234
+235            <!--
+236            <intent-filter>
+237                <action android:name="android.intent.action.PICK" />
+238                <category android:name="android.intent.category.DEFAULT" />
+239                <data android:mimeType="media/*"/>
+240                <data android:mimeType="audio/*"/>
+241                <data android:mimeType="application/ogg"/>
+242                <data android:mimeType="application/x-ogg"/>
+243                <data android:mimeType="video/*"/>
+244            </intent-filter>
+245            <intent-filter>
+246                <action android:name="android.intent.action.GET_CONTENT" />
+247                <category android:name="android.intent.category.DEFAULT" />
+248                <category android:name="android.intent.category.OPENABLE" />
+249                <data android:mimeType="media/*"/>
+250                <data android:mimeType="audio/*"/>
+251                <data android:mimeType="application/ogg"/>
+252                <data android:mimeType="application/x-ogg"/>
+253                <data android:mimeType="video/*"/>
+254            </intent-filter>
+255            -->
+256        </activity>
+257        <activity
+257-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:195:9-214:20
+258            android:name="com.android.music.MusicPicker"
+258-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:195:19-45
+259            android:exported="true"
+259-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:195:89-112
+260            android:label="@string/music_picker_title" >
+260-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:195:46-88
+261
+262            <!--
+263                 First way to invoke us: someone asks to get content of
+264                 any of the audio types we support.
+265            -->
+266            <intent-filter>
+266-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:198:13-205:29
+267                <action android:name="android.intent.action.GET_CONTENT" />
+267-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:199:17-76
+267-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:199:25-73
+268
+269                <category android:name="android.intent.category.DEFAULT" />
+269-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+269-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+270                <category android:name="android.intent.category.OPENABLE" />
+270-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:201:17-77
+270-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:201:27-74
+271
+272                <data android:mimeType="audio/*" />
+272-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+272-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+273                <data android:mimeType="application/ogg" />
+273-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+273-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+274                <data android:mimeType="application/x-ogg" />
+274-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+274-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+275            </intent-filter>
+276            <!--
+277                 Second way to invoke us: someone asks to pick an item from
+278                 some media Uri.
+279            -->
+280            <intent-filter>
+280-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:208:13-213:29
+281                <action android:name="android.intent.action.PICK" />
+281-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:17-69
+281-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:98:25-66
+282
+283                <category android:name="android.intent.category.DEFAULT" />
+283-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:17-76
+283-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:35:27-73
+284                <category android:name="android.intent.category.OPENABLE" />
+284-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:201:17-77
+284-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:201:27-74
+285
+286                <data android:mimeType="vnd.android.cursor.dir/audio" />
+286-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:71:17-49
+286-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:73:23-49
+287            </intent-filter>
+288        </activity>
+289        <activity
+289-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:215:9-120
+290            android:name="com.android.music.CreatePlaylist"
+290-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:215:19-48
+291            android:exported="false"
+291-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:215:93-117
+292            android:theme="@android:style/Theme.Dialog" />
+292-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:215:49-92
+293        <activity
+293-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:9-120
+294            android:name="com.android.music.RenamePlaylist"
+294-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:19-48
+295            android:exported="false"
+295-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:93-117
+296            android:theme="@android:style/Theme.Dialog" />
+296-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:216:49-92
+297        <activity
+297-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:9-118
+298            android:name="com.android.music.WeekSelector"
+298-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:19-46
+299            android:exported="false"
+299-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:91-115
+300            android:theme="@android:style/Theme.Dialog" />
+300-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:217:47-90
+301        <activity
+301-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:9-117
+302            android:name="com.android.music.DeleteItems"
+302-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:19-45
+303            android:exported="false"
+303-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:90-114
+304            android:theme="@android:style/Theme.Dialog" />
+304-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:218:46-89
+305        <activity
+305-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:9-122
+306            android:name="com.android.music.ScanningProgress"
+306-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:19-50
+307            android:exported="false"
+307-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:95-119
+308            android:theme="@android:style/Theme.Dialog" />
+308-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:219:51-94
+309
+310        <service
+310-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:220:9-222:61
+311            android:name="com.android.music.MediaPlaybackService"
+311-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:220:18-53
+312            android:exported="false"
+312-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:221:13-37
+313            android:foregroundServiceType="mediaPlayback" />
+313-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:222:13-58
+314
+315        <receiver
+315-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:224:9-229:20
+316            android:name="com.android.music.MediaAppWidgetProvider"
+316-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:224:19-56
+317            android:exported="true" >
+317-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:224:57-80
+318            <intent-filter>
+318-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:225:13-227:29
+319                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+319-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:226:17-84
+319-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:226:25-81
+320            </intent-filter>
+321
+322            <meta-data
+322-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:228:13-107
+323                android:name="android.appwidget.provider"
+323-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:228:24-65
+324                android:resource="@xml/appwidget_info" />
+324-->/data/data/com.termux/files/home/Music/app/src/main/AndroidManifest.xml:228:66-104
+325        </receiver>
+326    </application>
+327
+328</manifest>

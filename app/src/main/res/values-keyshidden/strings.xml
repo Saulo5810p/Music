@@ -24,6 +24,6 @@
     <!-- Prompt in dialog when renaming a playlist, and the entered name is the same as the old one. -->
     <string name="rename_playlist_same_prompt">Open the keyboard to give playlist \"<xliff:g id="playlist">%s</xliff:g>\" a new name.</string>
     <!-- Prompt in dialog when renaming a playlist, and the entered name is different from the old one. -->
-    <string name="rename_playlist_diff_prompt">Open the keyboard to give playlist \"<xliff:g id="playlist">%s</xliff:g>\" a new name, or select Save to name it \"%s\".</string>
+    <string name="rename_playlist_diff_prompt" formatted="false">Open the keyboard to give playlist \"<xliff:g id="playlist">%s</xliff:g>\" a new name, or select Save to name it \"%s\".</string>
 </resources>
 

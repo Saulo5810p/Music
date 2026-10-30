@@ -44,8 +44,6 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import androidx.core.app.ActivityCompat;
-
 public class MusicBrowserActivity extends Activity
     implements MusicUtils.Defs, View.OnClickListener {
     private View mNowPlayingView;
@@ -91,10 +89,9 @@ public class MusicBrowserActivity extends Activity
      */
     private void requestNotificationPermissionIfNeeded() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.POST_NOTIFICATIONS)
+            if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS)
                     != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.POST_NOTIFICATIONS}, 1);
+                requestPermissions(new String[]{Manifest.permission.POST_NOTIFICATIONS}, 1);
             }
         }
     }
@@ -106,10 +103,9 @@ public class MusicBrowserActivity extends Activity
      */
     private void requestPhoneStatePermissionIfNeeded() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
+            if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE)
                     != PackageManager.PERMISSION_GRANTED) {
-                ActivityCompat.requestPermissions(this,
-                        new String[]{Manifest.permission.READ_PHONE_STATE}, 2);
+                requestPermissions(new String[]{Manifest.permission.READ_PHONE_STATE}, 2);
             }
         }
     }

@@ -35,6 +35,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteException;
 import android.graphics.Bitmap;
 import android.media.AudioManager;
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.media.MediaMetadata;
+import android.media.session.MediaSession;
+import android.media.session.PlaybackState;
 
 import android.media.MediaPlayer;
 import android.net.Uri;
@@ -52,14 +57,6 @@ import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.widget.Toast;
 
-import androidx.core.app.NotificationChannelCompat;
-import androidx.core.app.NotificationCompat;
-import androidx.core.app.NotificationManagerCompat;
-import androidx.media.session.MediaButtonReceiver;
-import androidx.media.app.NotificationCompat.MediaStyle;
-import android.support.v4.media.MediaMetadataCompat;
-import android.support.v4.media.session.MediaSessionCompat;
-import android.support.v4.media.session.PlaybackStateCompat;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -161,8 +158,8 @@ public class MediaPlaybackService extends Service {
     // foreground service notification, replacing the old manual
     // RemoteViews-based status bar notification.
     private static final String NOTIFICATION_CHANNEL_ID = "playback_channel";
-    private MediaSessionCompat mSession;
-    private NotificationManagerCompat mNotificationManagerCompat;
+    private MediaSession mSession; // API 21+ (null em versões antigas)
+    private NotificationManager mNotificationManager;
 
     /**
      * Compat replacement for the internal, non-public
@@ -312,12 +309,12 @@ public class MediaPlaybackService extends Service {
         mPlayer = new MultiPlayer();
         mPlayer.setHandler(mMediaplayerHandler);
 
-        mNotificationManagerCompat = NotificationManagerCompat.from(this);
+        mNotificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         createNotificationChannel();
         setUpMediaSession();
 
         // Clear leftover notification in case this service previously got killed while playing
-        mNotificationManagerCompat.cancel(PLAYBACKSERVICE_STATUS);
+        mNotificationManager.cancel(PLAYBACKSERVICE_STATUS);
         
         reloadQueue();
         
@@ -333,8 +330,7 @@ public class MediaPlaybackService extends Service {
             registerReceiver(mIntentReceiver, commandFilter);
         }
         
-        if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE)
-                == PackageManager.PERMISSION_GRANTED) {
+        if (hasPermissionCompat(Manifest.permission.READ_PHONE_STATE)) {
             TelephonyManager tmgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
             tmgr.listen(mPhoneStateListener, PhoneStateListener.LISTEN_CALL_STATE);
         }
@@ -355,9 +351,9 @@ public class MediaPlaybackService extends Service {
             Log.e("MediaPlaybackService", "Service being destroyed while still playing.");
         }
 
-        stopForeground(Service.STOP_FOREGROUND_REMOVE);
-        if (mNotificationManagerCompat != null) {
-            mNotificationManagerCompat.cancel(PLAYBACKSERVICE_STATUS);
+        stopForegroundCompat(true);
+        if (mNotificationManager != null) {
+            mNotificationManager.cancel(PLAYBACKSERVICE_STATUS);
         }
 
         // release all MediaPlayer resources, including the native player and wakelocks
@@ -373,8 +369,7 @@ public class MediaPlaybackService extends Service {
             mCursor = null;
         }
 
-        if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE)
-                == PackageManager.PERMISSION_GRANTED) {
+        if (hasPermissionCompat(Manifest.permission.READ_PHONE_STATE)) {
             TelephonyManager tmgr = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
             tmgr.listen(mPhoneStateListener, 0);
         }
@@ -747,17 +742,26 @@ public class MediaPlaybackService extends Service {
     }
 
     private void createNotificationChannel() {
-        NotificationChannelCompat channel = new NotificationChannelCompat.Builder(
-                NOTIFICATION_CHANNEL_ID, NotificationManagerCompat.IMPORTANCE_LOW)
-                .setName(getString(R.string.notification_channel_playback))
-                .setShowBadge(false)
-                .build();
-        mNotificationManagerCompat.createNotificationChannel(channel);
+        // NotificationChannel só existe a partir do Android 8 (API 26).
+        if (Build.VERSION.SDK_INT >= 26) {
+            NotificationChannel channel = new NotificationChannel(
+                    NOTIFICATION_CHANNEL_ID,
+                    getString(R.string.notification_channel_playback),
+                    NotificationManager.IMPORTANCE_LOW);
+            channel.setShowBadge(false);
+            mNotificationManager.createNotificationChannel(channel);
+        }
     }
 
+    @SuppressWarnings("deprecation")
     private void setUpMediaSession() {
-        mSession = new MediaSessionCompat(this, "MediaPlaybackService");
-        mSession.setCallback(new MediaSessionCompat.Callback() {
+        // android.media.session.MediaSession só existe a partir do Android 5
+        // (API 21). Abaixo disso o app toca normal, só sem a sessão.
+        if (Build.VERSION.SDK_INT < 21) {
+            return;
+        }
+        mSession = new MediaSession(this, "MediaPlaybackService");
+        mSession.setCallback(new MediaSession.Callback() {
             @Override
             public void onPlay() {
                 play();
@@ -790,8 +794,8 @@ public class MediaPlaybackService extends Service {
                 seek(0);
             }
         });
-        mSession.setFlags(MediaSessionCompat.FLAG_HANDLES_MEDIA_BUTTONS |
-                MediaSessionCompat.FLAG_HANDLES_TRANSPORT_CONTROLS);
+        mSession.setFlags(MediaSession.FLAG_HANDLES_MEDIA_BUTTONS |
+                MediaSession.FLAG_HANDLES_TRANSPORT_CONTROLS);
         mSession.setActive(true);
     }
 
@@ -802,123 +806,81 @@ public class MediaPlaybackService extends Service {
      * lockscreen media controls are driven from.
      */
     private void updateMediaSession(String what) {
-        if (mSession == null) {
-            return;
-        }
+        if (mSession != null) {
+            long actions = PlaybackState.ACTION_PLAY_PAUSE |
+                    PlaybackState.ACTION_PLAY |
+                    PlaybackState.ACTION_PAUSE |
+                    PlaybackState.ACTION_SKIP_TO_NEXT |
+                    PlaybackState.ACTION_SKIP_TO_PREVIOUS |
+                    PlaybackState.ACTION_SEEK_TO |
+                    PlaybackState.ACTION_STOP;
 
-        long actions = PlaybackStateCompat.ACTION_PLAY_PAUSE |
-                PlaybackStateCompat.ACTION_PLAY |
-                PlaybackStateCompat.ACTION_PAUSE |
-                PlaybackStateCompat.ACTION_SKIP_TO_NEXT |
-                PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS |
-                PlaybackStateCompat.ACTION_SEEK_TO |
-                PlaybackStateCompat.ACTION_STOP;
+            int state = isPlaying() ? PlaybackState.STATE_PLAYING
+                    : PlaybackState.STATE_PAUSED;
 
-        int state = isPlaying() ? PlaybackStateCompat.STATE_PLAYING
-                : PlaybackStateCompat.STATE_PAUSED;
+            PlaybackState playbackState = new PlaybackState.Builder()
+                    .setActions(actions)
+                    .setState(state, position(), 1.0f)
+                    .build();
+            mSession.setPlaybackState(playbackState);
 
-        PlaybackStateCompat playbackState = new PlaybackStateCompat.Builder()
-                .setActions(actions)
-                .setState(state, position(), 1.0f)
-                .build();
-        mSession.setPlaybackState(playbackState);
-
-        if (!what.equals(PLAYSTATE_CHANGED)) {
-            String title;
-            String artist;
-            String album;
-            if (getAudioId() < 0) {
-                title = getPath();
-                artist = null;
-                album = null;
-            } else {
-                title = getTrackName();
-                artist = getArtistName();
-                if (artist == null || artist.equals(MediaFileCompat.UNKNOWN_STRING)) {
-                    artist = getString(R.string.unknown_artist_name);
+            if (!what.equals(PLAYSTATE_CHANGED)) {
+                String title;
+                String artist;
+                String album;
+                if (getAudioId() < 0) {
+                    title = getPath();
+                    artist = null;
+                    album = null;
+                } else {
+                    title = getTrackName();
+                    artist = getArtistName();
+                    if (artist == null || artist.equals(MediaFileCompat.UNKNOWN_STRING)) {
+                        artist = getString(R.string.unknown_artist_name);
+                    }
+                    album = getAlbumName();
+                    if (album == null || album.equals(MediaFileCompat.UNKNOWN_STRING)) {
+                        album = getString(R.string.unknown_album_name);
+                    }
                 }
-                album = getAlbumName();
-                if (album == null || album.equals(MediaFileCompat.UNKNOWN_STRING)) {
-                    album = getString(R.string.unknown_album_name);
-                }
-            }
-            Bitmap art = MusicUtils.getArtwork(this, getAlbumId());
+                Bitmap art = MusicUtils.getArtwork(this, getAlbumId());
 
-            MediaMetadataCompat.Builder metaBuilder = new MediaMetadataCompat.Builder()
-                    .putString(MediaMetadataCompat.METADATA_KEY_TITLE, title)
-                    .putString(MediaMetadataCompat.METADATA_KEY_ARTIST, artist)
-                    .putString(MediaMetadataCompat.METADATA_KEY_ALBUM, album)
-                    .putLong(MediaMetadataCompat.METADATA_KEY_DURATION, duration());
-            if (art != null) {
-                metaBuilder.putBitmap(MediaMetadataCompat.METADATA_KEY_ALBUM_ART, art);
+                MediaMetadata.Builder metaBuilder = new MediaMetadata.Builder()
+                        .putString(MediaMetadata.METADATA_KEY_TITLE, title)
+                        .putString(MediaMetadata.METADATA_KEY_ARTIST, artist)
+                        .putString(MediaMetadata.METADATA_KEY_ALBUM, album)
+                        .putLong(MediaMetadata.METADATA_KEY_DURATION, duration());
+                if (art != null) {
+                    metaBuilder.putBitmap(MediaMetadata.METADATA_KEY_ALBUM_ART, art);
+                }
+                mSession.setMetadata(metaBuilder.build());
             }
-            mSession.setMetadata(metaBuilder.build());
         }
 
         if (mIsSupposedToBePlaying) {
-            startForeground(PLAYBACKSERVICE_STATUS, buildNotification());
+            startForegroundCompat();
         } else {
             // Keep the notification visible (paused state) but let the
             // service leave the foreground state, same behavior as
             // before: it's dismissed only from gotoIdleState().
-            stopForeground(Service.STOP_FOREGROUND_DETACH);
-            mNotificationManagerCompat.notify(PLAYBACKSERVICE_STATUS, buildNotification());
+            stopForegroundCompat(false);
+            notifyCompat();
         }
     }
 
+    @SuppressWarnings("deprecation")
     private Notification buildNotification() {
+        // Notification.Builder só existe a partir do Android 3 (API 11).
+        // Abaixo disso o service toca sem notificação.
+        if (Build.VERSION.SDK_INT < 11) {
+            return null;
+        }
         boolean playing = isPlaying();
 
         PendingIntent contentIntent = PendingIntent.getActivity(this, 0,
                 new Intent("com.android.music.PLAYBACK_VIEWER")
                         .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP),
-                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
-
-        NotificationCompat.Action previousAction = new NotificationCompat.Action(
-                R.drawable.ic_notif_previous,
-                getString(R.string.notification_action_previous),
-                MediaButtonReceiver.buildMediaButtonPendingIntent(this,
-                        PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS));
-
-        NotificationCompat.Action playPauseAction = playing
-                ? new NotificationCompat.Action(
-                        R.drawable.ic_notif_pause,
-                        getString(R.string.notification_action_pause),
-                        MediaButtonReceiver.buildMediaButtonPendingIntent(this,
-                                PlaybackStateCompat.ACTION_PAUSE))
-                : new NotificationCompat.Action(
-                        R.drawable.ic_notif_play,
-                        getString(R.string.notification_action_play),
-                        MediaButtonReceiver.buildMediaButtonPendingIntent(this,
-                                PlaybackStateCompat.ACTION_PLAY));
-
-        NotificationCompat.Action nextAction = new NotificationCompat.Action(
-                R.drawable.ic_notif_next,
-                getString(R.string.notification_action_next),
-                MediaButtonReceiver.buildMediaButtonPendingIntent(this,
-                        PlaybackStateCompat.ACTION_SKIP_TO_NEXT));
-
-        // Repeat is a custom (non-transport) action, cycled via a service
-        // command rather than a MediaSession transport action, so it only
-        // shows up in the expanded notification, alongside prev/play/next.
-        int repeatIconRes;
-        switch (getRepeatMode()) {
-            case REPEAT_CURRENT:
-                repeatIconRes = R.drawable.ic_notif_repeat_one;
-                break;
-            case REPEAT_ALL:
-                repeatIconRes = R.drawable.ic_notif_repeat_all;
-                break;
-            default:
-                repeatIconRes = R.drawable.ic_notif_repeat_none;
-                break;
-        }
-        Intent repeatIntent = new Intent(SERVICECMD, null, this, MediaPlaybackService.class);
-        repeatIntent.putExtra(CMDNAME, CMDCYCLEREPEAT);
-        PendingIntent repeatPendingIntent = PendingIntent.getService(this, 0, repeatIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT | PendingIntent.FLAG_IMMUTABLE);
-        NotificationCompat.Action repeatAction = new NotificationCompat.Action(
-                repeatIconRes, getString(R.string.notification_action_repeat), repeatPendingIntent);
+                pendingFlags());
 
         String title;
         String artist;
@@ -935,27 +897,118 @@ public class MediaPlaybackService extends Service {
         }
         Bitmap art = MusicUtils.getArtwork(this, getAlbumId());
 
-        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, NOTIFICATION_CHANNEL_ID)
-                .setSmallIcon(R.drawable.ic_notif_status_bar)
+        Notification.Builder builder;
+        if (Build.VERSION.SDK_INT >= 26) {
+            builder = new Notification.Builder(this, NOTIFICATION_CHANNEL_ID);
+        } else {
+            builder = new Notification.Builder(this);
+        }
+        builder.setSmallIcon(R.drawable.ic_notif_status_bar)
                 .setContentTitle(title)
                 .setContentText(artist)
                 .setContentIntent(contentIntent)
                 .setLargeIcon(art)
                 .setOngoing(playing)
-                .setOnlyAlertOnce(true)
-                .setVisibility(NotificationCompat.VISIBILITY_PUBLIC)
-                .addAction(previousAction)
-                .addAction(playPauseAction)
-                .addAction(nextAction)
-                .addAction(repeatAction)
-                .setStyle(new MediaStyle()
-                        .setMediaSession(mSession.getSessionToken())
-                        .setShowActionsInCompactView(0, 1, 2)
-                        .setShowCancelButton(true)
-                        .setCancelButtonIntent(MediaButtonReceiver.buildMediaButtonPendingIntent(
-                                this, PlaybackStateCompat.ACTION_STOP)));
+                .setOnlyAlertOnce(true);
 
-        return builder.build();
+        if (Build.VERSION.SDK_INT >= 21) {
+            builder.setVisibility(Notification.VISIBILITY_PUBLIC);
+        }
+
+        // Botões da notificação (API 16+). Cada um manda um comando
+        // para o próprio service (ver onStart), sem passar por receiver.
+        if (Build.VERSION.SDK_INT >= 16) {
+            builder.addAction(R.drawable.ic_notif_previous,
+                    getString(R.string.notification_action_previous),
+                    commandIntent(1, CMDPREVIOUS));
+
+            builder.addAction(playing ? R.drawable.ic_notif_pause : R.drawable.ic_notif_play,
+                    getString(playing ? R.string.notification_action_pause
+                                      : R.string.notification_action_play),
+                    commandIntent(2, CMDTOGGLEPAUSE));
+
+            builder.addAction(R.drawable.ic_notif_next,
+                    getString(R.string.notification_action_next),
+                    commandIntent(3, CMDNEXT));
+
+            int repeatIconRes;
+            switch (getRepeatMode()) {
+                case REPEAT_CURRENT:
+                    repeatIconRes = R.drawable.ic_notif_repeat_one;
+                    break;
+                case REPEAT_ALL:
+                    repeatIconRes = R.drawable.ic_notif_repeat_all;
+                    break;
+                default:
+                    repeatIconRes = R.drawable.ic_notif_repeat_none;
+                    break;
+            }
+            builder.addAction(repeatIconRes,
+                    getString(R.string.notification_action_repeat),
+                    commandIntent(4, CMDCYCLEREPEAT));
+        }
+
+        if (Build.VERSION.SDK_INT >= 21 && mSession != null) {
+            builder.setStyle(new Notification.MediaStyle()
+                    .setMediaSession(mSession.getSessionToken())
+                    .setShowActionsInCompactView(0, 1, 2));
+        }
+
+        return Build.VERSION.SDK_INT >= 16 ? builder.build() : builder.getNotification();
+    }
+
+    // ---- helpers locais com checagem de API (sem bibliotecas compat) -------
+
+    /** FLAG_IMMUTABLE só existe a partir da API 23. */
+    private static int pendingFlags() {
+        int flags = PendingIntent.FLAG_UPDATE_CURRENT;
+        if (Build.VERSION.SDK_INT >= 23) {
+            flags |= PendingIntent.FLAG_IMMUTABLE;
+        }
+        return flags;
+    }
+
+    /** PendingIntent que manda um comando (CMD*) para este próprio service. */
+    private PendingIntent commandIntent(int requestCode, String command) {
+        Intent i = new Intent(SERVICECMD, null, this, MediaPlaybackService.class);
+        i.putExtra(CMDNAME, command);
+        return PendingIntent.getService(this, requestCode, i, pendingFlags());
+    }
+
+    private void startForegroundCompat() {
+        if (Build.VERSION.SDK_INT < 5) {
+            return; // startForeground() não existe na API 4
+        }
+        Notification n = buildNotification();
+        if (n != null) {
+            startForeground(PLAYBACKSERVICE_STATUS, n);
+        }
+    }
+
+    private void notifyCompat() {
+        Notification n = buildNotification();
+        if (n != null && mNotificationManager != null) {
+            mNotificationManager.notify(PLAYBACKSERVICE_STATUS, n);
+        }
+    }
+
+    /** stopForeground(int) só existe na API 24; antes era stopForeground(boolean). */
+    private void stopForegroundCompat(boolean removeNotification) {
+        if (Build.VERSION.SDK_INT >= 24) {
+            stopForeground(removeNotification ? Service.STOP_FOREGROUND_REMOVE
+                                              : Service.STOP_FOREGROUND_DETACH);
+        } else if (Build.VERSION.SDK_INT >= 5) {
+            stopForeground(removeNotification);
+        }
+    }
+
+    /** Context.checkSelfPermission só existe na API 23. */
+    private boolean hasPermissionCompat(String permission) {
+        if (Build.VERSION.SDK_INT >= 23) {
+            return checkSelfPermission(permission) == PackageManager.PERMISSION_GRANTED;
+        }
+        return getPackageManager().checkPermission(permission, getPackageName())
+                == PackageManager.PERMISSION_GRANTED;
     }
 
     private void ensurePlayListCapacity(int size) {
@@ -1277,7 +1330,7 @@ public class MediaPlaybackService extends Service {
 
             // startForeground() with the MediaStyle notification replaces the
             // old setForeground(true) + manual RemoteViews notification.
-            startForeground(PLAYBACKSERVICE_STATUS, buildNotification());
+            startForegroundCompat();
 
             if (!wasPlaying) {
                 notifyChange(PLAYSTATE_CHANGED);
@@ -1302,7 +1355,7 @@ public class MediaPlaybackService extends Service {
         if (remove_status_icon) {
             gotoIdleState();
         } else {
-            stopForeground(Service.STOP_FOREGROUND_DETACH);
+            stopForegroundCompat(false);
         }
         if (remove_status_icon) {
             mIsSupposedToBePlaying = false;

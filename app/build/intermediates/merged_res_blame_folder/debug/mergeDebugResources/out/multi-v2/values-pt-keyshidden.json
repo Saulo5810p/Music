@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.android.music.app-mergeDebugResources-9:/values-pt-keyshidden/values-pt-keyshidden.xml",
+            "outputFile": "com.android.music.app-mergeDebugResources-2:/values-pt-keyshidden/values-pt-keyshidden.xml",
             "map": [
                 {
                     "source": "/data/data/com.termux/files/home/Music/app/src/main/res/values-pt-keyshidden/strings.xml",
@@ -9,15 +9,15 @@
                         "startLines": "17,19,18",
                         "startColumns": "4,4,4",
                         "startOffsets": "801,1185,999",
-                        "endColumns": "197,226,185",
-                        "endOffsets": "994,1407,1180"
+                        "endColumns": "197,244,185",
+                        "endOffsets": "994,1425,1180"
                     },
                     "to": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
-                        "startOffsets": "105,303,526",
-                        "endColumns": "197,222,181",
-                        "endOffsets": "298,521,703"
+                        "startOffsets": "105,303,544",
+                        "endColumns": "197,240,181",
+                        "endOffsets": "298,539,721"
                     }
                 }
             ]
